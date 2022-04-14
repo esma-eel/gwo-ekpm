@@ -223,7 +223,7 @@ def get_corresponding_seed_set(v_prim_graph_list, xi, k):
     return si
 
 
-def wolf_update_position(A, C, v_prim_graph, wolf, alpha, beta, delta):
+def wolf_update_position(v_prim_graph, wolf, alpha, beta, delta):
     """
     update position list of wolf i based on alpha, beta, delta wolves
     based on algorithm 4 in article
@@ -232,33 +232,45 @@ def wolf_update_position(A, C, v_prim_graph, wolf, alpha, beta, delta):
     new_position = wolf_position
 
     alpha_position = v_prim_graph.nodes[alpha]["position"]
+    alpha_A1 = v_prim_graph.nodes[alpha]["A"]
+    alpha_C1 = v_prim_graph.nodes[alpha]["C"]
+
     beta_position = v_prim_graph.nodes[beta]["position"]
+    beta_A1 = v_prim_graph.nodes[beta]["A"]
+    beta_C1 = v_prim_graph.nodes[beta]["C"]
+
     delta_position = v_prim_graph.nodes[delta]["position"]
+    delta_A1 = v_prim_graph.nodes[delta]["A"]
+    delta_C1 = v_prim_graph.nodes[delta]["C"]
 
     for j in range(0, len(v_prim_graph)):
-        daj = abs((C * alpha_position[j]) - wolf_position[j])
-        y1 = alpha_position[j] - (A * daj)
+        daj = abs((alpha_C1 * alpha_position[j]) - wolf_position[j])
+        y1 = alpha_position[j] - (alpha_A1 * daj)
 
-        dbj = abs((C * beta_position[j]) - wolf_position[j])
-        y2 = beta_position[j] - (A * dbj)
+        dbj = abs((beta_C1 * beta_position[j]) - wolf_position[j])
+        y2 = beta_position[j] - (beta_A1 * dbj)
 
-        ddj = abs((C * delta_position[j]) - wolf_position[j])
-        y3 = delta_position[j] - (A * ddj)
+        ddj = abs((delta_C1 * delta_position[j]) - wolf_position[j])
+        y3 = delta_position[j] - (delta_A1 * ddj)
 
         new_position[j] = abs((y1 + y2 + y3) / 3)
 
     return new_position
 
 
-def generate_control_parameters(t, r1, r2):
-    """
-    generating control parameters
-    """
+def generate_control_parameters(t, v_prim_graph):
     a = 2 - 2 * (t / max_t)
-    A = (2 * a) * r1 - a
-    C = 2 * r2
+    for node in v_prim_graph.nodes():
+        r1 = random.uniform(0, 1)
+        r2 = random.uniform(0, 1)
+        A = (2 * a) * r1 - a
+        C = 2 * r2
+        net.set_node_attributes(v_prim_graph, {node: r1}, name="r1")
+        net.set_node_attributes(v_prim_graph, {node: r2}, name="r2")
+        net.set_node_attributes(v_prim_graph, {node: A}, name="A")
+        net.set_node_attributes(v_prim_graph, {node: C}, name="C")
 
-    return a, A, C
+    print("generating control parameters for nodes completed in iteration: ", t)
 
 
 every_alpha = []
@@ -269,11 +281,11 @@ def main():
     main function of gwim algorithm and running independent cascade for
     alpha wolf seed set
     """
-    # initial a, A, C
-    r1 = random.uniform(0, 1)
-    r2 = random.uniform(0, 1)
-    a, A, C = generate_control_parameters(0, r1, r2)
-    print(f"r1: {r1}, r2: {r2}\na: {a}\nA: {A}\nC: {C}")
+    # iteration counter
+    t = 0
+    # generating control parameters
+    print("generating control parameters iteration: ", t)
+    generate_control_parameters(t, v_prim_graph)
 
     print("creating population before starting main algorithm:")
     population = list(v_prim_graph.nodes())[:population_size]
@@ -302,7 +314,6 @@ def main():
     alpha, beta, delta = population_sorted[:3]
     omega_wolves = population_sorted[3:]
 
-    t = 0
     v_prim_graph_list = list(v_prim_graph)
 
     while t < max_t:
@@ -310,7 +321,7 @@ def main():
         for omega_wolf in omega_wolves:
             print("updating position for wolf: ", omega_wolf)
             position_value = wolf_update_position(
-                A, C, v_prim_graph, omega_wolf, alpha, beta, delta
+                v_prim_graph, omega_wolf, alpha, beta, delta
             )
             net.set_node_attributes(
                 v_prim_graph, {omega_wolf: position_value}, name="position"
@@ -323,10 +334,8 @@ def main():
                 v_prim_graph, {omega_wolf: seed_set_value}, name="seed_set"
             )
 
-        print("updating a, A, C:")
-        r1 = random.uniform(0, 1)
-        r2 = random.uniform(0, 1)
-        a, A, C = generate_control_parameters(t, r1, r2)
+        print("generating control parameters iteration: ", t)
+        generate_control_parameters(t, v_prim_graph)
 
         for wolf in population:
             print("recalculating fitness value for wolf: ", wolf)
