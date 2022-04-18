@@ -1,9 +1,10 @@
-import copy
 import math
 import random
 
 import networkx as net
+import numpy as np
 
+print("script")
 # dataset filename
 file_name = "dataset/CA-AstroPh.txt"
 
@@ -35,60 +36,63 @@ v_prim_graph = G.subgraph(v_prim_list)
 
 # propogation probability for independent cascade -> probability to active nodes
 propogation_probability = 0.02
+monte_carlo_simulation_number = 50
 
 
 def independent_cascade_simulation(
-    v_prim_graph, seed_set, propogation_probability
+    v_prim_graph,
+    seed_set,
+    propogation_probability=0.5,
+    monte_carlo_simulation_number=50,
 ):
     """
-    independent cascade function in order to simulate propogation
-    with seed set of alpha wolf found from Gwim
+    Input:  graph object, set of seed nodes, propagation probability
+            and the number of Monte-Carlo simulations
+    Output: average number of nodes influenced by the seed nodes
     """
-    new_active = True
-    current_active_nodes = copy.deepcopy(seed_set)
-    new_active_nodes = set()
-    activated_nodes = copy.deepcopy(seed_set)
-    influence_spread = len(seed_set)
 
-    print("current active nodes are:", current_active_nodes)
-    print("activated nodes are: ", activated_nodes)
-    print("influence spread number is: ", influence_spread)
-
-    while new_active:
-        for node in current_active_nodes:
-            print("current active node in loop is: ", node)
-            for neighbor in v_prim_graph.neighbors(node):
-                print(f"current neighbor for node {node} is: ", neighbor)
-                if neighbor not in activated_nodes:
-                    print(f"neighbor {neighbor} not in activated nodes")
-                    if flip_the_coin(propogation_probability):
-                        print(f"neighbor {neighbor} of node {node} activated")
-                        new_active_nodes.add(neighbor)
-                        activated_nodes.append(neighbor)
-        old_influence_spread = influence_spread
-        influence_spread += len(new_active_nodes)
+    # Loop over the Monte-Carlo Simulations
+    spread = []
+    for i in range(monte_carlo_simulation_number):
         print(
-            f"influence spread from {old_influence_spread} updated to"
-            f" {influence_spread}"
+            f"running simulation number {i} "
+            f"from {monte_carlo_simulation_number}"
         )
-        if new_active_nodes:
-            print("updating current active nodes")
-            current_active_nodes = list(new_active_nodes)
-            print("resetting new_active_nodes for next iteration")
-            new_active_nodes = set()
-        else:
-            print("there is no active node left")
-            new_active = False
+        # Simulate propagation process
+        new_active, all_activated_nodes = seed_set[:], seed_set[:]
+        while new_active:
+            print(f"new active nodes in simulation {i} are: ")
+            print(new_active)
+            # For each newly active node, find its neighbors
+            # that become activated
+            new_ones = []
+            for node in new_active:
 
-    return influence_spread
+                # Determine neighbors that become infected
+                np.random.seed(i)
+                # for directed graph use ==> neighbors(node, mode="out")
+                # and for undirected graph remove it
+                # make sure you make neighbors output as list with list(output)
+                success = (
+                    np.random.uniform(
+                        0, 1, len(list(v_prim_graph.neighbors(node)))
+                    )
+                    < propogation_probability
+                )
 
+                array_of_neighbors = np.array(
+                    list(v_prim_graph.neighbors(node))
+                )
+                new_ones += list(np.extract(success, array_of_neighbors))
 
-def flip_the_coin(probability):
-    """
-    if result of this function is True the node will be activated
-    in independent cascade
-    """
-    return random.random() < probability
+            new_active = list(set(new_ones) - set(all_activated_nodes))
+
+            # Add newly activated nodes to the set of activated nodes
+            all_activated_nodes += new_active
+
+        spread.append(len(all_activated_nodes))
+
+    return np.mean(spread)
 
 
 def safe_ln(value):
@@ -159,6 +163,8 @@ def fitness_function(wolf, seed_set, v_prim_graph):
     calculating the fitness value for 'wolf'
     based on part 4.1 equation 13 in article
     """
+    # generate subgraph based on the timing in dataset file
+    # first subgraph
     fitness = 0
     general_worth = sum_worthiness(wolf, seed_set, v_prim_graph)
 
@@ -288,6 +294,9 @@ def main():
     generate_control_parameters(t, v_prim_graph)
 
     print("creating population before starting main algorithm:")
+    # -- how to select population --> degrees more than 2 or
+    # random step for list
+    # check a parameter again
     population = list(v_prim_graph.nodes())[:population_size]
     for wolf in population:
         print("generating random position for wolf: ", wolf)
@@ -405,9 +414,10 @@ def main():
         )
     print("running simulation of independent cascade:")
     independent_cascade_result = independent_cascade_simulation(
-        v_prim_graph,
-        v_prim_graph.nodes[alpha]["seed_set"],
-        propogation_probability,
+        v_prim_graph=v_prim_graph,
+        seed_set=v_prim_graph.nodes[alpha]["seed_set"],
+        propogation_probability=propogation_probability,
+        monte_carlo_simulation_number=monte_carlo_simulation_number,
     )
 
     print("independent cascade simulation result is:")
