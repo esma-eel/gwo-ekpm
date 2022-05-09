@@ -1,19 +1,21 @@
 import math
 import random
 
-import networkx as net
+import networkx as nx
 import numpy as np
 
-print("script")
+print("test11")
 # dataset filename
-file_name = "dataset/CA-AstroPh.txt"
+file_name = "dataset/CA-AstroPh3.tsv"
+# file_with_timing = pd.read_csv(file_name, sep='\t')
 
 # crating undirected graph based on dataset
-graph_type = net.Graph()
+graph_type = nx.Graph()
 
-G = net.read_edgelist(
+G = nx.read_edgelist(
     file_name,
     create_using=graph_type,
+    data=(("days", int),),
     nodetype=int,
 )
 k = 10  # number of seed set
@@ -29,8 +31,8 @@ for node in G:
     else:
         v_1_degree.append(node)
 
-print(len(v_prim_list))
-print(len(v_1_degree))
+print("nodes with degree higher than 1:", len(v_prim_list))
+print("nodes with degree of 1", len(v_1_degree))
 
 v_prim_graph = G.subgraph(v_prim_list)
 
@@ -167,12 +169,16 @@ def fitness_function(wolf, seed_set, v_prim_graph):
     # first subgraph
     fitness = 0
     general_worth = sum_worthiness(wolf, seed_set, v_prim_graph)
-
     for neighbor_wolf in v_prim_graph.neighbors(wolf):
         neighbor_wolf_worth = worthiness_of_wolf(
             neighbor_wolf, seed_set, v_prim_graph
         )
-        neighbor_worth_divide_by_general = neighbor_wolf_worth / general_worth
+        try:
+            neighbor_worth_divide_by_general = (
+                neighbor_wolf_worth / general_worth
+            )
+        except ZeroDivisionError:
+            neighbor_worth_divide_by_general = 0
         fitness += neighbor_worth_divide_by_general * safe_ln(
             neighbor_worth_divide_by_general
         )
@@ -271,10 +277,10 @@ def generate_control_parameters(t, v_prim_graph):
         r2 = random.uniform(0, 1)
         A = (2 * a) * r1 - a
         C = 2 * r2
-        net.set_node_attributes(v_prim_graph, {node: r1}, name="r1")
-        net.set_node_attributes(v_prim_graph, {node: r2}, name="r2")
-        net.set_node_attributes(v_prim_graph, {node: A}, name="A")
-        net.set_node_attributes(v_prim_graph, {node: C}, name="C")
+        nx.set_node_attributes(v_prim_graph, {node: r1}, name="r1")
+        nx.set_node_attributes(v_prim_graph, {node: r2}, name="r2")
+        nx.set_node_attributes(v_prim_graph, {node: A}, name="A")
+        nx.set_node_attributes(v_prim_graph, {node: C}, name="C")
 
     print("generating control parameters for nodes completed in iteration: ", t)
 
@@ -297,20 +303,21 @@ def main():
     # -- how to select population --> degrees more than 2 or
     # random step for list
     # check a parameter again
-    population = list(v_prim_graph.nodes())[:population_size]
+    graph_nodes = list(v_prim_graph.nodes())
+    population = random.sample(graph_nodes, population_size)
     for wolf in population:
         print("generating random position for wolf: ", wolf)
         position_value, seed_set_value = wolf_random_position(v_prim_graph, k)
-        net.set_node_attributes(
+        nx.set_node_attributes(
             v_prim_graph, {wolf: position_value}, name="position"
         )
         print("generating random seed set for wolf: ", wolf)
-        net.set_node_attributes(
+        nx.set_node_attributes(
             v_prim_graph, {wolf: seed_set_value}, name="seed_set"
         )
         print("generating fitness value for wolf: ", wolf)
         fitness_value = fitness_function(wolf, seed_set_value, v_prim_graph)
-        net.set_node_attributes(
+        nx.set_node_attributes(
             v_prim_graph, {wolf: fitness_value}, name="value"
         )
 
@@ -332,14 +339,14 @@ def main():
             position_value = wolf_update_position(
                 v_prim_graph, omega_wolf, alpha, beta, delta
             )
-            net.set_node_attributes(
+            nx.set_node_attributes(
                 v_prim_graph, {omega_wolf: position_value}, name="position"
             )
             print("updating seed set for wolf: ", omega_wolf)
             seed_set_value = get_corresponding_seed_set(
                 v_prim_graph_list, position_value, k
             )
-            net.set_node_attributes(
+            nx.set_node_attributes(
                 v_prim_graph, {omega_wolf: seed_set_value}, name="seed_set"
             )
 
@@ -350,7 +357,7 @@ def main():
             print("recalculating fitness value for wolf: ", wolf)
             seed_set_value = v_prim_graph.nodes[wolf]["seed_set"]
             fitness_value = fitness_function(wolf, seed_set_value, v_prim_graph)
-            net.set_node_attributes(
+            nx.set_node_attributes(
                 v_prim_graph, {wolf: fitness_value}, name="value"
             )
 
@@ -375,14 +382,14 @@ def main():
             position_value, seed_set_value = wolf_random_position(
                 v_prim_graph, k
             )
-            net.set_node_attributes(
+            nx.set_node_attributes(
                 v_prim_graph, {beta: position_value}, name="position"
             )
             print("regenerating position for wolf delta: ", delta)
             position_value, seed_set_value = wolf_random_position(
                 v_prim_graph, k
             )
-            net.set_node_attributes(
+            nx.set_node_attributes(
                 v_prim_graph, {delta: position_value}, name="position"
             )
 
