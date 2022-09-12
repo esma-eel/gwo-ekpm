@@ -21,9 +21,15 @@ G = nx.read_edgelist(
     data=(("days", int),),
     nodetype=int,
 )
-k = 10  # number of seed set
-population_size = 10  # population size or n which is used in article
-max_t = 25  # maximum number of iterations
+k = 30  # number of seed set
+population_size = 50  # population size or n which is used in article
+max_t = 100  # maximum number of iterations
+
+print("K = ", k)
+print("Population = ", population_size)
+print("MAX_T = ", max_t)
+
+
 v_prim_list = []  # using this list in order to seperate nodes with degree >= 2
 v_1_degree = []  # this list is informational, keeps node with degree 1
 
@@ -40,6 +46,7 @@ print("nodes with degree of 1", len(v_1_degree))
 v_prim_graph = G.subgraph(v_prim_list)
 v_prim_graph = nx.Graph(v_prim_graph)
 v_prim_graph.remove_edges_from(list(nx.selfloop_edges(v_prim_graph)))
+print(len(v_prim_graph.nodes))
 
 
 # propogation probability for independent cascade -> probability to active nodes
@@ -478,4 +485,8 @@ def main():
 
 
 if __name__ == "__main__":
+    start_main = datetime.datetime.now()
     main()
+    end_main = datetime.datetime.now()
+    delta_main = end_main - start_main
+    print("time of execution this algorithm: ", delta_main)
