@@ -1,10 +1,13 @@
 import math
 import random
+import datetime
 
 import networkx as nx
 import numpy as np
 
-print("test11")
+# import sys
+
+print("script16")
 # dataset filename
 file_name = "dataset/CA-AstroPh3.tsv"
 # file_with_timing = pd.read_csv(file_name, sep='\t')
@@ -19,8 +22,8 @@ G = nx.read_edgelist(
     nodetype=int,
 )
 k = 10  # number of seed set
-population_size = 50  # population size or n which is used in article
-max_t = 50  # maximum number of iterations
+population_size = 10  # population size or n which is used in article
+max_t = 25  # maximum number of iterations
 v_prim_list = []  # using this list in order to seperate nodes with degree >= 2
 v_1_degree = []  # this list is informational, keeps node with degree 1
 
@@ -35,6 +38,9 @@ print("nodes with degree higher than 1:", len(v_prim_list))
 print("nodes with degree of 1", len(v_1_degree))
 
 v_prim_graph = G.subgraph(v_prim_list)
+v_prim_graph = nx.Graph(v_prim_graph)
+v_prim_graph.remove_edges_from(list(nx.selfloop_edges(v_prim_graph)))
+
 
 # propogation probability for independent cascade -> probability to active nodes
 propogation_probability = 0.02
@@ -64,7 +70,7 @@ def independent_cascade_simulation(
         new_active, all_activated_nodes = seed_set[:], seed_set[:]
         while new_active:
             print(f"new active nodes in simulation {i} are: ")
-            print(new_active)
+            print(len(new_active))
             # For each newly active node, find its neighbors
             # that become activated
             new_ones = []
@@ -108,81 +114,95 @@ def safe_ln(value):
     return math.log(value)
 
 
-def probability_of_node_gets_message(wolf, seed_set, v_prim_graph):
-    """
-    calculating the probability of 'wolf' getting activation message
-    based on part 4.1 equation 10 in article
-    """
-    iwolf = 0
-    total_p_wolf_to_neighbor = 0
-    total_p_wolf_to_second_order_neighbor = 0
-    for neighbor in v_prim_graph.neighbors(wolf):
-        p_wolf_to_neighbor = 1 / v_prim_graph.number_of_edges(wolf, neighbor)
-        if neighbor in seed_set:
-            total_p_wolf_to_neighbor += p_wolf_to_neighbor
+def knbrs(G, start, k):
+    nbrs = set([start])
+    for _ in range(k):
+        nbrs = set((nbr for n in nbrs for nbr in G[n]))
 
-        for second_order_neigbor in v_prim_graph.neighbors(neighbor):
-            if second_order_neigbor in seed_set:
-                p_second_neighbor_to_neighbor = (
-                    1
-                    / v_prim_graph.number_of_edges(
-                        second_order_neigbor, neighbor
-                    )
-                )
-
-                total_p_wolf_to_second_order_neighbor += (
-                    p_second_neighbor_to_neighbor * p_wolf_to_neighbor
-                )
-
-    iwolf = total_p_wolf_to_neighbor + total_p_wolf_to_second_order_neighbor
-    return iwolf
+    # In order to prevent any recursion we remove node it self from neighbors
+    if start in nbrs:
+        nbrs.remove(start)
+    return nbrs
 
 
-def worthiness_of_wolf(wolf, seed_set, v_prim_graph):
-    """
-    calculating the worthiness for 'wolf'
-    based on part 4.1 equation 11 in article
-    """
-    iwolf = probability_of_node_gets_message(wolf, seed_set, v_prim_graph)
-    worthiness = iwolf * v_prim_graph.degree(wolf)
-    return worthiness
-
-
-def sum_worthiness(wolf, seed_set, v_prim_graph):
-    """
-    calculating the total worth of 'wolf'
-    based on part 4.1 equation 12 in article
-    """
-    worth = 0
-    for neighbor_wolf in v_prim_graph.neighbors(wolf):
-        worth += worthiness_of_wolf(neighbor_wolf, seed_set, v_prim_graph)
-
-    return worth
-
-
-def fitness_function(wolf, seed_set, v_prim_graph):
+def fitness_function(seed_set, v_prim_graph):  # wolf,
+    start = datetime.datetime.now()
     """
     calculating the fitness value for 'wolf'
     based on part 4.1 equation 13 in article
     """
-    # generate subgraph based on the timing in dataset file
-    # first subgraph
-    fitness = 0
-    general_worth = sum_worthiness(wolf, seed_set, v_prim_graph)
-    for neighbor_wolf in v_prim_graph.neighbors(wolf):
-        neighbor_wolf_worth = worthiness_of_wolf(
-            neighbor_wolf, seed_set, v_prim_graph
-        )
+    impact_range = 60
+    # Creating s' set with using each item in seed set
+    s_prim = []
+    seed_set_with_neighbors = {}
+    for seed_set_item in seed_set:
+        seed_set_item_neighbors = knbrs(v_prim_graph, seed_set_item, 2)
+        seed_set_with_neighbors[seed_set_item] = seed_set_item_neighbors
+        s_prim += list(seed_set_item_neighbors)
+
+    s_prim = set(s_prim)
+
+    for node in set(s_prim):
+        neighbors = knbrs(v_prim_graph, node, 1)
+        for neighbor in neighbors:
+            edge_data = v_prim_graph.get_edge_data(neighbor, node).get("days")
+            # نحوه ارتباط برعکس در نظر گرفته شود -- بررسی نتیجه
+            if edge_data < impact_range and neighbor in s_prim:
+                s_prim.remove(neighbor)
+
+    s_prim_graph = v_prim_graph.subgraph(s_prim)
+    s_prim_sum_degrees = sum([degree for node, degree in s_prim_graph.degree()])
+    s_prim_mean_degrees = s_prim_sum_degrees // len(s_prim)
+    # we use k shell in order to remove the nodes below mean degree of s_prim
+    filtered_s_prim_graph = nx.k_core(s_prim_graph, k=s_prim_mean_degrees)
+
+    tolerance_range = 6
+    s_prim_eigenvector = None
+    while not s_prim_eigenvector:
+        if tolerance_range >= 0:
+            default_fault_tolerance = f"1.0e-{tolerance_range}"
+        else:
+            default_fault_tolerance = 1
+
         try:
-            neighbor_worth_divide_by_general = (
-                neighbor_wolf_worth / general_worth
+            s_prim_eigenvector = nx.eigenvector_centrality(
+                filtered_s_prim_graph,
+                weight="days",
+                tol=float(default_fault_tolerance),
             )
-        except ZeroDivisionError:
-            neighbor_worth_divide_by_general = 0
-        fitness += neighbor_worth_divide_by_general * safe_ln(
-            neighbor_worth_divide_by_general
+        except nx.PowerIterationFailedConvergence:
+            tolerance_range -= 1
+
+    prb = 0.02
+    s_prim_eigenvector = dict(
+        sorted(
+            s_prim_eigenvector.items(),
+            key=lambda item: item[1] >= prb,
+            reverse=True,
+        )
+    )
+    s_prim_eigenvector_worthy = {}
+    for (
+        seed_set_item,
+        seed_set_item_neighbors,
+    ) in seed_set_with_neighbors.items():
+        # seed_set_item_neighbors = knbrs(v_prim_graph, seed_set_item, 2)
+        for node, egv_value in s_prim_eigenvector.items():
+            if node in seed_set_item_neighbors:
+                s_prim_eigenvector_worthy[node] = egv_value
+
+    fitness = 0
+    general_worth = sum(s_prim_eigenvector_worthy.values())
+
+    for node_j, worth_j in s_prim_eigenvector_worthy.items():
+        node_j_worth_divide_by_general_worth = worth_j / general_worth
+        fitness += node_j_worth_divide_by_general_worth * safe_ln(
+            node_j_worth_divide_by_general_worth
         )
 
+    end = datetime.datetime.now()
+    delta = end - start
+    print("time for calculating fitness: ", delta)
     return -(fitness)
 
 
@@ -240,20 +260,20 @@ def wolf_update_position(v_prim_graph, wolf, alpha, beta, delta):
     update position list of wolf i based on alpha, beta, delta wolves
     based on algorithm 4 in article
     """
-    wolf_position = v_prim_graph.nodes[wolf]["position"]
+    wolf_position = wolf.X
     new_position = wolf_position
 
-    alpha_position = v_prim_graph.nodes[alpha]["position"]
-    alpha_A1 = v_prim_graph.nodes[alpha]["A"]
-    alpha_C1 = v_prim_graph.nodes[alpha]["C"]
+    alpha_position = alpha.X
+    alpha_A1 = alpha.get_params()["A"]
+    alpha_C1 = alpha.get_params()["C"]
 
-    beta_position = v_prim_graph.nodes[beta]["position"]
-    beta_A1 = v_prim_graph.nodes[beta]["A"]
-    beta_C1 = v_prim_graph.nodes[beta]["C"]
+    beta_position = beta.X
+    beta_A1 = beta.get_params()["A"]
+    beta_C1 = beta.get_params()["C"]
 
-    delta_position = v_prim_graph.nodes[delta]["position"]
-    delta_A1 = v_prim_graph.nodes[delta]["A"]
-    delta_C1 = v_prim_graph.nodes[delta]["C"]
+    delta_position = delta.X
+    delta_A1 = delta.get_params()["A"]
+    delta_C1 = delta.get_params()["C"]
 
     for j in range(0, len(v_prim_graph)):
         daj = abs((alpha_C1 * alpha_position[j]) - wolf_position[j])
@@ -270,22 +290,66 @@ def wolf_update_position(v_prim_graph, wolf, alpha, beta, delta):
     return new_position
 
 
-def generate_control_parameters(t, v_prim_graph):
-    a = 2 - 2 * (t / max_t)
-    for node in v_prim_graph.nodes():
+every_alpha = []
+
+
+class Wolf(object):
+    def __init__(self, *args, **kwargs):
+        self._position = kwargs.get("position")
+        self._seed_set = kwargs.get("seed_set")
+        self._value = kwargs.get("value")
+        self._history = []
+        self._params = {"r1": 0, "r2": 0, "A": 0, "C": 0, "t": 0}
+
+    def generate_params(self, t):
+        a = 2 - 2 * (t / max_t)
         r1 = random.uniform(0, 1)
         r2 = random.uniform(0, 1)
         A = (2 * a) * r1 - a
         C = 2 * r2
-        nx.set_node_attributes(v_prim_graph, {node: r1}, name="r1")
-        nx.set_node_attributes(v_prim_graph, {node: r2}, name="r2")
-        nx.set_node_attributes(v_prim_graph, {node: A}, name="A")
-        nx.set_node_attributes(v_prim_graph, {node: C}, name="C")
+        self._params["r1"] = r1
+        self._params["r2"] = r2
+        self._params["A"] = A
+        self._params["C"] = C
+        self._params["t"] = t
+        return self._params
 
-    print("generating control parameters for nodes completed in iteration: ", t)
+    def get_params(self):
+        return self._params
+
+    @property
+    def X(self):
+        return self._position
+
+    @X.setter
+    def X(self, value):
+        self._position = value
+
+    @property
+    def S(self):
+        return self._seed_set
+
+    @S.setter
+    def S(self, value):
+        self._seed_set = value
+
+    @property
+    def value(self):
+        return self._value
+
+    @value.setter
+    def value(self, value):
+        self._history.append(value)
+        self._value = value
 
 
-every_alpha = []
+def generate_p_between_nodes(v_prim_graph):
+    for node in v_prim_graph.nodes():
+        ngs = knbrs(v_prim_graph, node, 1)
+        for ng in ngs:
+            propagation = random.uniform(0, propogation_probability)
+            attr = {(node, ng): {"propagation": propagation}}
+            nx.set_edge_attributes(v_prim_graph, attr)
 
 
 def main():
@@ -295,36 +359,28 @@ def main():
     """
     # iteration counter
     t = 0
-    # generating control parameters
-    print("generating control parameters iteration: ", t)
-    generate_control_parameters(t, v_prim_graph)
-
     print("creating population before starting main algorithm:")
-    # -- how to select population --> degrees more than 2 or
-    # random step for list
-    # check a parameter again
-    graph_nodes = list(v_prim_graph.nodes())
-    population = random.sample(graph_nodes, population_size)
-    for wolf in population:
-        print("generating random position for wolf: ", wolf)
+    population = [Wolf() for wolf in range(population_size)]
+    for index, wolf in enumerate(population):
+        print(
+            "generating control parameters iteration: ", t, " for wolf: ", index
+        )
+        wolf.generate_params(t)
+        print("generating random position for wolf: ", index)
         position_value, seed_set_value = wolf_random_position(v_prim_graph, k)
-        nx.set_node_attributes(
-            v_prim_graph, {wolf: position_value}, name="position"
-        )
-        print("generating random seed set for wolf: ", wolf)
-        nx.set_node_attributes(
-            v_prim_graph, {wolf: seed_set_value}, name="seed_set"
-        )
-        print("generating fitness value for wolf: ", wolf)
-        fitness_value = fitness_function(wolf, seed_set_value, v_prim_graph)
-        nx.set_node_attributes(
-            v_prim_graph, {wolf: fitness_value}, name="value"
-        )
+        wolf.X = position_value
+        print("generating random seed set for wolf: ", index)
+        wolf.S = seed_set_value
+        print("wolf ", index, " seed set is: ", wolf.S)
+        print("generating fitness value for wolf: ", index)
+        fitness_value = fitness_function(wolf.S, v_prim_graph)
+        print("fitness value of wolf ", index, fitness_value)
+        wolf.value = fitness_value
 
     print("extracting alpha, beta, delta and omega wolves:")
     population_sorted = sorted(
         population,
-        key=lambda wolf: v_prim_graph.nodes[wolf]["value"],
+        key=lambda wolf: wolf.value,
         reverse=True,
     )
     alpha, beta, delta = population_sorted[:3]
@@ -334,95 +390,83 @@ def main():
 
     while t < max_t:
         print(f"---------- iteration {t} -----------")
-        for omega_wolf in omega_wolves:
-            print("updating position for wolf: ", omega_wolf)
+        for index, omega_wolf in enumerate(omega_wolves):
+            print("updating position for omega wolf: ", index)
             position_value = wolf_update_position(
                 v_prim_graph, omega_wolf, alpha, beta, delta
             )
-            nx.set_node_attributes(
-                v_prim_graph, {omega_wolf: position_value}, name="position"
-            )
-            print("updating seed set for wolf: ", omega_wolf)
+            wolf.X = position_value
+            print("updating seed set for wolf: ", index)
             seed_set_value = get_corresponding_seed_set(
                 v_prim_graph_list, position_value, k
             )
-            nx.set_node_attributes(
-                v_prim_graph, {omega_wolf: seed_set_value}, name="seed_set"
-            )
+            wolf.S = seed_set_value
+            print("wolf ", index, " seed set is: ", wolf.S)
 
         print("generating control parameters iteration: ", t)
-        generate_control_parameters(t, v_prim_graph)
+        # generate_control_parameters(t, v_prim_graph)
 
-        for wolf in population:
-            print("recalculating fitness value for wolf: ", wolf)
-            seed_set_value = v_prim_graph.nodes[wolf]["seed_set"]
-            fitness_value = fitness_function(wolf, seed_set_value, v_prim_graph)
-            nx.set_node_attributes(
-                v_prim_graph, {wolf: fitness_value}, name="value"
-            )
+        for index, wolf in enumerate(population):
+            print("recalculating fitness value for wolf: ", index)
+            seed_set_value = wolf.S
+            fitness_value = fitness_function(wolf.S, v_prim_graph)
+            # nx.set_node_attributes(
+            #     v_prim_graph, {wolf: fitness_value}, name="value"
+            # )
+            print("fitness value of wolf ", index, fitness_value)
+            wolf.value = fitness_value
 
         print("extracting alpha, beta, delta and omega wolves:")
         population_sorted = sorted(
             population,
-            key=lambda wolf: v_prim_graph.nodes[wolf]["value"],
+            key=lambda wolf: wolf.value,
             reverse=True,
         )
         alpha, beta, delta = population_sorted[:3]
         if alpha not in every_alpha:
             every_alpha.append(alpha)
         omega_wolves = population_sorted[3:]
-        if (
-            v_prim_graph.nodes[beta]["position"]
-            == v_prim_graph.nodes[alpha]["position"]
-        ) or (
-            v_prim_graph.nodes[delta]["position"]
-            == v_prim_graph.nodes[beta]["position"]
-        ):
+        if (beta.X == alpha.X) or (delta.X == beta.X):
             print("regenerating position for wolf beta: ", beta)
-            position_value, seed_set_value = wolf_random_position(
+            position_value0, seed_set_value0 = wolf_random_position(
                 v_prim_graph, k
             )
-            nx.set_node_attributes(
-                v_prim_graph, {beta: position_value}, name="position"
-            )
+            beta.X = position_value0
             print("regenerating position for wolf delta: ", delta)
-            position_value, seed_set_value = wolf_random_position(
+            position_value1, seed_set_value1 = wolf_random_position(
                 v_prim_graph, k
             )
-            nx.set_node_attributes(
-                v_prim_graph, {delta: position_value}, name="position"
-            )
+            delta.X = position_value1
 
         t += 1
+        for wolf in population:
+            wolf.generate_params(t)
 
     for index, wolf in enumerate(population):
         print(
-            f"index[{index}]",
-            wolf,
-            # v_prim_graph.nodes[wolf]["position"],
-            v_prim_graph.nodes[wolf]["value"],
-            v_prim_graph.nodes[wolf]["seed_set"],
+            f"wolf[{index}]",
+            wolf.value,
+            wolf.S,
         )
 
     print("Final Alpha is:")
     print(
         alpha,
-        # v_prim_graph.nodes[alpha]["position"],
-        v_prim_graph.nodes[alpha]["value"],
-        v_prim_graph.nodes[alpha]["seed_set"],
+        alpha.value,
+        alpha.S,
     )
     print("all unique alpha throgh iterations are: ")
-    for u_alpha in every_alpha:
+    for index, u_alpha in enumerate(every_alpha):
         print(
+            f"alpha[{index}]",
             u_alpha,
-            # v_prim_graph.nodes[alpha]["position"],
-            v_prim_graph.nodes[u_alpha]["value"],
-            v_prim_graph.nodes[u_alpha]["seed_set"],
+            u_alpha.value,
+            u_alpha.S,
         )
     print("running simulation of independent cascade:")
     independent_cascade_result = independent_cascade_simulation(
         v_prim_graph=v_prim_graph,
-        seed_set=v_prim_graph.nodes[alpha]["seed_set"],
+        seed_set=alpha.S,
         propogation_probability=propogation_probability,
         monte_carlo_simulation_number=monte_carlo_simulation_number,
     )
