@@ -21,7 +21,7 @@ G = nx.read_edgelist(
     data=(("days", int),),
     nodetype=int,
 )
-k = 30  # number of seed set
+k = 10  # number of seed set
 population_size = 50  # population size or n which is used in article
 max_t = 100  # maximum number of iterations
 
