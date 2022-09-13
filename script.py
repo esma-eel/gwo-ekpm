@@ -21,7 +21,7 @@ G = nx.read_edgelist(
     data=(("days", int),),
     nodetype=int,
 )
-k = 10  # number of seed set
+k = 40  # number of seed set
 population_size = 50  # population size or n which is used in article
 max_t = 100  # maximum number of iterations
 
@@ -51,7 +51,9 @@ print(len(v_prim_graph.nodes))
 
 # propogation probability for independent cascade -> probability to active nodes
 propogation_probability = 0.02
+print("propogation probability: ", propogation_probability)
 monte_carlo_simulation_number = 50
+print("simulation iteration number: ", monte_carlo_simulation_number)
 
 
 def independent_cascade_simulation(
