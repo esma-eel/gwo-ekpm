@@ -50,7 +50,7 @@ print(len(v_prim_graph.nodes))
 
 
 # propogation probability for independent cascade -> probability to active nodes
-propogation_probability = 0.02
+propogation_probability = 0.1
 print("propogation probability: ", propogation_probability)
 monte_carlo_simulation_number = 50
 print("simulation iteration number: ", monte_carlo_simulation_number)
