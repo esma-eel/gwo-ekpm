@@ -1,3 +1,4 @@
+from cmath import exp
 import math
 import random
 import datetime
@@ -9,7 +10,7 @@ import numpy as np
 
 print("script16")
 # dataset filename
-file_name = "dataset/CA-AstroPh3.tsv"
+file_name = "/home/esmaeel/work/thesis/thesis_main/src/dataset/CA-AstroPh3.tsv"
 # file_with_timing = pd.read_csv(file_name, sep='\t')
 
 # crating undirected graph based on dataset
@@ -21,9 +22,9 @@ G = nx.read_edgelist(
     data=(("days", int),),
     nodetype=int,
 )
-k = 40  # number of seed set
-population_size = 50  # population size or n which is used in article
-max_t = 100  # maximum number of iterations
+k = 10  # number of seed set
+population_size = 10  # population size or n which is used in article
+max_t = 10  # maximum number of iterations
 
 print("K = ", k)
 print("Population = ", population_size)
@@ -50,7 +51,7 @@ print(len(v_prim_graph.nodes))
 
 
 # propogation probability for independent cascade -> probability to active nodes
-propogation_probability = 0.1
+propogation_probability = 0.02
 print("propogation probability: ", propogation_probability)
 monte_carlo_simulation_number = 50
 print("simulation iteration number: ", monte_carlo_simulation_number)
@@ -270,7 +271,7 @@ def wolf_update_position(v_prim_graph, wolf, alpha, beta, delta):
     based on algorithm 4 in article
     """
     wolf_position = wolf.X
-    new_position = wolf_position
+    new_position = wolf_position[:]
 
     alpha_position = alpha.X
     alpha_A1 = alpha.get_params()["A"]
@@ -309,6 +310,7 @@ class Wolf(object):
         self._value = kwargs.get("value")
         self._history = []
         self._params = {"r1": 0, "r2": 0, "A": 0, "C": 0, "t": 0}
+        self._position_history = {}
 
     def generate_params(self, t):
         a = 2 - 2 * (t / max_t)
@@ -351,6 +353,23 @@ class Wolf(object):
         self._history.append(value)
         self._value = value
 
+    def register_position_history(self, t):
+        self._position_history[t] = self._position
+
+    def move(self, t, t_next):
+        if self._position_history.get(t_next) and self._position_history.get(t):
+            distance_moved = math.dist(
+                self._position_history[t_next], self._position_history[t]
+            )
+        elif self._position_history.get(t):
+            distance_moved = math.dist(
+                [0] * len(self._position_history[t]), self._position_history[t]
+            )
+        else:
+            distance_moved = 0
+
+        return distance_moved
+
 
 def generate_p_between_nodes(v_prim_graph):
     for node in v_prim_graph.nodes():
@@ -359,6 +378,11 @@ def generate_p_between_nodes(v_prim_graph):
             propagation = random.uniform(0, propogation_probability)
             attr = {(node, ng): {"propagation": propagation}}
             nx.set_edge_attributes(v_prim_graph, attr)
+
+
+def calculate_average_movement(wolves, current_t, next_t):
+    sum_movement = sum([wolf.move(current_t, next_t) for wolf in wolves])
+    return sum_movement / len(wolves)
 
 
 def main():
@@ -378,6 +402,7 @@ def main():
         print("generating random position for wolf: ", index)
         position_value, seed_set_value = wolf_random_position(v_prim_graph, k)
         wolf.X = position_value
+        wolf.register_position_history(t)
         print("generating random seed set for wolf: ", index)
         wolf.S = seed_set_value
         print("wolf ", index, " seed set is: ", wolf.S)
@@ -399,12 +424,13 @@ def main():
 
     while t < max_t:
         print(f"---------- iteration {t} -----------")
-        for index, omega_wolf in enumerate(omega_wolves):
+        for index, wolf in enumerate(omega_wolves):
             print("updating position for omega wolf: ", index)
             position_value = wolf_update_position(
-                v_prim_graph, omega_wolf, alpha, beta, delta
+                v_prim_graph, wolf, alpha, beta, delta
             )
             wolf.X = position_value
+            wolf.register_position_history(t)
             print("updating seed set for wolf: ", index)
             seed_set_value = get_corresponding_seed_set(
                 v_prim_graph_list, position_value, k
@@ -450,6 +476,9 @@ def main():
         t += 1
         for wolf in population:
             wolf.generate_params(t)
+
+        average_movement = calculate_average_movement(population, t - 1, t)
+        print(f"average movement in: ({t - 1}, {t}) => {average_movement}")
 
     for index, wolf in enumerate(population):
         print(
