@@ -12,7 +12,7 @@ class Wolf(object):
         self._seed_set = kwargs.get("seed_set")
         self._value = kwargs.get("value")
         self._history = []
-        self._position_history = {}
+        # self._position_history = {}
         self._id = uuid.uuid4().hex
 
     def __str__(self):
@@ -129,19 +129,19 @@ class Wolf(object):
         self._history.append(value)
         self._value = value
 
-    def register_position_history(self, t):
-        self._position_history[t] = self._position
+    # def register_position_history(self, t):
+    #     self._position_history[t] = self._position
 
-    def move(self, t, t_next):
-        if self._position_history.get(t_next) and self._position_history.get(t):
-            distance_moved = math.dist(
-                self._position_history[t_next], self._position_history[t]
-            )
-        elif self._position_history.get(t):
-            distance_moved = math.dist(
-                [0] * len(self._position_history[t]), self._position_history[t]
-            )
-        else:
-            distance_moved = 0
+    # def move(self, t, t_next):
+    #     if self._position_history.get(t_next) and self._position_history.get(t):
+    #         distance_moved = math.dist(
+    #             self._position_history[t_next], self._position_history[t]
+    #         )
+    #     elif self._position_history.get(t):
+    #         distance_moved = math.dist(
+    #             [0] * len(self._position_history[t]), self._position_history[t]
+    #         )
+    #     else:
+    #         distance_moved = 0
 
-        return distance_moved
+    #     return distance_moved

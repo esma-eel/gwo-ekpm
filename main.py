@@ -1,10 +1,16 @@
 import datetime
 
-from constants import MAX_T, POPULATION_SIZE
+from constants import (
+    MAX_T,
+    POPULATION_SIZE,
+    SEED_SET_SIZE,
+    MONTE_CARLO_SIMULATION_NUMBER,
+    PROPOGATION_PROBABILITY,
+)
 from cost_functions import fitness_function
 from independent_cascade import independent_cascade_simulation
 
-from utils import calculate_average_movement
+# from utils import calculate_average_movement
 from wolf import Wolf
 from network import initial_graph
 
@@ -16,6 +22,12 @@ def main():
     main function of gwim algorithm and running independent cascade for
     alpha wolf seed set
     """
+    print("SEED_SET_SIZE:", SEED_SET_SIZE)
+    print("MONTE_CARLO_SIMULATION_NUMBER:", MONTE_CARLO_SIMULATION_NUMBER)
+    print("POPULATION_SIZE:", POPULATION_SIZE)
+    print("PROPOGATION_PROBABILITY:", PROPOGATION_PROBABILITY)
+    print("MAX_T:", MAX_T)
+
     alpha_history = []
     # iteration counter
     print("creating population before starting main algorithm:")
@@ -24,7 +36,7 @@ def main():
     for wolf in population:
         print("generating random position for wolf: ", wolf)
         wolf.random_position(graph)
-        wolf.register_position_history(0)
+        # wolf.register_position_history(0)
         print("generating random seed set for wolf: ", wolf)
         wolf.generate_corresponding_seed_set(graph)
         print("wolf ", wolf, " seed set is: ", wolf.S)
@@ -47,7 +59,7 @@ def main():
         for wolf in omega_wolves:
             print("updating position for omega wolf: ", wolf)
             wolf.update_position(alpha, beta, delta, iteration, graph)
-            wolf.register_position_history(iteration)
+            # wolf.register_position_history(iteration)
             print("updating seed set for wolf: ", wolf)
             wolf.generate_corresponding_seed_set(graph)
             print("wolf ", wolf, " seed set is: ", wolf.S)
@@ -76,19 +88,19 @@ def main():
         ):
             print("regenerating position for wolf beta: ", beta)
             beta.random_position(graph)
-            beta.register_position_history(iteration)
+            # beta.register_position_history(iteration)
 
             print("regenerating position for wolf delta: ", delta)
             delta.random_position(graph)
-            delta.register_position_history(iteration)
+            # delta.register_position_history(iteration)
 
-        average_movement = calculate_average_movement(
-            population, iteration - 1, iteration
-        )
-        print(
-            f"average movement in: ({iteration - 1}, {iteration}) =>"
-            f" {average_movement}"
-        )
+        # average_movement = calculate_average_movement(
+        #     population, iteration - 1, iteration
+        # )
+        # print(
+        #     f"average movement in: ({iteration - 1}, {iteration}) =>"
+        #     f" {average_movement}"
+        # )
 
     for wolf in population:
         print(
