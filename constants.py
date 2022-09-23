@@ -13,4 +13,4 @@ MAX_T = 100
 # V` degree limit which is 2
 V_PRIM_DEGREE_LIMIT = 2
 # probability in astroph dataset for activating nodes in IC simulations
-PROPOGATION_PROBABILITY = 0.08
+PROPOGATION_PROBABILITY = 0.02
