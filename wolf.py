@@ -1,9 +1,17 @@
+# import json
 import math
 import random
 import uuid
 
 from constants import MAX_T, SEED_SET_SIZE
-from utils import maximum_degree, graph_length, graph_nodes
+
+# POSITIONS_HISTORY_FILE
+from utils import (
+    graph_length,
+    graph_nodes,
+    maximum_degree,
+    # convert_positions_data,
+)
 
 
 class Wolf(object):
@@ -12,7 +20,7 @@ class Wolf(object):
         self._seed_set = kwargs.get("seed_set")
         self._value = kwargs.get("value")
         self._history = []
-        # self._position_history = {}
+        self._position_history = {}
         self._id = uuid.uuid4().hex
 
     def __str__(self):
@@ -129,19 +137,63 @@ class Wolf(object):
         self._history.append(value)
         self._value = value
 
-    # def register_position_history(self, t):
-    #     self._position_history[t] = self._position
+    def register_position_history(self, t):
+        # self._position_history[t] = self._position
+        # with open(POSITIONS_HISTORY_FILE, "r") as history_file:
+        #     data = history_file.read()
+        #     if data:
+        #         position_history = json.loads(data)
+        #     else:
+        #         position_history = {}
 
-    # def move(self, t, t_next):
-    #     if self._position_history.get(t_next) and self._position_history.get(t):
-    #         distance_moved = math.dist(
-    #             self._position_history[t_next], self._position_history[t]
-    #         )
-    #     elif self._position_history.get(t):
-    #         distance_moved = math.dist(
-    #             [0] * len(self._position_history[t]), self._position_history[t]
-    #         )
-    #     else:
-    #         distance_moved = 0
+        # if t == 0 or not position_history.get(self._id):
+        # position_history[self._id] = {}
 
-    #     return distance_moved
+        # position_history[self._id][t] = self._position
+        # json_data = json.dumps(position_history)
+        # with open(POSITIONS_HISTORY_FILE, "w") as history_file:
+        #     history_file.write(json_data)
+        self._position_history[t] = self._position
+
+    def move(self, t, t_next):
+        # with open(POSITIONS_HISTORY_FILE, "r") as history_file:
+        #     data = history_file.read()
+        #     if data:
+        #         position_history = json.loads(data)
+
+        # if not position_history.get(self._id):
+        #     return 0
+        # mov(i,t,t+1)=
+        # sqrt(sum_(j=1)^(|v|)( vec(X)_(ij)(t+1)- vec(X)_(ij)(t))^(2))
+
+        # wolf_history = position_history.get(self._id)
+        # wolf_history = convert_positions_data(wolf_history)
+        wolf_history = {**self._position_history}
+
+        if wolf_history.get(t_next) and wolf_history.get(t):
+            distance_moved = math.dist(
+                wolf_history[t_next].values(), wolf_history[t].values()
+            )
+        elif wolf_history.get(t):
+            distance_moved = math.dist(
+                [0] * len(wolf_history[t]), wolf_history[t].values()
+            )
+        else:
+            distance_moved = 0
+
+        return distance_moved
+
+
+# if __name__ == "__main__":
+#     w = Wolf()
+#     w._id = "25e2448455174193be2da83ad33a229a"
+#     print(w.move(0, 1))
+#     print(w.move(1, 2))
+#     print(w.move(2, 3))
+#     print(w.move(3, 4))
+#     print(w.move(4, 5))
+#     print(w.move(5, 6))
+#     print(w.move(6, 7))
+#     print(w.move(7, 8))
+#     print(w.move(8, 9))
+#     # w.move(9, 2)

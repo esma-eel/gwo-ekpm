@@ -14,3 +14,7 @@ MAX_T = 100
 V_PRIM_DEGREE_LIMIT = 2
 # probability in astroph dataset for activating nodes in IC simulations
 PROPOGATION_PROBABILITY = 0.02
+# for positions history
+POSITIONS_HISTORY_FILE = (
+    "/home/esmaeel/work/thesis/thesis_main/src/positions_history.json"
+)

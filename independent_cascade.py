@@ -5,9 +5,7 @@ from constants import (
 import numpy as np
 
 
-def independent_cascade_simulation(
-    seed_set, graph
-):
+def independent_cascade_simulation(seed_set, graph):
     """
     Input:  graph object, set of seed nodes, propagation probability
             and the number of Monte-Carlo simulations
@@ -37,15 +35,11 @@ def independent_cascade_simulation(
                 # and for undirected graph remove it
                 # make sure you make neighbors output as list with list(output)
                 success = (
-                    np.random.uniform(
-                        0, 1, len(list(graph.neighbors(node)))
-                    )
+                    np.random.uniform(0, 1, len(list(graph.neighbors(node))))
                     < PROPOGATION_PROBABILITY
                 )
 
-                array_of_neighbors = np.array(
-                    list(graph.neighbors(node))
-                )
+                array_of_neighbors = np.array(list(graph.neighbors(node)))
                 new_ones += list(np.extract(success, array_of_neighbors))
 
             new_active = list(set(new_ones) - set(all_activated_nodes))

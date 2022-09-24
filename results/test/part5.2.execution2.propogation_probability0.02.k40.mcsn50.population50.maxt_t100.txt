@@ -1,0 +1,2143 @@
+SEED_SET_SIZE: 10
+MONTE_CARLO_SIMULATION_NUMBER: 50
+POPULATION_SIZE: 10
+PROPOGATION_PROBABILITY: 0.02
+MAX_T: 10
+creating population before starting main algorithm:
+generating random position for wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+generating random seed set for wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+wolf  Wolf(25e2448455174193be2da83ad33a229a)  seed set is:  [35290, 93504, 21718, 94235, 92790, 62821, 1086, 44612, 75223, 90402]
+generating fitness value for wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+time for calculating fitness:  0:00:00.534626
+fitness value of wolf  Wolf(25e2448455174193be2da83ad33a229a) 2.1668800001568247
+generating random position for wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+generating random seed set for wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+wolf  Wolf(9fee9bc058a54716b10f8378ba1304cb)  seed set is:  [77754, 21718, 89732, 62821, 35290, 33040, 94235, 28516, 36907, 75223]
+generating fitness value for wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+time for calculating fitness:  0:00:00.439353
+fitness value of wolf  Wolf(9fee9bc058a54716b10f8378ba1304cb) 2.166505619929413
+generating random position for wolf:  Wolf(d87037ac256e40129e5954a4838d94a9)
+generating random seed set for wolf:  Wolf(d87037ac256e40129e5954a4838d94a9)
+wolf  Wolf(d87037ac256e40129e5954a4838d94a9)  seed set is:  [21718, 18314, 89732, 64054, 49118, 77754, 34608, 85176, 93504, 111161]
+generating fitness value for wolf:  Wolf(d87037ac256e40129e5954a4838d94a9)
+time for calculating fitness:  0:00:00.653600
+fitness value of wolf  Wolf(d87037ac256e40129e5954a4838d94a9) 2.8336617232320935
+generating random position for wolf:  Wolf(81a5b5b5e33f497b9bff07975b0c42a8)
+generating random seed set for wolf:  Wolf(81a5b5b5e33f497b9bff07975b0c42a8)
+wolf  Wolf(81a5b5b5e33f497b9bff07975b0c42a8)  seed set is:  [38109, 23986, 62821, 34608, 92790, 49387, 53213, 44612, 40170, 38155]
+generating fitness value for wolf:  Wolf(81a5b5b5e33f497b9bff07975b0c42a8)
+time for calculating fitness:  0:00:00.861139
+fitness value of wolf  Wolf(81a5b5b5e33f497b9bff07975b0c42a8) 3.397891702936425
+generating random position for wolf:  Wolf(ab324a94ff5f4db1b25eb60b029823fe)
+generating random seed set for wolf:  Wolf(ab324a94ff5f4db1b25eb60b029823fe)
+wolf  Wolf(ab324a94ff5f4db1b25eb60b029823fe)  seed set is:  [62821, 21718, 35290, 77754, 23986, 49118, 94235, 92790, 90402, 124741]
+generating fitness value for wolf:  Wolf(ab324a94ff5f4db1b25eb60b029823fe)
+time for calculating fitness:  0:00:00.445120
+fitness value of wolf  Wolf(ab324a94ff5f4db1b25eb60b029823fe) 2.1670456529165687
+generating random position for wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+generating random seed set for wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+wolf  Wolf(d50fee42872343aea1a09e4ab83644b0)  seed set is:  [62821, 92790, 1086, 23986, 53213, 77754, 38109, 50808, 36907, 47968]
+generating fitness value for wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+time for calculating fitness:  0:00:00.499248
+fitness value of wolf  Wolf(d50fee42872343aea1a09e4ab83644b0) 2.1675529563303937
+generating random position for wolf:  Wolf(f065a3762b9e4544828a14e43f91dff1)
+generating random seed set for wolf:  Wolf(f065a3762b9e4544828a14e43f91dff1)
+wolf  Wolf(f065a3762b9e4544828a14e43f91dff1)  seed set is:  [53213, 34608, 21718, 89732, 44612, 130997, 18314, 128081, 52682, 90794]
+generating fitness value for wolf:  Wolf(f065a3762b9e4544828a14e43f91dff1)
+time for calculating fitness:  0:00:00.379040
+fitness value of wolf  Wolf(f065a3762b9e4544828a14e43f91dff1) 2.226791366647288
+generating random position for wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+generating random seed set for wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+wolf  Wolf(8c680aa720de41ac95874ba648ccf760)  seed set is:  [35290, 21718, 111161, 77754, 92790, 50808, 44612, 106497, 18314, 124741]
+generating fitness value for wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+time for calculating fitness:  0:00:00.474895
+fitness value of wolf  Wolf(8c680aa720de41ac95874ba648ccf760) 2.2513143398128515
+generating random position for wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+generating random seed set for wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+wolf  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)  seed set is:  [1086, 21718, 23986, 64054, 75223, 34608, 36907, 33040, 47968, 18314]
+generating fitness value for wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+time for calculating fitness:  0:00:00.424443
+fitness value of wolf  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91) 2.163867380975033
+generating random position for wolf:  Wolf(03a2307bfc204093abe0f07f330f9657)
+generating random seed set for wolf:  Wolf(03a2307bfc204093abe0f07f330f9657)
+wolf  Wolf(03a2307bfc204093abe0f07f330f9657)  seed set is:  [62821, 18314, 94235, 92790, 28516, 35290, 38109, 52682, 50808, 111161]
+generating fitness value for wolf:  Wolf(03a2307bfc204093abe0f07f330f9657)
+time for calculating fitness:  0:00:00.522915
+fitness value of wolf  Wolf(03a2307bfc204093abe0f07f330f9657) 2.0544897649314646
+extracting alpha, beta, delta and omega wolves:
+---------- iteration 0 -----------
+updating position for omega wolf:  Wolf(f065a3762b9e4544828a14e43f91dff1)
+updating seed set for wolf:  Wolf(f065a3762b9e4544828a14e43f91dff1)
+wolf  Wolf(f065a3762b9e4544828a14e43f91dff1)  seed set is:  [124529, 111161, 34608, 40495, 121399, 127886, 62821, 6288, 40170, 10976]
+updating position for omega wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+updating seed set for wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+wolf  Wolf(d50fee42872343aea1a09e4ab83644b0)  seed set is:  [38109, 92790, 72941, 77754, 23986, 64054, 131813, 130997, 100394, 127886]
+updating position for omega wolf:  Wolf(ab324a94ff5f4db1b25eb60b029823fe)
+updating seed set for wolf:  Wolf(ab324a94ff5f4db1b25eb60b029823fe)
+wolf  Wolf(ab324a94ff5f4db1b25eb60b029823fe)  seed set is:  [35290, 34608, 1086, 45163, 37479, 21718, 75947, 85740, 77754, 33500]
+updating position for omega wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+updating seed set for wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+wolf  Wolf(25e2448455174193be2da83ad33a229a)  seed set is:  [35290, 52682, 49118, 1086, 111161, 85740, 92790, 6506, 34608, 41473]
+updating position for omega wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+updating seed set for wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+wolf  Wolf(9fee9bc058a54716b10f8378ba1304cb)  seed set is:  [94235, 77754, 18781, 38109, 48189, 124529, 65713, 33040, 35290, 36907]
+updating position for omega wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+updating seed set for wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+wolf  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)  seed set is:  [92790, 35290, 50808, 38109, 90794, 93504, 21718, 62821, 72941, 23453]
+updating position for omega wolf:  Wolf(03a2307bfc204093abe0f07f330f9657)
+updating seed set for wolf:  Wolf(03a2307bfc204093abe0f07f330f9657)
+wolf  Wolf(03a2307bfc204093abe0f07f330f9657)  seed set is:  [111161, 18314, 50808, 62821, 1086, 44612, 85176, 35290, 114352, 49118]
+recalculating fitness value for wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+time for calculating fitness:  0:00:00.486269
+fitness value of wolf  Wolf(25e2448455174193be2da83ad33a229a) 2.1689613909185517
+recalculating fitness value for wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+time for calculating fitness:  0:00:00.472954
+fitness value of wolf  Wolf(9fee9bc058a54716b10f8378ba1304cb) 2.1872607915190767
+recalculating fitness value for wolf:  Wolf(d87037ac256e40129e5954a4838d94a9)
+time for calculating fitness:  0:00:00.716072
+fitness value of wolf  Wolf(d87037ac256e40129e5954a4838d94a9) 2.8336617232320935
+recalculating fitness value for wolf:  Wolf(81a5b5b5e33f497b9bff07975b0c42a8)
+time for calculating fitness:  0:00:00.956932
+fitness value of wolf  Wolf(81a5b5b5e33f497b9bff07975b0c42a8) 3.397891702936425
+recalculating fitness value for wolf:  Wolf(ab324a94ff5f4db1b25eb60b029823fe)
+time for calculating fitness:  0:00:00.516295
+fitness value of wolf  Wolf(ab324a94ff5f4db1b25eb60b029823fe) 2.2515996634169135
+recalculating fitness value for wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+time for calculating fitness:  0:00:00.468180
+fitness value of wolf  Wolf(d50fee42872343aea1a09e4ab83644b0) 2.248348864878191
+recalculating fitness value for wolf:  Wolf(f065a3762b9e4544828a14e43f91dff1)
+time for calculating fitness:  0:00:00.461010
+fitness value of wolf  Wolf(f065a3762b9e4544828a14e43f91dff1) 2.1877900170964217
+recalculating fitness value for wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+time for calculating fitness:  0:00:00.466985
+fitness value of wolf  Wolf(8c680aa720de41ac95874ba648ccf760) 2.2513143398128515
+recalculating fitness value for wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+time for calculating fitness:  0:00:00.506623
+fitness value of wolf  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91) 2.1911239599517085
+recalculating fitness value for wolf:  Wolf(03a2307bfc204093abe0f07f330f9657)
+time for calculating fitness:  0:00:00.493442
+fitness value of wolf  Wolf(03a2307bfc204093abe0f07f330f9657) 2.1750044754792293
+extracting alpha, beta, delta and omega wolves:
+average movement in: (-1, 0) => 0.0
+---------- iteration 1 -----------
+updating position for omega wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+updating seed set for wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+wolf  Wolf(8c680aa720de41ac95874ba648ccf760)  seed set is:  [45163, 85740, 89732, 1086, 23986, 37479, 84122, 21718, 7264, 127886]
+updating position for omega wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+updating seed set for wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+wolf  Wolf(d50fee42872343aea1a09e4ab83644b0)  seed set is:  [92790, 45163, 77754, 34608, 37479, 21718, 62821, 85176, 114959, 33500]
+updating position for omega wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+updating seed set for wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+wolf  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)  seed set is:  [38109, 45163, 120425, 38155, 18314, 1086, 49387, 75947, 31756, 23986]
+updating position for omega wolf:  Wolf(f065a3762b9e4544828a14e43f91dff1)
+updating seed set for wolf:  Wolf(f065a3762b9e4544828a14e43f91dff1)
+wolf  Wolf(f065a3762b9e4544828a14e43f91dff1)  seed set is:  [38109, 34608, 21718, 49387, 124741, 85740, 20405, 52682, 90402, 2478]
+updating position for omega wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+updating seed set for wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+wolf  Wolf(9fee9bc058a54716b10f8378ba1304cb)  seed set is:  [35290, 1086, 92790, 37479, 34608, 75947, 18314, 116191, 79712, 31063]
+updating position for omega wolf:  Wolf(03a2307bfc204093abe0f07f330f9657)
+updating seed set for wolf:  Wolf(03a2307bfc204093abe0f07f330f9657)
+wolf  Wolf(03a2307bfc204093abe0f07f330f9657)  seed set is:  [44612, 35290, 34608, 111161, 18314, 45970, 114095, 6288, 49387, 37479]
+updating position for omega wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+updating seed set for wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+wolf  Wolf(25e2448455174193be2da83ad33a229a)  seed set is:  [89732, 62821, 34608, 111161, 7264, 130134, 119664, 21718, 90794, 45009]
+recalculating fitness value for wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+time for calculating fitness:  0:00:00.542316
+fitness value of wolf  Wolf(25e2448455174193be2da83ad33a229a) 1.9817329318522339
+recalculating fitness value for wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+time for calculating fitness:  0:00:00.504146
+fitness value of wolf  Wolf(9fee9bc058a54716b10f8378ba1304cb) 2.1750993523970332
+recalculating fitness value for wolf:  Wolf(d87037ac256e40129e5954a4838d94a9)
+time for calculating fitness:  0:00:00.660706
+fitness value of wolf  Wolf(d87037ac256e40129e5954a4838d94a9) 2.8336617232320935
+recalculating fitness value for wolf:  Wolf(81a5b5b5e33f497b9bff07975b0c42a8)
+time for calculating fitness:  0:00:00.891981
+fitness value of wolf  Wolf(81a5b5b5e33f497b9bff07975b0c42a8) 3.397891702936425
+recalculating fitness value for wolf:  Wolf(ab324a94ff5f4db1b25eb60b029823fe)
+time for calculating fitness:  0:00:00.508639
+fitness value of wolf  Wolf(ab324a94ff5f4db1b25eb60b029823fe) 2.2515996634169135
+recalculating fitness value for wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+time for calculating fitness:  0:00:00.608282
+fitness value of wolf  Wolf(d50fee42872343aea1a09e4ab83644b0) 2.263602804787019
+recalculating fitness value for wolf:  Wolf(f065a3762b9e4544828a14e43f91dff1)
+time for calculating fitness:  0:00:00.532750
+fitness value of wolf  Wolf(f065a3762b9e4544828a14e43f91dff1) 2.949752833676641
+recalculating fitness value for wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+time for calculating fitness:  0:00:00.474472
+fitness value of wolf  Wolf(8c680aa720de41ac95874ba648ccf760) 2.1676621441568478
+recalculating fitness value for wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+time for calculating fitness:  0:00:00.465390
+fitness value of wolf  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91) 2.166961307347323
+recalculating fitness value for wolf:  Wolf(03a2307bfc204093abe0f07f330f9657)
+time for calculating fitness:  0:00:00.397613
+fitness value of wolf  Wolf(03a2307bfc204093abe0f07f330f9657) 2.224611738490603
+extracting alpha, beta, delta and omega wolves:
+average movement in: (0, 1) => 0.0
+---------- iteration 2 -----------
+updating position for omega wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+updating seed set for wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+wolf  Wolf(d50fee42872343aea1a09e4ab83644b0)  seed set is:  [38109, 34608, 21718, 64054, 47856, 85176, 72941, 44612, 55837, 56290]
+updating position for omega wolf:  Wolf(ab324a94ff5f4db1b25eb60b029823fe)
+updating seed set for wolf:  Wolf(ab324a94ff5f4db1b25eb60b029823fe)
+wolf  Wolf(ab324a94ff5f4db1b25eb60b029823fe)  seed set is:  [109670, 121399, 18314, 77754, 68018, 33500, 64054, 38109, 21718, 89732]
+updating position for omega wolf:  Wolf(03a2307bfc204093abe0f07f330f9657)
+updating seed set for wolf:  Wolf(03a2307bfc204093abe0f07f330f9657)
+wolf  Wolf(03a2307bfc204093abe0f07f330f9657)  seed set is:  [38109, 34608, 1086, 21718, 49387, 38155, 44612, 64054, 18314, 67374]
+updating position for omega wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+updating seed set for wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+wolf  Wolf(9fee9bc058a54716b10f8378ba1304cb)  seed set is:  [38109, 62821, 34608, 38155, 75947, 124741, 85176, 77754, 47856, 37479]
+updating position for omega wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+updating seed set for wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+wolf  Wolf(8c680aa720de41ac95874ba648ccf760)  seed set is:  [38109, 89732, 90794, 85740, 50808, 23986, 49387, 18396, 18314, 121399]
+updating position for omega wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+updating seed set for wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+wolf  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)  seed set is:  [34608, 90794, 47856, 49387, 21718, 20405, 93504, 44612, 37479, 77754]
+updating position for omega wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+updating seed set for wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+wolf  Wolf(25e2448455174193be2da83ad33a229a)  seed set is:  [92790, 111161, 38109, 37479, 69226, 44612, 18314, 62821, 90402, 93504]
+recalculating fitness value for wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+time for calculating fitness:  0:00:00.542906
+fitness value of wolf  Wolf(25e2448455174193be2da83ad33a229a) 2.0567275738400865
+recalculating fitness value for wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+time for calculating fitness:  0:00:00.536735
+fitness value of wolf  Wolf(9fee9bc058a54716b10f8378ba1304cb) 2.1795773599315553
+recalculating fitness value for wolf:  Wolf(d87037ac256e40129e5954a4838d94a9)
+time for calculating fitness:  0:00:00.640095
+fitness value of wolf  Wolf(d87037ac256e40129e5954a4838d94a9) 2.8336617232320935
+recalculating fitness value for wolf:  Wolf(81a5b5b5e33f497b9bff07975b0c42a8)
+time for calculating fitness:  0:00:00.875458
+fitness value of wolf  Wolf(81a5b5b5e33f497b9bff07975b0c42a8) 3.397891702936425
+recalculating fitness value for wolf:  Wolf(ab324a94ff5f4db1b25eb60b029823fe)
+time for calculating fitness:  0:00:00.464825
+fitness value of wolf  Wolf(ab324a94ff5f4db1b25eb60b029823fe) 2.248817575537536
+recalculating fitness value for wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+time for calculating fitness:  0:00:00.829982
+fitness value of wolf  Wolf(d50fee42872343aea1a09e4ab83644b0) 2.9143594379564153
+recalculating fitness value for wolf:  Wolf(f065a3762b9e4544828a14e43f91dff1)
+time for calculating fitness:  0:00:00.522313
+fitness value of wolf  Wolf(f065a3762b9e4544828a14e43f91dff1) 2.949752833676641
+recalculating fitness value for wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+time for calculating fitness:  0:00:00.444784
+fitness value of wolf  Wolf(8c680aa720de41ac95874ba648ccf760) 2.184347937379701
+recalculating fitness value for wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+time for calculating fitness:  0:00:00.451709
+fitness value of wolf  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91) 2.166949251648973
+recalculating fitness value for wolf:  Wolf(03a2307bfc204093abe0f07f330f9657)
+time for calculating fitness:  0:00:00.420775
+fitness value of wolf  Wolf(03a2307bfc204093abe0f07f330f9657) 2.1644083976066133
+extracting alpha, beta, delta and omega wolves:
+average movement in: (1, 2) => 0.0
+---------- iteration 3 -----------
+updating position for omega wolf:  Wolf(d87037ac256e40129e5954a4838d94a9)
+updating seed set for wolf:  Wolf(d87037ac256e40129e5954a4838d94a9)
+wolf  Wolf(d87037ac256e40129e5954a4838d94a9)  seed set is:  [38109, 34608, 21718, 121399, 20405, 1155, 92790, 8094, 77754, 1677]
+updating position for omega wolf:  Wolf(ab324a94ff5f4db1b25eb60b029823fe)
+updating seed set for wolf:  Wolf(ab324a94ff5f4db1b25eb60b029823fe)
+wolf  Wolf(ab324a94ff5f4db1b25eb60b029823fe)  seed set is:  [38109, 85659, 21718, 64054, 121399, 47856, 90794, 56290, 85176, 122272]
+updating position for omega wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+updating seed set for wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+wolf  Wolf(8c680aa720de41ac95874ba648ccf760)  seed set is:  [34608, 38109, 55837, 7072, 45163, 50808, 18314, 52682, 90794, 90402]
+updating position for omega wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+updating seed set for wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+wolf  Wolf(9fee9bc058a54716b10f8378ba1304cb)  seed set is:  [38109, 34608, 21718, 49387, 90402, 23986, 1086, 38155, 122272, 18314]
+updating position for omega wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+updating seed set for wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+wolf  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)  seed set is:  [38109, 47856, 90794, 21718, 75947, 20405, 49387, 18314, 52682, 44612]
+updating position for omega wolf:  Wolf(03a2307bfc204093abe0f07f330f9657)
+updating seed set for wolf:  Wolf(03a2307bfc204093abe0f07f330f9657)
+wolf  Wolf(03a2307bfc204093abe0f07f330f9657)  seed set is:  [38109, 34608, 49387, 21718, 23986, 118835, 72941, 45163, 18314, 64054]
+updating position for omega wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+updating seed set for wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+wolf  Wolf(25e2448455174193be2da83ad33a229a)  seed set is:  [34608, 49387, 44612, 64054, 90794, 21718, 37479, 85659, 121399, 118835]
+recalculating fitness value for wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+time for calculating fitness:  0:00:00.429239
+fitness value of wolf  Wolf(25e2448455174193be2da83ad33a229a) 2.2237596615342174
+recalculating fitness value for wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+time for calculating fitness:  0:00:00.431201
+fitness value of wolf  Wolf(9fee9bc058a54716b10f8378ba1304cb) 2.164382099018443
+recalculating fitness value for wolf:  Wolf(d87037ac256e40129e5954a4838d94a9)
+time for calculating fitness:  0:00:00.431349
+fitness value of wolf  Wolf(d87037ac256e40129e5954a4838d94a9) 2.187993294846648
+recalculating fitness value for wolf:  Wolf(81a5b5b5e33f497b9bff07975b0c42a8)
+time for calculating fitness:  0:00:00.856095
+fitness value of wolf  Wolf(81a5b5b5e33f497b9bff07975b0c42a8) 3.397891702936425
+recalculating fitness value for wolf:  Wolf(ab324a94ff5f4db1b25eb60b029823fe)
+time for calculating fitness:  0:00:00.495207
+fitness value of wolf  Wolf(ab324a94ff5f4db1b25eb60b029823fe) 2.23519478895308
+recalculating fitness value for wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+time for calculating fitness:  0:00:00.807586
+fitness value of wolf  Wolf(d50fee42872343aea1a09e4ab83644b0) 2.9143594379564153
+recalculating fitness value for wolf:  Wolf(f065a3762b9e4544828a14e43f91dff1)
+time for calculating fitness:  0:00:00.514836
+fitness value of wolf  Wolf(f065a3762b9e4544828a14e43f91dff1) 2.949752833676641
+recalculating fitness value for wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+time for calculating fitness:  0:00:00.717003
+fitness value of wolf  Wolf(8c680aa720de41ac95874ba648ccf760) 3.076149854045876
+recalculating fitness value for wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+time for calculating fitness:  0:00:00.768152
+fitness value of wolf  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91) 3.0943666726356374
+recalculating fitness value for wolf:  Wolf(03a2307bfc204093abe0f07f330f9657)
+time for calculating fitness:  0:00:00.933268
+fitness value of wolf  Wolf(03a2307bfc204093abe0f07f330f9657) 4.057669878019171
+extracting alpha, beta, delta and omega wolves:
+average movement in: (2, 3) => 0.0
+---------- iteration 4 -----------
+updating position for omega wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+updating seed set for wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+wolf  Wolf(8c680aa720de41ac95874ba648ccf760)  seed set is:  [49387, 38109, 21718, 38155, 90794, 45163, 41283, 37479, 53213, 52682]
+updating position for omega wolf:  Wolf(f065a3762b9e4544828a14e43f91dff1)
+updating seed set for wolf:  Wolf(f065a3762b9e4544828a14e43f91dff1)
+wolf  Wolf(f065a3762b9e4544828a14e43f91dff1)  seed set is:  [49387, 38109, 23986, 90794, 72941, 107877, 53213, 85740, 52682, 47856]
+updating position for omega wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+updating seed set for wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+wolf  Wolf(d50fee42872343aea1a09e4ab83644b0)  seed set is:  [38109, 34608, 49387, 75947, 37479, 18314, 72941, 52682, 20405, 47856]
+updating position for omega wolf:  Wolf(ab324a94ff5f4db1b25eb60b029823fe)
+updating seed set for wolf:  Wolf(ab324a94ff5f4db1b25eb60b029823fe)
+wolf  Wolf(ab324a94ff5f4db1b25eb60b029823fe)  seed set is:  [38109, 21718, 44612, 49387, 41283, 56290, 90794, 72941, 52682, 18781]
+updating position for omega wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+updating seed set for wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+wolf  Wolf(25e2448455174193be2da83ad33a229a)  seed set is:  [49387, 38109, 34608, 90402, 20405, 21718, 85740, 41283, 44612, 18314]
+updating position for omega wolf:  Wolf(d87037ac256e40129e5954a4838d94a9)
+updating seed set for wolf:  Wolf(d87037ac256e40129e5954a4838d94a9)
+wolf  Wolf(d87037ac256e40129e5954a4838d94a9)  seed set is:  [38109, 34608, 23986, 72941, 41283, 62821, 21718, 49387, 90794, 75947]
+updating position for omega wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+updating seed set for wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+wolf  Wolf(9fee9bc058a54716b10f8378ba1304cb)  seed set is:  [38109, 49387, 20405, 47856, 21718, 23986, 121399, 38155, 77754, 11513]
+recalculating fitness value for wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+time for calculating fitness:  0:00:00.577161
+fitness value of wolf  Wolf(25e2448455174193be2da83ad33a229a) 2.9461288319472785
+recalculating fitness value for wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+time for calculating fitness:  0:00:00.426247
+fitness value of wolf  Wolf(9fee9bc058a54716b10f8378ba1304cb) 2.1882075030800205
+recalculating fitness value for wolf:  Wolf(d87037ac256e40129e5954a4838d94a9)
+time for calculating fitness:  0:00:00.874405
+fitness value of wolf  Wolf(d87037ac256e40129e5954a4838d94a9) 2.6436950457098907
+recalculating fitness value for wolf:  Wolf(81a5b5b5e33f497b9bff07975b0c42a8)
+time for calculating fitness:  0:00:00.858883
+fitness value of wolf  Wolf(81a5b5b5e33f497b9bff07975b0c42a8) 3.397891702936425
+recalculating fitness value for wolf:  Wolf(ab324a94ff5f4db1b25eb60b029823fe)
+time for calculating fitness:  0:00:00.758438
+fitness value of wolf  Wolf(ab324a94ff5f4db1b25eb60b029823fe) 3.416046992038568
+recalculating fitness value for wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+time for calculating fitness:  0:00:00.445744
+fitness value of wolf  Wolf(d50fee42872343aea1a09e4ab83644b0) 2.041974737273369
+recalculating fitness value for wolf:  Wolf(f065a3762b9e4544828a14e43f91dff1)
+time for calculating fitness:  0:00:00.898054
+fitness value of wolf  Wolf(f065a3762b9e4544828a14e43f91dff1) 2.7148052204705824
+recalculating fitness value for wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+time for calculating fitness:  0:00:00.553357
+fitness value of wolf  Wolf(8c680aa720de41ac95874ba648ccf760) 3.0746269253761813
+recalculating fitness value for wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+time for calculating fitness:  0:00:00.768743
+fitness value of wolf  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91) 3.0943666726356374
+recalculating fitness value for wolf:  Wolf(03a2307bfc204093abe0f07f330f9657)
+time for calculating fitness:  0:00:00.936130
+fitness value of wolf  Wolf(03a2307bfc204093abe0f07f330f9657) 4.057669878019171
+extracting alpha, beta, delta and omega wolves:
+average movement in: (3, 4) => 0.0
+---------- iteration 5 -----------
+updating position for omega wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+updating seed set for wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+wolf  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)  seed set is:  [34608, 23986, 38109, 90794, 21718, 49387, 62821, 107877, 44612, 38155]
+updating position for omega wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+updating seed set for wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+wolf  Wolf(8c680aa720de41ac95874ba648ccf760)  seed set is:  [38109, 45163, 49387, 18781, 34608, 107877, 64054, 118835, 39696, 121399]
+updating position for omega wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+updating seed set for wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+wolf  Wolf(25e2448455174193be2da83ad33a229a)  seed set is:  [38109, 49387, 21718, 34608, 45163, 44612, 107877, 23986, 122272, 64054]
+updating position for omega wolf:  Wolf(f065a3762b9e4544828a14e43f91dff1)
+updating seed set for wolf:  Wolf(f065a3762b9e4544828a14e43f91dff1)
+wolf  Wolf(f065a3762b9e4544828a14e43f91dff1)  seed set is:  [38109, 49387, 44612, 34608, 38155, 90794, 52682, 18781, 90402, 120425]
+updating position for omega wolf:  Wolf(d87037ac256e40129e5954a4838d94a9)
+updating seed set for wolf:  Wolf(d87037ac256e40129e5954a4838d94a9)
+wolf  Wolf(d87037ac256e40129e5954a4838d94a9)  seed set is:  [23986, 34608, 38155, 21718, 44612, 85659, 92790, 38109, 39696, 49387]
+updating position for omega wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+updating seed set for wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+wolf  Wolf(9fee9bc058a54716b10f8378ba1304cb)  seed set is:  [38109, 21718, 52682, 34608, 23986, 90794, 114959, 90402, 38155, 45009]
+updating position for omega wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+updating seed set for wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+wolf  Wolf(d50fee42872343aea1a09e4ab83644b0)  seed set is:  [44612, 23986, 38109, 72941, 34608, 90794, 49387, 45009, 90402, 89969]
+recalculating fitness value for wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+time for calculating fitness:  0:00:00.836377
+fitness value of wolf  Wolf(25e2448455174193be2da83ad33a229a) 2.9054913828971403
+recalculating fitness value for wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+time for calculating fitness:  0:00:00.393867
+fitness value of wolf  Wolf(9fee9bc058a54716b10f8378ba1304cb) 2.2286401153435302
+recalculating fitness value for wolf:  Wolf(d87037ac256e40129e5954a4838d94a9)
+time for calculating fitness:  0:00:00.908995
+fitness value of wolf  Wolf(d87037ac256e40129e5954a4838d94a9) 2.7580702321545036
+recalculating fitness value for wolf:  Wolf(81a5b5b5e33f497b9bff07975b0c42a8)
+time for calculating fitness:  0:00:00.868411
+fitness value of wolf  Wolf(81a5b5b5e33f497b9bff07975b0c42a8) 3.397891702936425
+recalculating fitness value for wolf:  Wolf(ab324a94ff5f4db1b25eb60b029823fe)
+time for calculating fitness:  0:00:00.823073
+fitness value of wolf  Wolf(ab324a94ff5f4db1b25eb60b029823fe) 3.416046992038568
+recalculating fitness value for wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+time for calculating fitness:  0:00:00.471156
+fitness value of wolf  Wolf(d50fee42872343aea1a09e4ab83644b0) 2.4217356939029737
+recalculating fitness value for wolf:  Wolf(f065a3762b9e4544828a14e43f91dff1)
+time for calculating fitness:  0:00:00.471995
+fitness value of wolf  Wolf(f065a3762b9e4544828a14e43f91dff1) 2.2309314695858116
+recalculating fitness value for wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+time for calculating fitness:  0:00:00.440344
+fitness value of wolf  Wolf(8c680aa720de41ac95874ba648ccf760) 2.1905275032374862
+recalculating fitness value for wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+time for calculating fitness:  0:00:00.541352
+fitness value of wolf  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91) 1.9929216152734932
+recalculating fitness value for wolf:  Wolf(03a2307bfc204093abe0f07f330f9657)
+time for calculating fitness:  0:00:00.952301
+fitness value of wolf  Wolf(03a2307bfc204093abe0f07f330f9657) 4.057669878019171
+extracting alpha, beta, delta and omega wolves:
+average movement in: (4, 5) => 0.0
+---------- iteration 6 -----------
+updating position for omega wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+updating seed set for wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+wolf  Wolf(25e2448455174193be2da83ad33a229a)  seed set is:  [38109, 23986, 49387, 34608, 121399, 45163, 56290, 52682, 44612, 41283]
+updating position for omega wolf:  Wolf(d87037ac256e40129e5954a4838d94a9)
+updating seed set for wolf:  Wolf(d87037ac256e40129e5954a4838d94a9)
+wolf  Wolf(d87037ac256e40129e5954a4838d94a9)  seed set is:  [38109, 49387, 34608, 44612, 52682, 90794, 72941, 45163, 23986, 37479]
+updating position for omega wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+updating seed set for wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+wolf  Wolf(d50fee42872343aea1a09e4ab83644b0)  seed set is:  [38109, 21718, 56290, 34608, 72941, 90402, 49387, 38155, 23986, 44612]
+updating position for omega wolf:  Wolf(f065a3762b9e4544828a14e43f91dff1)
+updating seed set for wolf:  Wolf(f065a3762b9e4544828a14e43f91dff1)
+wolf  Wolf(f065a3762b9e4544828a14e43f91dff1)  seed set is:  [38109, 49387, 34608, 118835, 21718, 44612, 40170, 38155, 72941, 56290]
+updating position for omega wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+updating seed set for wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+wolf  Wolf(9fee9bc058a54716b10f8378ba1304cb)  seed set is:  [38109, 34608, 23986, 72941, 90402, 38155, 37479, 68018, 49387, 90794]
+updating position for omega wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+updating seed set for wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+wolf  Wolf(8c680aa720de41ac95874ba648ccf760)  seed set is:  [38109, 21718, 49387, 23986, 62821, 34608, 85659, 41283, 107877, 72941]
+updating position for omega wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+updating seed set for wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+wolf  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)  seed set is:  [38109, 49387, 90794, 23986, 85740, 38155, 92790, 72941, 45009, 90402]
+recalculating fitness value for wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+time for calculating fitness:  0:00:00.454098
+fitness value of wolf  Wolf(25e2448455174193be2da83ad33a229a) 2.2398329538257675
+recalculating fitness value for wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+time for calculating fitness:  0:00:00.452158
+fitness value of wolf  Wolf(9fee9bc058a54716b10f8378ba1304cb) 2.474930007234763
+recalculating fitness value for wolf:  Wolf(d87037ac256e40129e5954a4838d94a9)
+time for calculating fitness:  0:00:00.847881
+fitness value of wolf  Wolf(d87037ac256e40129e5954a4838d94a9) 2.5594656310369506
+recalculating fitness value for wolf:  Wolf(81a5b5b5e33f497b9bff07975b0c42a8)
+time for calculating fitness:  0:00:00.908960
+fitness value of wolf  Wolf(81a5b5b5e33f497b9bff07975b0c42a8) 3.397891702936425
+recalculating fitness value for wolf:  Wolf(ab324a94ff5f4db1b25eb60b029823fe)
+time for calculating fitness:  0:00:00.751613
+fitness value of wolf  Wolf(ab324a94ff5f4db1b25eb60b029823fe) 3.416046992038568
+recalculating fitness value for wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+time for calculating fitness:  0:00:00.912870
+fitness value of wolf  Wolf(d50fee42872343aea1a09e4ab83644b0) 3.154375693821814
+recalculating fitness value for wolf:  Wolf(f065a3762b9e4544828a14e43f91dff1)
+time for calculating fitness:  0:00:01.109369
+fitness value of wolf  Wolf(f065a3762b9e4544828a14e43f91dff1) 3.975492270577571
+recalculating fitness value for wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+time for calculating fitness:  0:00:00.931472
+fitness value of wolf  Wolf(8c680aa720de41ac95874ba648ccf760) 2.681913974528258
+recalculating fitness value for wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+time for calculating fitness:  0:00:00.515616
+fitness value of wolf  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91) 2.4230358920535577
+recalculating fitness value for wolf:  Wolf(03a2307bfc204093abe0f07f330f9657)
+time for calculating fitness:  0:00:00.966994
+fitness value of wolf  Wolf(03a2307bfc204093abe0f07f330f9657) 4.057669878019171
+extracting alpha, beta, delta and omega wolves:
+average movement in: (5, 6) => 0.0
+---------- iteration 7 -----------
+updating position for omega wolf:  Wolf(81a5b5b5e33f497b9bff07975b0c42a8)
+updating seed set for wolf:  Wolf(81a5b5b5e33f497b9bff07975b0c42a8)
+wolf  Wolf(81a5b5b5e33f497b9bff07975b0c42a8)  seed set is:  [38109, 21718, 34608, 49387, 52682, 44612, 118835, 122272, 23986, 72941]
+updating position for omega wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+updating seed set for wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+wolf  Wolf(d50fee42872343aea1a09e4ab83644b0)  seed set is:  [38109, 49387, 21718, 72941, 52682, 34608, 41283, 23986, 44612, 121399]
+updating position for omega wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+updating seed set for wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+wolf  Wolf(8c680aa720de41ac95874ba648ccf760)  seed set is:  [38109, 49387, 21718, 72941, 44612, 90794, 34608, 41283, 56290, 52682]
+updating position for omega wolf:  Wolf(d87037ac256e40129e5954a4838d94a9)
+updating seed set for wolf:  Wolf(d87037ac256e40129e5954a4838d94a9)
+wolf  Wolf(d87037ac256e40129e5954a4838d94a9)  seed set is:  [38109, 21718, 49387, 34608, 44612, 38155, 45163, 107877, 90794, 23986]
+updating position for omega wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+updating seed set for wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+wolf  Wolf(9fee9bc058a54716b10f8378ba1304cb)  seed set is:  [38109, 21718, 34608, 49387, 45163, 72941, 23986, 90402, 722, 41283]
+updating position for omega wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+updating seed set for wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+wolf  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)  seed set is:  [38109, 34608, 21718, 23986, 118835, 49387, 41283, 44612, 52682, 56290]
+updating position for omega wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+updating seed set for wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+wolf  Wolf(25e2448455174193be2da83ad33a229a)  seed set is:  [38109, 49387, 34608, 44612, 118835, 41283, 38155, 54681, 23986, 72941]
+recalculating fitness value for wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+time for calculating fitness:  0:00:00.395760
+fitness value of wolf  Wolf(25e2448455174193be2da83ad33a229a) 2.2259505362549254
+recalculating fitness value for wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+time for calculating fitness:  0:00:00.872439
+fitness value of wolf  Wolf(9fee9bc058a54716b10f8378ba1304cb) 2.6535973895241627
+recalculating fitness value for wolf:  Wolf(d87037ac256e40129e5954a4838d94a9)
+time for calculating fitness:  0:00:00.779899
+fitness value of wolf  Wolf(d87037ac256e40129e5954a4838d94a9) 3.1224275525064122
+recalculating fitness value for wolf:  Wolf(81a5b5b5e33f497b9bff07975b0c42a8)
+time for calculating fitness:  0:00:00.987775
+fitness value of wolf  Wolf(81a5b5b5e33f497b9bff07975b0c42a8) 2.74972903301366
+recalculating fitness value for wolf:  Wolf(ab324a94ff5f4db1b25eb60b029823fe)
+time for calculating fitness:  0:00:01.124443
+fitness value of wolf  Wolf(ab324a94ff5f4db1b25eb60b029823fe) 3.416046992038568
+recalculating fitness value for wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+time for calculating fitness:  0:00:00.637898
+fitness value of wolf  Wolf(d50fee42872343aea1a09e4ab83644b0) 2.1866889462461674
+recalculating fitness value for wolf:  Wolf(f065a3762b9e4544828a14e43f91dff1)
+time for calculating fitness:  0:00:01.485122
+fitness value of wolf  Wolf(f065a3762b9e4544828a14e43f91dff1) 3.975492270577571
+recalculating fitness value for wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+time for calculating fitness:  0:00:01.197684
+fitness value of wolf  Wolf(8c680aa720de41ac95874ba648ccf760) 3.28734730534029
+recalculating fitness value for wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+time for calculating fitness:  0:00:01.255722
+fitness value of wolf  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91) 3.159184902272016
+recalculating fitness value for wolf:  Wolf(03a2307bfc204093abe0f07f330f9657)
+time for calculating fitness:  0:00:01.359173
+fitness value of wolf  Wolf(03a2307bfc204093abe0f07f330f9657) 4.057669878019171
+extracting alpha, beta, delta and omega wolves:
+average movement in: (6, 7) => 0.0
+---------- iteration 8 -----------
+updating position for omega wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+updating seed set for wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+wolf  Wolf(8c680aa720de41ac95874ba648ccf760)  seed set is:  [38109, 34608, 49387, 44612, 21718, 72941, 45163, 52682, 56290, 90794]
+updating position for omega wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+updating seed set for wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+wolf  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)  seed set is:  [38109, 21718, 34608, 49387, 23986, 38155, 107877, 44612, 72941, 41283]
+updating position for omega wolf:  Wolf(d87037ac256e40129e5954a4838d94a9)
+updating seed set for wolf:  Wolf(d87037ac256e40129e5954a4838d94a9)
+wolf  Wolf(d87037ac256e40129e5954a4838d94a9)  seed set is:  [38109, 49387, 34608, 21718, 23986, 107877, 45163, 41283, 72941, 52682]
+updating position for omega wolf:  Wolf(81a5b5b5e33f497b9bff07975b0c42a8)
+updating seed set for wolf:  Wolf(81a5b5b5e33f497b9bff07975b0c42a8)
+wolf  Wolf(81a5b5b5e33f497b9bff07975b0c42a8)  seed set is:  [38109, 49387, 34608, 21718, 44612, 90794, 23986, 118835, 107877, 41283]
+updating position for omega wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+updating seed set for wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+wolf  Wolf(9fee9bc058a54716b10f8378ba1304cb)  seed set is:  [38109, 49387, 21718, 34608, 118835, 44612, 41283, 90794, 107877, 45009]
+updating position for omega wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+updating seed set for wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+wolf  Wolf(25e2448455174193be2da83ad33a229a)  seed set is:  [38109, 49387, 21718, 34608, 23986, 118835, 45163, 44612, 72941, 41283]
+updating position for omega wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+updating seed set for wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+wolf  Wolf(d50fee42872343aea1a09e4ab83644b0)  seed set is:  [38109, 49387, 21718, 44612, 23986, 34608, 72941, 118835, 41283, 52682]
+recalculating fitness value for wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+time for calculating fitness:  0:00:01.142107
+fitness value of wolf  Wolf(25e2448455174193be2da83ad33a229a) 3.476561903993451
+recalculating fitness value for wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+time for calculating fitness:  0:00:00.926326
+fitness value of wolf  Wolf(9fee9bc058a54716b10f8378ba1304cb) 3.094102648078453
+recalculating fitness value for wolf:  Wolf(d87037ac256e40129e5954a4838d94a9)
+time for calculating fitness:  0:00:01.139445
+fitness value of wolf  Wolf(d87037ac256e40129e5954a4838d94a9) 3.5151728422677486
+recalculating fitness value for wolf:  Wolf(81a5b5b5e33f497b9bff07975b0c42a8)
+time for calculating fitness:  0:00:00.870588
+fitness value of wolf  Wolf(81a5b5b5e33f497b9bff07975b0c42a8) 3.0807728535043157
+recalculating fitness value for wolf:  Wolf(ab324a94ff5f4db1b25eb60b029823fe)
+time for calculating fitness:  0:00:00.893556
+fitness value of wolf  Wolf(ab324a94ff5f4db1b25eb60b029823fe) 3.416046992038568
+recalculating fitness value for wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+time for calculating fitness:  0:00:00.932416
+fitness value of wolf  Wolf(d50fee42872343aea1a09e4ab83644b0) 3.090566798714123
+recalculating fitness value for wolf:  Wolf(f065a3762b9e4544828a14e43f91dff1)
+time for calculating fitness:  0:00:01.212433
+fitness value of wolf  Wolf(f065a3762b9e4544828a14e43f91dff1) 3.975492270577571
+recalculating fitness value for wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+time for calculating fitness:  0:00:01.031694
+fitness value of wolf  Wolf(8c680aa720de41ac95874ba648ccf760) 3.295717727334979
+recalculating fitness value for wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+time for calculating fitness:  0:00:00.913663
+fitness value of wolf  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91) 3.1326224767552486
+recalculating fitness value for wolf:  Wolf(03a2307bfc204093abe0f07f330f9657)
+time for calculating fitness:  0:00:01.081799
+fitness value of wolf  Wolf(03a2307bfc204093abe0f07f330f9657) 4.057669878019171
+extracting alpha, beta, delta and omega wolves:
+average movement in: (7, 8) => 0.0
+---------- iteration 9 -----------
+updating position for omega wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+updating seed set for wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+wolf  Wolf(25e2448455174193be2da83ad33a229a)  seed set is:  [38109, 34608, 49387, 21718, 118835, 23986, 45163, 72941, 44612, 107877]
+updating position for omega wolf:  Wolf(ab324a94ff5f4db1b25eb60b029823fe)
+updating seed set for wolf:  Wolf(ab324a94ff5f4db1b25eb60b029823fe)
+wolf  Wolf(ab324a94ff5f4db1b25eb60b029823fe)  seed set is:  [38109, 49387, 34608, 21718, 118835, 45163, 72941, 23986, 44612, 38155]
+updating position for omega wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+updating seed set for wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+wolf  Wolf(8c680aa720de41ac95874ba648ccf760)  seed set is:  [38109, 49387, 34608, 21718, 118835, 72941, 44612, 45163, 23986, 34454]
+updating position for omega wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+updating seed set for wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+wolf  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)  seed set is:  [38109, 49387, 34608, 21718, 72941, 23986, 118835, 45163, 44612, 45009]
+updating position for omega wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+updating seed set for wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+wolf  Wolf(9fee9bc058a54716b10f8378ba1304cb)  seed set is:  [38109, 49387, 34608, 21718, 72941, 118835, 23986, 44612, 45163, 121399]
+updating position for omega wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+updating seed set for wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+wolf  Wolf(d50fee42872343aea1a09e4ab83644b0)  seed set is:  [38109, 49387, 34608, 21718, 45163, 118835, 72941, 23986, 107877, 38155]
+updating position for omega wolf:  Wolf(81a5b5b5e33f497b9bff07975b0c42a8)
+updating seed set for wolf:  Wolf(81a5b5b5e33f497b9bff07975b0c42a8)
+wolf  Wolf(81a5b5b5e33f497b9bff07975b0c42a8)  seed set is:  [38109, 49387, 34608, 21718, 118835, 45163, 72941, 23986, 41283, 107877]
+recalculating fitness value for wolf:  Wolf(25e2448455174193be2da83ad33a229a)
+time for calculating fitness:  0:00:01.310739
+fitness value of wolf  Wolf(25e2448455174193be2da83ad33a229a) 4.031928572979484
+recalculating fitness value for wolf:  Wolf(9fee9bc058a54716b10f8378ba1304cb)
+time for calculating fitness:  0:00:00.569771
+fitness value of wolf  Wolf(9fee9bc058a54716b10f8378ba1304cb) 2.1859047386559056
+recalculating fitness value for wolf:  Wolf(d87037ac256e40129e5954a4838d94a9)
+time for calculating fitness:  0:00:00.923136
+fitness value of wolf  Wolf(d87037ac256e40129e5954a4838d94a9) 3.5151728422677486
+recalculating fitness value for wolf:  Wolf(81a5b5b5e33f497b9bff07975b0c42a8)
+time for calculating fitness:  0:00:01.148636
+fitness value of wolf  Wolf(81a5b5b5e33f497b9bff07975b0c42a8) 3.5056229075722776
+recalculating fitness value for wolf:  Wolf(ab324a94ff5f4db1b25eb60b029823fe)
+time for calculating fitness:  0:00:01.160201
+fitness value of wolf  Wolf(ab324a94ff5f4db1b25eb60b029823fe) 4.119730140949467
+recalculating fitness value for wolf:  Wolf(d50fee42872343aea1a09e4ab83644b0)
+time for calculating fitness:  0:00:01.124279
+fitness value of wolf  Wolf(d50fee42872343aea1a09e4ab83644b0) 4.101925156552533
+recalculating fitness value for wolf:  Wolf(f065a3762b9e4544828a14e43f91dff1)
+time for calculating fitness:  0:00:01.228034
+fitness value of wolf  Wolf(f065a3762b9e4544828a14e43f91dff1) 3.975492270577571
+recalculating fitness value for wolf:  Wolf(8c680aa720de41ac95874ba648ccf760)
+time for calculating fitness:  0:00:01.043031
+fitness value of wolf  Wolf(8c680aa720de41ac95874ba648ccf760) 3.0848747049569174
+recalculating fitness value for wolf:  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91)
+time for calculating fitness:  0:00:01.124903
+fitness value of wolf  Wolf(ad8e77cc0f1646b39d50821f3a9a8e91) 4.037777280375533
+recalculating fitness value for wolf:  Wolf(03a2307bfc204093abe0f07f330f9657)
+time for calculating fitness:  0:00:01.150334
+fitness value of wolf  Wolf(03a2307bfc204093abe0f07f330f9657) 4.057669878019171
+extracting alpha, beta, delta and omega wolves:
+average movement in: (8, 9) => 0.0
+Wolf(25e2448455174193be2da83ad33a229a) 4.031928572979484 [38109, 34608, 49387, 21718, 118835, 23986, 45163, 72941, 44612, 107877]
+Wolf(9fee9bc058a54716b10f8378ba1304cb) 2.1859047386559056 [38109, 49387, 34608, 21718, 72941, 118835, 23986, 44612, 45163, 121399]
+Wolf(d87037ac256e40129e5954a4838d94a9) 3.5151728422677486 [38109, 49387, 34608, 21718, 23986, 107877, 45163, 41283, 72941, 52682]
+Wolf(81a5b5b5e33f497b9bff07975b0c42a8) 3.5056229075722776 [38109, 49387, 34608, 21718, 118835, 45163, 72941, 23986, 41283, 107877]
+Wolf(ab324a94ff5f4db1b25eb60b029823fe) 4.119730140949467 [38109, 49387, 34608, 21718, 118835, 45163, 72941, 23986, 44612, 38155]
+Wolf(d50fee42872343aea1a09e4ab83644b0) 4.101925156552533 [38109, 49387, 34608, 21718, 45163, 118835, 72941, 23986, 107877, 38155]
+Wolf(f065a3762b9e4544828a14e43f91dff1) 3.975492270577571 [38109, 49387, 34608, 118835, 21718, 44612, 40170, 38155, 72941, 56290]
+Wolf(8c680aa720de41ac95874ba648ccf760) 3.0848747049569174 [38109, 49387, 34608, 21718, 118835, 72941, 44612, 45163, 23986, 34454]
+Wolf(ad8e77cc0f1646b39d50821f3a9a8e91) 4.037777280375533 [38109, 49387, 34608, 21718, 72941, 23986, 118835, 45163, 44612, 45009]
+Wolf(03a2307bfc204093abe0f07f330f9657) 4.057669878019171 [38109, 34608, 49387, 21718, 23986, 118835, 72941, 45163, 18314, 64054]
+Final Alpha is:
+Wolf(ab324a94ff5f4db1b25eb60b029823fe) 4.119730140949467 [38109, 49387, 34608, 21718, 118835, 45163, 72941, 23986, 44612, 38155]
+all unique alpha throgh iterations are: 
+Wolf(81a5b5b5e33f497b9bff07975b0c42a8) 3.5056229075722776 [38109, 49387, 34608, 21718, 118835, 45163, 72941, 23986, 41283, 107877]
+Wolf(03a2307bfc204093abe0f07f330f9657) 4.057669878019171 [38109, 34608, 49387, 21718, 23986, 118835, 72941, 45163, 18314, 64054]
+Wolf(ab324a94ff5f4db1b25eb60b029823fe) 4.119730140949467 [38109, 49387, 34608, 21718, 118835, 45163, 72941, 23986, 44612, 38155]
+running simulation of independent cascade:
+running simulation number 0 from 50
+new active nodes in simulation 0 are: 
+10
+new active nodes in simulation 0 are: 
+62
+new active nodes in simulation 0 are: 
+103
+new active nodes in simulation 0 are: 
+108
+new active nodes in simulation 0 are: 
+97
+new active nodes in simulation 0 are: 
+107
+new active nodes in simulation 0 are: 
+91
+new active nodes in simulation 0 are: 
+86
+new active nodes in simulation 0 are: 
+78
+new active nodes in simulation 0 are: 
+66
+new active nodes in simulation 0 are: 
+38
+new active nodes in simulation 0 are: 
+23
+new active nodes in simulation 0 are: 
+16
+new active nodes in simulation 0 are: 
+17
+new active nodes in simulation 0 are: 
+11
+new active nodes in simulation 0 are: 
+6
+new active nodes in simulation 0 are: 
+1
+new active nodes in simulation 0 are: 
+1
+running simulation number 1 from 50
+new active nodes in simulation 1 are: 
+10
+new active nodes in simulation 1 are: 
+107
+new active nodes in simulation 1 are: 
+291
+new active nodes in simulation 1 are: 
+559
+new active nodes in simulation 1 are: 
+899
+new active nodes in simulation 1 are: 
+992
+new active nodes in simulation 1 are: 
+759
+new active nodes in simulation 1 are: 
+461
+new active nodes in simulation 1 are: 
+273
+new active nodes in simulation 1 are: 
+135
+new active nodes in simulation 1 are: 
+64
+new active nodes in simulation 1 are: 
+23
+new active nodes in simulation 1 are: 
+12
+new active nodes in simulation 1 are: 
+6
+new active nodes in simulation 1 are: 
+4
+new active nodes in simulation 1 are: 
+2
+new active nodes in simulation 1 are: 
+2
+new active nodes in simulation 1 are: 
+1
+running simulation number 2 from 50
+new active nodes in simulation 2 are: 
+10
+new active nodes in simulation 2 are: 
+44
+new active nodes in simulation 2 are: 
+26
+new active nodes in simulation 2 are: 
+10
+new active nodes in simulation 2 are: 
+4
+running simulation number 3 from 50
+new active nodes in simulation 3 are: 
+10
+new active nodes in simulation 3 are: 
+19
+new active nodes in simulation 3 are: 
+2
+running simulation number 4 from 50
+new active nodes in simulation 4 are: 
+10
+new active nodes in simulation 4 are: 
+42
+new active nodes in simulation 4 are: 
+94
+new active nodes in simulation 4 are: 
+163
+new active nodes in simulation 4 are: 
+268
+new active nodes in simulation 4 are: 
+363
+new active nodes in simulation 4 are: 
+405
+new active nodes in simulation 4 are: 
+319
+new active nodes in simulation 4 are: 
+289
+new active nodes in simulation 4 are: 
+228
+new active nodes in simulation 4 are: 
+175
+new active nodes in simulation 4 are: 
+134
+new active nodes in simulation 4 are: 
+85
+new active nodes in simulation 4 are: 
+65
+new active nodes in simulation 4 are: 
+58
+new active nodes in simulation 4 are: 
+48
+new active nodes in simulation 4 are: 
+37
+new active nodes in simulation 4 are: 
+19
+new active nodes in simulation 4 are: 
+11
+new active nodes in simulation 4 are: 
+15
+new active nodes in simulation 4 are: 
+12
+new active nodes in simulation 4 are: 
+10
+new active nodes in simulation 4 are: 
+5
+new active nodes in simulation 4 are: 
+1
+new active nodes in simulation 4 are: 
+1
+new active nodes in simulation 4 are: 
+1
+new active nodes in simulation 4 are: 
+1
+new active nodes in simulation 4 are: 
+1
+new active nodes in simulation 4 are: 
+2
+running simulation number 5 from 50
+new active nodes in simulation 5 are: 
+10
+new active nodes in simulation 5 are: 
+56
+new active nodes in simulation 5 are: 
+110
+new active nodes in simulation 5 are: 
+179
+new active nodes in simulation 5 are: 
+231
+new active nodes in simulation 5 are: 
+249
+new active nodes in simulation 5 are: 
+236
+new active nodes in simulation 5 are: 
+199
+new active nodes in simulation 5 are: 
+165
+new active nodes in simulation 5 are: 
+133
+new active nodes in simulation 5 are: 
+76
+new active nodes in simulation 5 are: 
+41
+new active nodes in simulation 5 are: 
+25
+new active nodes in simulation 5 are: 
+14
+new active nodes in simulation 5 are: 
+9
+new active nodes in simulation 5 are: 
+8
+new active nodes in simulation 5 are: 
+8
+new active nodes in simulation 5 are: 
+8
+new active nodes in simulation 5 are: 
+6
+new active nodes in simulation 5 are: 
+2
+running simulation number 6 from 50
+new active nodes in simulation 6 are: 
+10
+new active nodes in simulation 6 are: 
+56
+new active nodes in simulation 6 are: 
+43
+new active nodes in simulation 6 are: 
+18
+new active nodes in simulation 6 are: 
+5
+running simulation number 7 from 50
+new active nodes in simulation 7 are: 
+10
+new active nodes in simulation 7 are: 
+46
+new active nodes in simulation 7 are: 
+52
+new active nodes in simulation 7 are: 
+43
+new active nodes in simulation 7 are: 
+19
+new active nodes in simulation 7 are: 
+8
+new active nodes in simulation 7 are: 
+7
+new active nodes in simulation 7 are: 
+1
+running simulation number 8 from 50
+new active nodes in simulation 8 are: 
+10
+new active nodes in simulation 8 are: 
+68
+new active nodes in simulation 8 are: 
+122
+new active nodes in simulation 8 are: 
+246
+new active nodes in simulation 8 are: 
+330
+new active nodes in simulation 8 are: 
+416
+new active nodes in simulation 8 are: 
+418
+new active nodes in simulation 8 are: 
+356
+new active nodes in simulation 8 are: 
+230
+new active nodes in simulation 8 are: 
+153
+new active nodes in simulation 8 are: 
+91
+new active nodes in simulation 8 are: 
+44
+new active nodes in simulation 8 are: 
+23
+new active nodes in simulation 8 are: 
+12
+new active nodes in simulation 8 are: 
+9
+new active nodes in simulation 8 are: 
+6
+new active nodes in simulation 8 are: 
+2
+new active nodes in simulation 8 are: 
+1
+new active nodes in simulation 8 are: 
+1
+running simulation number 9 from 50
+new active nodes in simulation 9 are: 
+10
+new active nodes in simulation 9 are: 
+30
+new active nodes in simulation 9 are: 
+11
+new active nodes in simulation 9 are: 
+1
+running simulation number 10 from 50
+new active nodes in simulation 10 are: 
+10
+new active nodes in simulation 10 are: 
+32
+new active nodes in simulation 10 are: 
+36
+new active nodes in simulation 10 are: 
+58
+new active nodes in simulation 10 are: 
+70
+new active nodes in simulation 10 are: 
+60
+new active nodes in simulation 10 are: 
+54
+new active nodes in simulation 10 are: 
+46
+new active nodes in simulation 10 are: 
+34
+new active nodes in simulation 10 are: 
+28
+new active nodes in simulation 10 are: 
+22
+new active nodes in simulation 10 are: 
+16
+new active nodes in simulation 10 are: 
+11
+new active nodes in simulation 10 are: 
+9
+new active nodes in simulation 10 are: 
+7
+new active nodes in simulation 10 are: 
+6
+new active nodes in simulation 10 are: 
+6
+new active nodes in simulation 10 are: 
+8
+new active nodes in simulation 10 are: 
+5
+new active nodes in simulation 10 are: 
+4
+new active nodes in simulation 10 are: 
+3
+new active nodes in simulation 10 are: 
+4
+new active nodes in simulation 10 are: 
+3
+new active nodes in simulation 10 are: 
+3
+running simulation number 11 from 50
+new active nodes in simulation 11 are: 
+10
+new active nodes in simulation 11 are: 
+36
+new active nodes in simulation 11 are: 
+67
+new active nodes in simulation 11 are: 
+93
+new active nodes in simulation 11 are: 
+128
+new active nodes in simulation 11 are: 
+177
+new active nodes in simulation 11 are: 
+214
+new active nodes in simulation 11 are: 
+209
+new active nodes in simulation 11 are: 
+176
+new active nodes in simulation 11 are: 
+169
+new active nodes in simulation 11 are: 
+152
+new active nodes in simulation 11 are: 
+122
+new active nodes in simulation 11 are: 
+103
+new active nodes in simulation 11 are: 
+82
+new active nodes in simulation 11 are: 
+56
+new active nodes in simulation 11 are: 
+45
+new active nodes in simulation 11 are: 
+41
+new active nodes in simulation 11 are: 
+33
+new active nodes in simulation 11 are: 
+23
+new active nodes in simulation 11 are: 
+12
+new active nodes in simulation 11 are: 
+10
+new active nodes in simulation 11 are: 
+4
+new active nodes in simulation 11 are: 
+2
+new active nodes in simulation 11 are: 
+1
+new active nodes in simulation 11 are: 
+1
+running simulation number 12 from 50
+new active nodes in simulation 12 are: 
+10
+new active nodes in simulation 12 are: 
+72
+new active nodes in simulation 12 are: 
+170
+new active nodes in simulation 12 are: 
+319
+new active nodes in simulation 12 are: 
+551
+new active nodes in simulation 12 are: 
+656
+new active nodes in simulation 12 are: 
+624
+new active nodes in simulation 12 are: 
+478
+new active nodes in simulation 12 are: 
+355
+new active nodes in simulation 12 are: 
+238
+new active nodes in simulation 12 are: 
+144
+new active nodes in simulation 12 are: 
+111
+new active nodes in simulation 12 are: 
+74
+new active nodes in simulation 12 are: 
+51
+new active nodes in simulation 12 are: 
+39
+new active nodes in simulation 12 are: 
+23
+new active nodes in simulation 12 are: 
+17
+new active nodes in simulation 12 are: 
+9
+new active nodes in simulation 12 are: 
+3
+new active nodes in simulation 12 are: 
+1
+new active nodes in simulation 12 are: 
+2
+new active nodes in simulation 12 are: 
+2
+running simulation number 13 from 50
+new active nodes in simulation 13 are: 
+10
+new active nodes in simulation 13 are: 
+61
+new active nodes in simulation 13 are: 
+167
+new active nodes in simulation 13 are: 
+360
+new active nodes in simulation 13 are: 
+629
+new active nodes in simulation 13 are: 
+777
+new active nodes in simulation 13 are: 
+809
+new active nodes in simulation 13 are: 
+683
+new active nodes in simulation 13 are: 
+459
+new active nodes in simulation 13 are: 
+237
+new active nodes in simulation 13 are: 
+123
+new active nodes in simulation 13 are: 
+62
+new active nodes in simulation 13 are: 
+24
+new active nodes in simulation 13 are: 
+18
+new active nodes in simulation 13 are: 
+11
+new active nodes in simulation 13 are: 
+7
+new active nodes in simulation 13 are: 
+5
+new active nodes in simulation 13 are: 
+1
+new active nodes in simulation 13 are: 
+1
+new active nodes in simulation 13 are: 
+2
+running simulation number 14 from 50
+new active nodes in simulation 14 are: 
+10
+new active nodes in simulation 14 are: 
+30
+new active nodes in simulation 14 are: 
+63
+new active nodes in simulation 14 are: 
+106
+new active nodes in simulation 14 are: 
+159
+new active nodes in simulation 14 are: 
+225
+new active nodes in simulation 14 are: 
+238
+new active nodes in simulation 14 are: 
+261
+new active nodes in simulation 14 are: 
+235
+new active nodes in simulation 14 are: 
+203
+new active nodes in simulation 14 are: 
+174
+new active nodes in simulation 14 are: 
+133
+new active nodes in simulation 14 are: 
+106
+new active nodes in simulation 14 are: 
+79
+new active nodes in simulation 14 are: 
+63
+new active nodes in simulation 14 are: 
+39
+new active nodes in simulation 14 are: 
+31
+new active nodes in simulation 14 are: 
+29
+new active nodes in simulation 14 are: 
+21
+new active nodes in simulation 14 are: 
+14
+new active nodes in simulation 14 are: 
+12
+new active nodes in simulation 14 are: 
+5
+new active nodes in simulation 14 are: 
+1
+running simulation number 15 from 50
+new active nodes in simulation 15 are: 
+10
+new active nodes in simulation 15 are: 
+59
+new active nodes in simulation 15 are: 
+92
+new active nodes in simulation 15 are: 
+95
+new active nodes in simulation 15 are: 
+59
+new active nodes in simulation 15 are: 
+32
+new active nodes in simulation 15 are: 
+14
+new active nodes in simulation 15 are: 
+9
+new active nodes in simulation 15 are: 
+2
+new active nodes in simulation 15 are: 
+1
+running simulation number 16 from 50
+new active nodes in simulation 16 are: 
+10
+new active nodes in simulation 16 are: 
+60
+new active nodes in simulation 16 are: 
+104
+new active nodes in simulation 16 are: 
+145
+new active nodes in simulation 16 are: 
+166
+new active nodes in simulation 16 are: 
+164
+new active nodes in simulation 16 are: 
+180
+new active nodes in simulation 16 are: 
+148
+new active nodes in simulation 16 are: 
+126
+new active nodes in simulation 16 are: 
+87
+new active nodes in simulation 16 are: 
+50
+new active nodes in simulation 16 are: 
+31
+new active nodes in simulation 16 are: 
+28
+new active nodes in simulation 16 are: 
+17
+new active nodes in simulation 16 are: 
+26
+new active nodes in simulation 16 are: 
+20
+new active nodes in simulation 16 are: 
+12
+new active nodes in simulation 16 are: 
+4
+new active nodes in simulation 16 are: 
+1
+running simulation number 17 from 50
+new active nodes in simulation 17 are: 
+10
+new active nodes in simulation 17 are: 
+35
+new active nodes in simulation 17 are: 
+22
+new active nodes in simulation 17 are: 
+9
+new active nodes in simulation 17 are: 
+2
+new active nodes in simulation 17 are: 
+1
+new active nodes in simulation 17 are: 
+1
+new active nodes in simulation 17 are: 
+1
+running simulation number 18 from 50
+new active nodes in simulation 18 are: 
+10
+new active nodes in simulation 18 are: 
+90
+new active nodes in simulation 18 are: 
+281
+new active nodes in simulation 18 are: 
+603
+new active nodes in simulation 18 are: 
+892
+new active nodes in simulation 18 are: 
+780
+new active nodes in simulation 18 are: 
+507
+new active nodes in simulation 18 are: 
+242
+new active nodes in simulation 18 are: 
+106
+new active nodes in simulation 18 are: 
+32
+new active nodes in simulation 18 are: 
+10
+new active nodes in simulation 18 are: 
+3
+new active nodes in simulation 18 are: 
+3
+running simulation number 19 from 50
+new active nodes in simulation 19 are: 
+10
+new active nodes in simulation 19 are: 
+45
+new active nodes in simulation 19 are: 
+57
+new active nodes in simulation 19 are: 
+49
+new active nodes in simulation 19 are: 
+38
+new active nodes in simulation 19 are: 
+31
+new active nodes in simulation 19 are: 
+28
+new active nodes in simulation 19 are: 
+23
+new active nodes in simulation 19 are: 
+11
+new active nodes in simulation 19 are: 
+5
+new active nodes in simulation 19 are: 
+4
+new active nodes in simulation 19 are: 
+5
+new active nodes in simulation 19 are: 
+3
+new active nodes in simulation 19 are: 
+2
+new active nodes in simulation 19 are: 
+1
+new active nodes in simulation 19 are: 
+2
+new active nodes in simulation 19 are: 
+1
+new active nodes in simulation 19 are: 
+1
+running simulation number 20 from 50
+new active nodes in simulation 20 are: 
+10
+new active nodes in simulation 20 are: 
+46
+new active nodes in simulation 20 are: 
+21
+running simulation number 21 from 50
+new active nodes in simulation 21 are: 
+10
+new active nodes in simulation 21 are: 
+32
+new active nodes in simulation 21 are: 
+10
+new active nodes in simulation 21 are: 
+2
+running simulation number 22 from 50
+new active nodes in simulation 22 are: 
+10
+new active nodes in simulation 22 are: 
+53
+new active nodes in simulation 22 are: 
+128
+new active nodes in simulation 22 are: 
+276
+new active nodes in simulation 22 are: 
+467
+new active nodes in simulation 22 are: 
+594
+new active nodes in simulation 22 are: 
+603
+new active nodes in simulation 22 are: 
+559
+new active nodes in simulation 22 are: 
+444
+new active nodes in simulation 22 are: 
+312
+new active nodes in simulation 22 are: 
+224
+new active nodes in simulation 22 are: 
+161
+new active nodes in simulation 22 are: 
+102
+new active nodes in simulation 22 are: 
+54
+new active nodes in simulation 22 are: 
+41
+new active nodes in simulation 22 are: 
+27
+new active nodes in simulation 22 are: 
+15
+new active nodes in simulation 22 are: 
+13
+new active nodes in simulation 22 are: 
+6
+new active nodes in simulation 22 are: 
+3
+new active nodes in simulation 22 are: 
+3
+new active nodes in simulation 22 are: 
+1
+new active nodes in simulation 22 are: 
+1
+new active nodes in simulation 22 are: 
+1
+running simulation number 23 from 50
+new active nodes in simulation 23 are: 
+10
+new active nodes in simulation 23 are: 
+52
+new active nodes in simulation 23 are: 
+105
+new active nodes in simulation 23 are: 
+217
+new active nodes in simulation 23 are: 
+373
+new active nodes in simulation 23 are: 
+544
+new active nodes in simulation 23 are: 
+604
+new active nodes in simulation 23 are: 
+519
+new active nodes in simulation 23 are: 
+421
+new active nodes in simulation 23 are: 
+330
+new active nodes in simulation 23 are: 
+217
+new active nodes in simulation 23 are: 
+120
+new active nodes in simulation 23 are: 
+82
+new active nodes in simulation 23 are: 
+60
+new active nodes in simulation 23 are: 
+39
+new active nodes in simulation 23 are: 
+15
+new active nodes in simulation 23 are: 
+13
+new active nodes in simulation 23 are: 
+8
+new active nodes in simulation 23 are: 
+4
+new active nodes in simulation 23 are: 
+4
+new active nodes in simulation 23 are: 
+2
+new active nodes in simulation 23 are: 
+1
+new active nodes in simulation 23 are: 
+1
+running simulation number 24 from 50
+new active nodes in simulation 24 are: 
+10
+new active nodes in simulation 24 are: 
+76
+new active nodes in simulation 24 are: 
+91
+new active nodes in simulation 24 are: 
+74
+new active nodes in simulation 24 are: 
+47
+new active nodes in simulation 24 are: 
+26
+new active nodes in simulation 24 are: 
+13
+new active nodes in simulation 24 are: 
+6
+new active nodes in simulation 24 are: 
+2
+new active nodes in simulation 24 are: 
+5
+new active nodes in simulation 24 are: 
+4
+new active nodes in simulation 24 are: 
+1
+new active nodes in simulation 24 are: 
+1
+running simulation number 25 from 50
+new active nodes in simulation 25 are: 
+10
+new active nodes in simulation 25 are: 
+34
+new active nodes in simulation 25 are: 
+8
+new active nodes in simulation 25 are: 
+1
+running simulation number 26 from 50
+new active nodes in simulation 26 are: 
+10
+new active nodes in simulation 26 are: 
+45
+new active nodes in simulation 26 are: 
+27
+new active nodes in simulation 26 are: 
+2
+new active nodes in simulation 26 are: 
+2
+running simulation number 27 from 50
+new active nodes in simulation 27 are: 
+10
+new active nodes in simulation 27 are: 
+45
+new active nodes in simulation 27 are: 
+57
+new active nodes in simulation 27 are: 
+55
+new active nodes in simulation 27 are: 
+51
+new active nodes in simulation 27 are: 
+40
+new active nodes in simulation 27 are: 
+28
+new active nodes in simulation 27 are: 
+18
+new active nodes in simulation 27 are: 
+13
+new active nodes in simulation 27 are: 
+8
+new active nodes in simulation 27 are: 
+5
+new active nodes in simulation 27 are: 
+6
+new active nodes in simulation 27 are: 
+6
+new active nodes in simulation 27 are: 
+7
+new active nodes in simulation 27 are: 
+6
+new active nodes in simulation 27 are: 
+5
+new active nodes in simulation 27 are: 
+2
+new active nodes in simulation 27 are: 
+1
+running simulation number 28 from 50
+new active nodes in simulation 28 are: 
+10
+new active nodes in simulation 28 are: 
+31
+new active nodes in simulation 28 are: 
+3
+running simulation number 29 from 50
+new active nodes in simulation 29 are: 
+10
+new active nodes in simulation 29 are: 
+47
+new active nodes in simulation 29 are: 
+79
+new active nodes in simulation 29 are: 
+123
+new active nodes in simulation 29 are: 
+193
+new active nodes in simulation 29 are: 
+233
+new active nodes in simulation 29 are: 
+284
+new active nodes in simulation 29 are: 
+275
+new active nodes in simulation 29 are: 
+237
+new active nodes in simulation 29 are: 
+206
+new active nodes in simulation 29 are: 
+147
+new active nodes in simulation 29 are: 
+104
+new active nodes in simulation 29 are: 
+63
+new active nodes in simulation 29 are: 
+45
+new active nodes in simulation 29 are: 
+29
+new active nodes in simulation 29 are: 
+16
+new active nodes in simulation 29 are: 
+8
+new active nodes in simulation 29 are: 
+4
+new active nodes in simulation 29 are: 
+1
+running simulation number 30 from 50
+new active nodes in simulation 30 are: 
+10
+new active nodes in simulation 30 are: 
+30
+new active nodes in simulation 30 are: 
+7
+running simulation number 31 from 50
+new active nodes in simulation 31 are: 
+10
+new active nodes in simulation 31 are: 
+39
+new active nodes in simulation 31 are: 
+52
+new active nodes in simulation 31 are: 
+46
+new active nodes in simulation 31 are: 
+36
+new active nodes in simulation 31 are: 
+21
+new active nodes in simulation 31 are: 
+12
+new active nodes in simulation 31 are: 
+11
+new active nodes in simulation 31 are: 
+15
+new active nodes in simulation 31 are: 
+13
+new active nodes in simulation 31 are: 
+12
+new active nodes in simulation 31 are: 
+9
+new active nodes in simulation 31 are: 
+1
+new active nodes in simulation 31 are: 
+2
+new active nodes in simulation 31 are: 
+1
+running simulation number 32 from 50
+new active nodes in simulation 32 are: 
+10
+new active nodes in simulation 32 are: 
+65
+new active nodes in simulation 32 are: 
+100
+new active nodes in simulation 32 are: 
+112
+new active nodes in simulation 32 are: 
+111
+new active nodes in simulation 32 are: 
+79
+new active nodes in simulation 32 are: 
+43
+new active nodes in simulation 32 are: 
+28
+new active nodes in simulation 32 are: 
+20
+new active nodes in simulation 32 are: 
+12
+new active nodes in simulation 32 are: 
+9
+new active nodes in simulation 32 are: 
+6
+new active nodes in simulation 32 are: 
+1
+running simulation number 33 from 50
+new active nodes in simulation 33 are: 
+10
+new active nodes in simulation 33 are: 
+40
+new active nodes in simulation 33 are: 
+52
+new active nodes in simulation 33 are: 
+67
+new active nodes in simulation 33 are: 
+78
+new active nodes in simulation 33 are: 
+106
+new active nodes in simulation 33 are: 
+117
+new active nodes in simulation 33 are: 
+135
+new active nodes in simulation 33 are: 
+147
+new active nodes in simulation 33 are: 
+137
+new active nodes in simulation 33 are: 
+118
+new active nodes in simulation 33 are: 
+93
+new active nodes in simulation 33 are: 
+68
+new active nodes in simulation 33 are: 
+45
+new active nodes in simulation 33 are: 
+38
+new active nodes in simulation 33 are: 
+30
+new active nodes in simulation 33 are: 
+21
+new active nodes in simulation 33 are: 
+17
+new active nodes in simulation 33 are: 
+10
+new active nodes in simulation 33 are: 
+7
+new active nodes in simulation 33 are: 
+6
+new active nodes in simulation 33 are: 
+2
+running simulation number 34 from 50
+new active nodes in simulation 34 are: 
+10
+new active nodes in simulation 34 are: 
+95
+new active nodes in simulation 34 are: 
+203
+new active nodes in simulation 34 are: 
+422
+new active nodes in simulation 34 are: 
+525
+new active nodes in simulation 34 are: 
+532
+new active nodes in simulation 34 are: 
+414
+new active nodes in simulation 34 are: 
+286
+new active nodes in simulation 34 are: 
+225
+new active nodes in simulation 34 are: 
+160
+new active nodes in simulation 34 are: 
+127
+new active nodes in simulation 34 are: 
+93
+new active nodes in simulation 34 are: 
+59
+new active nodes in simulation 34 are: 
+31
+new active nodes in simulation 34 are: 
+29
+new active nodes in simulation 34 are: 
+22
+new active nodes in simulation 34 are: 
+12
+new active nodes in simulation 34 are: 
+8
+new active nodes in simulation 34 are: 
+7
+new active nodes in simulation 34 are: 
+6
+new active nodes in simulation 34 are: 
+2
+new active nodes in simulation 34 are: 
+1
+new active nodes in simulation 34 are: 
+1
+running simulation number 35 from 50
+new active nodes in simulation 35 are: 
+10
+new active nodes in simulation 35 are: 
+81
+new active nodes in simulation 35 are: 
+178
+new active nodes in simulation 35 are: 
+290
+new active nodes in simulation 35 are: 
+377
+new active nodes in simulation 35 are: 
+374
+new active nodes in simulation 35 are: 
+332
+new active nodes in simulation 35 are: 
+219
+new active nodes in simulation 35 are: 
+161
+new active nodes in simulation 35 are: 
+94
+new active nodes in simulation 35 are: 
+51
+new active nodes in simulation 35 are: 
+23
+new active nodes in simulation 35 are: 
+18
+new active nodes in simulation 35 are: 
+8
+new active nodes in simulation 35 are: 
+4
+new active nodes in simulation 35 are: 
+2
+new active nodes in simulation 35 are: 
+1
+running simulation number 36 from 50
+new active nodes in simulation 36 are: 
+10
+new active nodes in simulation 36 are: 
+52
+new active nodes in simulation 36 are: 
+77
+new active nodes in simulation 36 are: 
+116
+new active nodes in simulation 36 are: 
+121
+new active nodes in simulation 36 are: 
+136
+new active nodes in simulation 36 are: 
+141
+new active nodes in simulation 36 are: 
+122
+new active nodes in simulation 36 are: 
+110
+new active nodes in simulation 36 are: 
+92
+new active nodes in simulation 36 are: 
+75
+new active nodes in simulation 36 are: 
+62
+new active nodes in simulation 36 are: 
+50
+new active nodes in simulation 36 are: 
+36
+new active nodes in simulation 36 are: 
+21
+new active nodes in simulation 36 are: 
+15
+new active nodes in simulation 36 are: 
+10
+new active nodes in simulation 36 are: 
+6
+new active nodes in simulation 36 are: 
+6
+new active nodes in simulation 36 are: 
+5
+new active nodes in simulation 36 are: 
+3
+new active nodes in simulation 36 are: 
+2
+new active nodes in simulation 36 are: 
+2
+new active nodes in simulation 36 are: 
+2
+new active nodes in simulation 36 are: 
+1
+new active nodes in simulation 36 are: 
+1
+running simulation number 37 from 50
+new active nodes in simulation 37 are: 
+10
+new active nodes in simulation 37 are: 
+44
+new active nodes in simulation 37 are: 
+91
+new active nodes in simulation 37 are: 
+143
+new active nodes in simulation 37 are: 
+191
+new active nodes in simulation 37 are: 
+216
+new active nodes in simulation 37 are: 
+210
+new active nodes in simulation 37 are: 
+184
+new active nodes in simulation 37 are: 
+165
+new active nodes in simulation 37 are: 
+104
+new active nodes in simulation 37 are: 
+54
+new active nodes in simulation 37 are: 
+42
+new active nodes in simulation 37 are: 
+31
+new active nodes in simulation 37 are: 
+15
+new active nodes in simulation 37 are: 
+7
+new active nodes in simulation 37 are: 
+7
+new active nodes in simulation 37 are: 
+9
+new active nodes in simulation 37 are: 
+3
+new active nodes in simulation 37 are: 
+3
+running simulation number 38 from 50
+new active nodes in simulation 38 are: 
+10
+new active nodes in simulation 38 are: 
+53
+new active nodes in simulation 38 are: 
+55
+new active nodes in simulation 38 are: 
+59
+new active nodes in simulation 38 are: 
+73
+new active nodes in simulation 38 are: 
+66
+new active nodes in simulation 38 are: 
+51
+new active nodes in simulation 38 are: 
+41
+new active nodes in simulation 38 are: 
+29
+new active nodes in simulation 38 are: 
+28
+new active nodes in simulation 38 are: 
+19
+new active nodes in simulation 38 are: 
+19
+new active nodes in simulation 38 are: 
+16
+new active nodes in simulation 38 are: 
+7
+new active nodes in simulation 38 are: 
+4
+new active nodes in simulation 38 are: 
+3
+new active nodes in simulation 38 are: 
+2
+running simulation number 39 from 50
+new active nodes in simulation 39 are: 
+10
+new active nodes in simulation 39 are: 
+38
+new active nodes in simulation 39 are: 
+90
+new active nodes in simulation 39 are: 
+159
+new active nodes in simulation 39 are: 
+203
+new active nodes in simulation 39 are: 
+280
+new active nodes in simulation 39 are: 
+275
+new active nodes in simulation 39 are: 
+222
+new active nodes in simulation 39 are: 
+144
+new active nodes in simulation 39 are: 
+108
+new active nodes in simulation 39 are: 
+52
+new active nodes in simulation 39 are: 
+27
+new active nodes in simulation 39 are: 
+11
+new active nodes in simulation 39 are: 
+4
+new active nodes in simulation 39 are: 
+2
+new active nodes in simulation 39 are: 
+1
+running simulation number 40 from 50
+new active nodes in simulation 40 are: 
+10
+new active nodes in simulation 40 are: 
+95
+new active nodes in simulation 40 are: 
+159
+new active nodes in simulation 40 are: 
+237
+new active nodes in simulation 40 are: 
+266
+new active nodes in simulation 40 are: 
+298
+new active nodes in simulation 40 are: 
+257
+new active nodes in simulation 40 are: 
+176
+new active nodes in simulation 40 are: 
+120
+new active nodes in simulation 40 are: 
+67
+new active nodes in simulation 40 are: 
+26
+new active nodes in simulation 40 are: 
+19
+new active nodes in simulation 40 are: 
+11
+new active nodes in simulation 40 are: 
+8
+new active nodes in simulation 40 are: 
+3
+new active nodes in simulation 40 are: 
+2
+new active nodes in simulation 40 are: 
+5
+new active nodes in simulation 40 are: 
+2
+running simulation number 41 from 50
+new active nodes in simulation 41 are: 
+10
+new active nodes in simulation 41 are: 
+45
+new active nodes in simulation 41 are: 
+15
+running simulation number 42 from 50
+new active nodes in simulation 42 are: 
+10
+new active nodes in simulation 42 are: 
+52
+new active nodes in simulation 42 are: 
+27
+new active nodes in simulation 42 are: 
+12
+running simulation number 43 from 50
+new active nodes in simulation 43 are: 
+10
+new active nodes in simulation 43 are: 
+59
+new active nodes in simulation 43 are: 
+108
+new active nodes in simulation 43 are: 
+152
+new active nodes in simulation 43 are: 
+173
+new active nodes in simulation 43 are: 
+180
+new active nodes in simulation 43 are: 
+167
+new active nodes in simulation 43 are: 
+121
+new active nodes in simulation 43 are: 
+83
+new active nodes in simulation 43 are: 
+60
+new active nodes in simulation 43 are: 
+39
+new active nodes in simulation 43 are: 
+23
+new active nodes in simulation 43 are: 
+15
+new active nodes in simulation 43 are: 
+14
+new active nodes in simulation 43 are: 
+11
+new active nodes in simulation 43 are: 
+10
+new active nodes in simulation 43 are: 
+9
+new active nodes in simulation 43 are: 
+6
+new active nodes in simulation 43 are: 
+1
+new active nodes in simulation 43 are: 
+2
+new active nodes in simulation 43 are: 
+1
+new active nodes in simulation 43 are: 
+2
+new active nodes in simulation 43 are: 
+1
+running simulation number 44 from 50
+new active nodes in simulation 44 are: 
+10
+new active nodes in simulation 44 are: 
+50
+new active nodes in simulation 44 are: 
+80
+new active nodes in simulation 44 are: 
+95
+new active nodes in simulation 44 are: 
+70
+new active nodes in simulation 44 are: 
+52
+new active nodes in simulation 44 are: 
+32
+new active nodes in simulation 44 are: 
+17
+new active nodes in simulation 44 are: 
+5
+running simulation number 45 from 50
+new active nodes in simulation 45 are: 
+10
+new active nodes in simulation 45 are: 
+3
+running simulation number 46 from 50
+new active nodes in simulation 46 are: 
+10
+new active nodes in simulation 46 are: 
+99
+new active nodes in simulation 46 are: 
+263
+new active nodes in simulation 46 are: 
+392
+new active nodes in simulation 46 are: 
+386
+new active nodes in simulation 46 are: 
+261
+new active nodes in simulation 46 are: 
+173
+new active nodes in simulation 46 are: 
+126
+new active nodes in simulation 46 are: 
+56
+new active nodes in simulation 46 are: 
+18
+new active nodes in simulation 46 are: 
+6
+new active nodes in simulation 46 are: 
+9
+new active nodes in simulation 46 are: 
+9
+new active nodes in simulation 46 are: 
+12
+new active nodes in simulation 46 are: 
+8
+new active nodes in simulation 46 are: 
+9
+new active nodes in simulation 46 are: 
+3
+new active nodes in simulation 46 are: 
+1
+running simulation number 47 from 50
+new active nodes in simulation 47 are: 
+10
+new active nodes in simulation 47 are: 
+66
+new active nodes in simulation 47 are: 
+140
+new active nodes in simulation 47 are: 
+247
+new active nodes in simulation 47 are: 
+395
+new active nodes in simulation 47 are: 
+467
+new active nodes in simulation 47 are: 
+433
+new active nodes in simulation 47 are: 
+350
+new active nodes in simulation 47 are: 
+268
+new active nodes in simulation 47 are: 
+192
+new active nodes in simulation 47 are: 
+130
+new active nodes in simulation 47 are: 
+85
+new active nodes in simulation 47 are: 
+54
+new active nodes in simulation 47 are: 
+37
+new active nodes in simulation 47 are: 
+21
+new active nodes in simulation 47 are: 
+11
+new active nodes in simulation 47 are: 
+9
+new active nodes in simulation 47 are: 
+6
+new active nodes in simulation 47 are: 
+3
+new active nodes in simulation 47 are: 
+3
+new active nodes in simulation 47 are: 
+1
+running simulation number 48 from 50
+new active nodes in simulation 48 are: 
+10
+new active nodes in simulation 48 are: 
+52
+new active nodes in simulation 48 are: 
+74
+new active nodes in simulation 48 are: 
+101
+new active nodes in simulation 48 are: 
+84
+new active nodes in simulation 48 are: 
+93
+new active nodes in simulation 48 are: 
+88
+new active nodes in simulation 48 are: 
+74
+new active nodes in simulation 48 are: 
+67
+new active nodes in simulation 48 are: 
+37
+new active nodes in simulation 48 are: 
+33
+new active nodes in simulation 48 are: 
+17
+new active nodes in simulation 48 are: 
+13
+new active nodes in simulation 48 are: 
+15
+new active nodes in simulation 48 are: 
+11
+new active nodes in simulation 48 are: 
+13
+new active nodes in simulation 48 are: 
+11
+new active nodes in simulation 48 are: 
+7
+new active nodes in simulation 48 are: 
+4
+new active nodes in simulation 48 are: 
+2
+new active nodes in simulation 48 are: 
+1
+running simulation number 49 from 50
+new active nodes in simulation 49 are: 
+10
+new active nodes in simulation 49 are: 
+62
+new active nodes in simulation 49 are: 
+117
+new active nodes in simulation 49 are: 
+177
+new active nodes in simulation 49 are: 
+223
+new active nodes in simulation 49 are: 
+221
+new active nodes in simulation 49 are: 
+176
+new active nodes in simulation 49 are: 
+121
+new active nodes in simulation 49 are: 
+99
+new active nodes in simulation 49 are: 
+60
+new active nodes in simulation 49 are: 
+53
+new active nodes in simulation 49 are: 
+30
+new active nodes in simulation 49 are: 
+25
+new active nodes in simulation 49 are: 
+15
+new active nodes in simulation 49 are: 
+9
+new active nodes in simulation 49 are: 
+2
+independent cascade simulation result is:
+1326.02
+time of execution this algorithm:  0:02:47.949177

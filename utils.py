@@ -48,3 +48,14 @@ def knbrs(G, start, k):
 def calculate_average_movement(wolves, current_t, next_t):
     sum_movement = sum([wolf.move(current_t, next_t) for wolf in wolves])
     return sum_movement / len(wolves)
+
+
+def convert_positions_data(data):
+    new_data = {}
+    for key, value in data.items():
+        if type(value) == dict:
+            new_data[int(key)] = convert_positions_data(value)
+        else:
+            new_data[int(key)] = float(value)
+
+    return new_data

@@ -1,0 +1,174 @@
+SEED_SET_SIZE: 10
+MONTE_CARLO_SIMULATION_NUMBER: 50
+POPULATION_SIZE: 10
+PROPOGATION_PROBABILITY: 0.02
+MAX_T: 10
+creating population before starting main algorithm:
+generating random position for wolf:  Wolf(5c57179bcbc74217bc4a4e9774b78ac2)
+generating random seed set for wolf:  Wolf(5c57179bcbc74217bc4a4e9774b78ac2)
+wolf  Wolf(5c57179bcbc74217bc4a4e9774b78ac2)  seed set is:  [38109, 92790, 35290, 21718, 23986, 75223, 52682, 47968, 111161, 53213]
+generating fitness value for wolf:  Wolf(5c57179bcbc74217bc4a4e9774b78ac2)
+time for calculating fitness:  0:00:00.516900
+fitness value of wolf  Wolf(5c57179bcbc74217bc4a4e9774b78ac2) 2.049975388841978
+generating random position for wolf:  Wolf(40d5ef5be4de4a84b1e46be332b671ba)
+generating random seed set for wolf:  Wolf(40d5ef5be4de4a84b1e46be332b671ba)
+wolf  Wolf(40d5ef5be4de4a84b1e46be332b671ba)  seed set is:  [35290, 93504, 1086, 38109, 92790, 28516, 53213, 48189, 13557, 81151]
+generating fitness value for wolf:  Wolf(40d5ef5be4de4a84b1e46be332b671ba)
+time for calculating fitness:  0:00:00.469505
+fitness value of wolf  Wolf(40d5ef5be4de4a84b1e46be332b671ba) 2.1700079316288243
+generating random position for wolf:  Wolf(52416acf5e534b74bc232d3adfef5d65)
+generating random seed set for wolf:  Wolf(52416acf5e534b74bc232d3adfef5d65)
+wolf  Wolf(52416acf5e534b74bc232d3adfef5d65)  seed set is:  [44612, 1086, 21718, 49118, 28516, 111161, 33040, 85176, 75223, 10976]
+generating fitness value for wolf:  Wolf(52416acf5e534b74bc232d3adfef5d65)
+time for calculating fitness:  0:00:00.431268
+fitness value of wolf  Wolf(52416acf5e534b74bc232d3adfef5d65) 2.1679738233816073
+generating random position for wolf:  Wolf(80dbf701b9b54fb3b3a07a78b65b843e)
+generating random seed set for wolf:  Wolf(80dbf701b9b54fb3b3a07a78b65b843e)
+wolf  Wolf(80dbf701b9b54fb3b3a07a78b65b843e)  seed set is:  [53213, 62821, 94235, 84122, 18314, 37479, 50808, 38109, 120425, 31756]
+generating fitness value for wolf:  Wolf(80dbf701b9b54fb3b3a07a78b65b843e)
+time for calculating fitness:  0:00:00.491663
+fitness value of wolf  Wolf(80dbf701b9b54fb3b3a07a78b65b843e) 2.051483087847317
+generating random position for wolf:  Wolf(e19989cb6069430b84d5626b76819dc5)
+generating random seed set for wolf:  Wolf(e19989cb6069430b84d5626b76819dc5)
+wolf  Wolf(e19989cb6069430b84d5626b76819dc5)  seed set is:  [53213, 92790, 34608, 62821, 35290, 93504, 1086, 85176, 94235, 65337]
+generating fitness value for wolf:  Wolf(e19989cb6069430b84d5626b76819dc5)
+time for calculating fitness:  0:00:00.558212
+fitness value of wolf  Wolf(e19989cb6069430b84d5626b76819dc5) 2.1962908009252637
+generating random position for wolf:  Wolf(4e52995914a04587925063863bb33ff6)
+generating random seed set for wolf:  Wolf(4e52995914a04587925063863bb33ff6)
+wolf  Wolf(4e52995914a04587925063863bb33ff6)  seed set is:  [92790, 21718, 18314, 23986, 34608, 77754, 111161, 94235, 130997, 33040]
+generating fitness value for wolf:  Wolf(4e52995914a04587925063863bb33ff6)
+time for calculating fitness:  0:00:00.448960
+fitness value of wolf  Wolf(4e52995914a04587925063863bb33ff6) 2.248278525749439
+generating random position for wolf:  Wolf(953aa6869e8a4e9db53f1a3cb389c02e)
+generating random seed set for wolf:  Wolf(953aa6869e8a4e9db53f1a3cb389c02e)
+wolf  Wolf(953aa6869e8a4e9db53f1a3cb389c02e)  seed set is:  [38109, 92790, 18314, 93504, 90402, 28516, 53213, 52682, 75223, 44612]
+generating fitness value for wolf:  Wolf(953aa6869e8a4e9db53f1a3cb389c02e)
+time for calculating fitness:  0:00:00.781302
+fitness value of wolf  Wolf(953aa6869e8a4e9db53f1a3cb389c02e) 3.024428449211955
+generating random position for wolf:  Wolf(405047c52df846689a07cff04d36eb7b)
+generating random seed set for wolf:  Wolf(405047c52df846689a07cff04d36eb7b)
+wolf  Wolf(405047c52df846689a07cff04d36eb7b)  seed set is:  [93504, 94235, 35290, 111161, 92790, 36907, 47968, 49118, 38109, 90402]
+generating fitness value for wolf:  Wolf(405047c52df846689a07cff04d36eb7b)
+time for calculating fitness:  0:00:00.508306
+fitness value of wolf  Wolf(405047c52df846689a07cff04d36eb7b) 2.053102018932438
+generating random position for wolf:  Wolf(025e108022834cd7a57b7aa5bc52e3fa)
+generating random seed set for wolf:  Wolf(025e108022834cd7a57b7aa5bc52e3fa)
+wolf  Wolf(025e108022834cd7a57b7aa5bc52e3fa)  seed set is:  [38109, 18314, 111161, 94235, 47968, 21718, 35290, 50808, 49387, 23986]
+generating fitness value for wolf:  Wolf(025e108022834cd7a57b7aa5bc52e3fa)
+time for calculating fitness:  0:00:00.821384
+fitness value of wolf  Wolf(025e108022834cd7a57b7aa5bc52e3fa) 2.4115165720339853
+generating random position for wolf:  Wolf(69b80f7468c34e0d89fc357d5d0670da)
+generating random seed set for wolf:  Wolf(69b80f7468c34e0d89fc357d5d0670da)
+wolf  Wolf(69b80f7468c34e0d89fc357d5d0670da)  seed set is:  [53213, 21718, 1086, 111161, 62821, 36907, 40170, 92790, 34608, 130997]
+generating fitness value for wolf:  Wolf(69b80f7468c34e0d89fc357d5d0670da)
+time for calculating fitness:  0:00:00.457221
+fitness value of wolf  Wolf(69b80f7468c34e0d89fc357d5d0670da) 2.2513446864861697
+extracting alpha, beta, delta and omega wolves:
+---------- iteration 0 -----------
+updating position for omega wolf:  Wolf(4e52995914a04587925063863bb33ff6)
+updating seed set for wolf:  Wolf(4e52995914a04587925063863bb33ff6)
+wolf  Wolf(4e52995914a04587925063863bb33ff6)  seed set is:  [111161, 1086, 21718, 92790, 18314, 38109, 53213, 50808, 106497, 40170]
+updating position for omega wolf:  Wolf(e19989cb6069430b84d5626b76819dc5)
+updating seed set for wolf:  Wolf(e19989cb6069430b84d5626b76819dc5)
+wolf  Wolf(e19989cb6069430b84d5626b76819dc5)  seed set is:  [53213, 38109, 117350, 21718, 92790, 40170, 1086, 124529, 38155, 40495]
+updating position for omega wolf:  Wolf(40d5ef5be4de4a84b1e46be332b671ba)
+updating seed set for wolf:  Wolf(40d5ef5be4de4a84b1e46be332b671ba)
+wolf  Wolf(40d5ef5be4de4a84b1e46be332b671ba)  seed set is:  [38109, 50808, 94235, 92790, 21718, 44612, 28516, 111161, 35290, 18314]
+updating position for omega wolf:  Wolf(52416acf5e534b74bc232d3adfef5d65)
+updating seed set for wolf:  Wolf(52416acf5e534b74bc232d3adfef5d65)
+wolf  Wolf(52416acf5e534b74bc232d3adfef5d65)  seed set is:  [90402, 1086, 10976, 111161, 50808, 75847, 62821, 64054, 114352, 27862]
+updating position for omega wolf:  Wolf(405047c52df846689a07cff04d36eb7b)
+updating seed set for wolf:  Wolf(405047c52df846689a07cff04d36eb7b)
+wolf  Wolf(405047c52df846689a07cff04d36eb7b)  seed set is:  [38109, 1086, 18314, 92790, 21718, 80186, 49387, 95036, 93504, 94235]
+updating position for omega wolf:  Wolf(80dbf701b9b54fb3b3a07a78b65b843e)
+updating seed set for wolf:  Wolf(80dbf701b9b54fb3b3a07a78b65b843e)
+wolf  Wolf(80dbf701b9b54fb3b3a07a78b65b843e)  seed set is:  [21718, 111161, 36907, 107877, 104749, 27901, 94235, 37479, 62821, 124529]
+updating position for omega wolf:  Wolf(5c57179bcbc74217bc4a4e9774b78ac2)
+updating seed set for wolf:  Wolf(5c57179bcbc74217bc4a4e9774b78ac2)
+wolf  Wolf(5c57179bcbc74217bc4a4e9774b78ac2)  seed set is:  [53213, 111161, 50808, 21718, 28516, 120425, 62821, 68673, 65337, 38109]
+recalculating fitness value for wolf:  Wolf(5c57179bcbc74217bc4a4e9774b78ac2)
+time for calculating fitness:  0:00:00.470208
+fitness value of wolf  Wolf(5c57179bcbc74217bc4a4e9774b78ac2) 1.9808299637579347
+recalculating fitness value for wolf:  Wolf(40d5ef5be4de4a84b1e46be332b671ba)
+time for calculating fitness:  0:00:00.901246
+fitness value of wolf  Wolf(40d5ef5be4de4a84b1e46be332b671ba) 2.787101089064294
+recalculating fitness value for wolf:  Wolf(52416acf5e534b74bc232d3adfef5d65)
+time for calculating fitness:  0:00:00.434127
+fitness value of wolf  Wolf(52416acf5e534b74bc232d3adfef5d65) 2.1701821754513846
+recalculating fitness value for wolf:  Wolf(80dbf701b9b54fb3b3a07a78b65b843e)
+time for calculating fitness:  0:00:00.420389
+fitness value of wolf  Wolf(80dbf701b9b54fb3b3a07a78b65b843e) 2.0876601482808703
+recalculating fitness value for wolf:  Wolf(e19989cb6069430b84d5626b76819dc5)
+time for calculating fitness:  0:00:00.444183
+fitness value of wolf  Wolf(e19989cb6069430b84d5626b76819dc5) 2.1675140563857918
+recalculating fitness value for wolf:  Wolf(4e52995914a04587925063863bb33ff6)
+time for calculating fitness:  0:00:00.446926
+fitness value of wolf  Wolf(4e52995914a04587925063863bb33ff6) 2.251281692772657
+recalculating fitness value for wolf:  Wolf(953aa6869e8a4e9db53f1a3cb389c02e)
+time for calculating fitness:  0:00:00.779414
+fitness value of wolf  Wolf(953aa6869e8a4e9db53f1a3cb389c02e) 3.024428449211955
+recalculating fitness value for wolf:  Wolf(405047c52df846689a07cff04d36eb7b)
+time for calculating fitness:  0:00:00.442457
+fitness value of wolf  Wolf(405047c52df846689a07cff04d36eb7b) 2.171290778408565
+recalculating fitness value for wolf:  Wolf(025e108022834cd7a57b7aa5bc52e3fa)
+time for calculating fitness:  0:00:00.839312
+fitness value of wolf  Wolf(025e108022834cd7a57b7aa5bc52e3fa) 2.4115165720339853
+recalculating fitness value for wolf:  Wolf(69b80f7468c34e0d89fc357d5d0670da)
+time for calculating fitness:  0:00:00.462607
+fitness value of wolf  Wolf(69b80f7468c34e0d89fc357d5d0670da) 2.2513446864861697
+extracting alpha, beta, delta and omega wolves:
+average movement in: (-1, 0) => 0.0
+---------- iteration 1 -----------
+updating position for omega wolf:  Wolf(69b80f7468c34e0d89fc357d5d0670da)
+updating seed set for wolf:  Wolf(69b80f7468c34e0d89fc357d5d0670da)
+wolf  Wolf(69b80f7468c34e0d89fc357d5d0670da)  seed set is:  [38109, 94235, 44612, 18314, 21718, 28516, 92790, 35550, 35290, 124529]
+updating position for omega wolf:  Wolf(4e52995914a04587925063863bb33ff6)
+updating seed set for wolf:  Wolf(4e52995914a04587925063863bb33ff6)
+wolf  Wolf(4e52995914a04587925063863bb33ff6)  seed set is:  [38109, 49387, 21718, 94235, 16158, 47968, 35290, 93504, 18314, 37036]
+updating position for omega wolf:  Wolf(405047c52df846689a07cff04d36eb7b)
+updating seed set for wolf:  Wolf(405047c52df846689a07cff04d36eb7b)
+wolf  Wolf(405047c52df846689a07cff04d36eb7b)  seed set is:  [47968, 18314, 38109, 90402, 94235, 85176, 92790, 50808, 85740, 44612]
+updating position for omega wolf:  Wolf(52416acf5e534b74bc232d3adfef5d65)
+updating seed set for wolf:  Wolf(52416acf5e534b74bc232d3adfef5d65)
+wolf  Wolf(52416acf5e534b74bc232d3adfef5d65)  seed set is:  [38109, 92790, 18314, 111161, 94235, 44612, 28516, 21718, 60088, 60471]
+updating position for omega wolf:  Wolf(e19989cb6069430b84d5626b76819dc5)
+updating seed set for wolf:  Wolf(e19989cb6069430b84d5626b76819dc5)
+wolf  Wolf(e19989cb6069430b84d5626b76819dc5)  seed set is:  [18314, 90402, 38109, 93504, 38966, 40495, 114352, 94235, 47968, 52682]
+updating position for omega wolf:  Wolf(80dbf701b9b54fb3b3a07a78b65b843e)
+updating seed set for wolf:  Wolf(80dbf701b9b54fb3b3a07a78b65b843e)
+wolf  Wolf(80dbf701b9b54fb3b3a07a78b65b843e)  seed set is:  [90402, 44183, 50808, 75223, 106497, 36907, 35290, 92790, 57331, 35550]
+updating position for omega wolf:  Wolf(5c57179bcbc74217bc4a4e9774b78ac2)
+updating seed set for wolf:  Wolf(5c57179bcbc74217bc4a4e9774b78ac2)
+wolf  Wolf(5c57179bcbc74217bc4a4e9774b78ac2)  seed set is:  [18314, 38109, 94235, 90402, 44612, 85740, 7894, 76213, 52682, 50808]
+recalculating fitness value for wolf:  Wolf(5c57179bcbc74217bc4a4e9774b78ac2)
+time for calculating fitness:  0:00:00.508382
+fitness value of wolf  Wolf(5c57179bcbc74217bc4a4e9774b78ac2) 2.9434021548429268
+recalculating fitness value for wolf:  Wolf(40d5ef5be4de4a84b1e46be332b671ba)
+time for calculating fitness:  0:00:00.899832
+fitness value of wolf  Wolf(40d5ef5be4de4a84b1e46be332b671ba) 2.787101089064294
+recalculating fitness value for wolf:  Wolf(52416acf5e534b74bc232d3adfef5d65)
+time for calculating fitness:  0:00:00.541622
+fitness value of wolf  Wolf(52416acf5e534b74bc232d3adfef5d65) 2.931203663401176
+recalculating fitness value for wolf:  Wolf(80dbf701b9b54fb3b3a07a78b65b843e)
+time for calculating fitness:  0:00:00.383556
+fitness value of wolf  Wolf(80dbf701b9b54fb3b3a07a78b65b843e) 2.2368160413230256
+recalculating fitness value for wolf:  Wolf(e19989cb6069430b84d5626b76819dc5)
+time for calculating fitness:  0:00:00.394281
+fitness value of wolf  Wolf(e19989cb6069430b84d5626b76819dc5) 2.2288152551102174
+recalculating fitness value for wolf:  Wolf(4e52995914a04587925063863bb33ff6)
+time for calculating fitness:  0:00:00.561862
+fitness value of wolf  Wolf(4e52995914a04587925063863bb33ff6) 2.26626098560125
+recalculating fitness value for wolf:  Wolf(953aa6869e8a4e9db53f1a3cb389c02e)
+time for calculating fitness:  0:00:00.784895
+fitness value of wolf  Wolf(953aa6869e8a4e9db53f1a3cb389c02e) 3.024428449211955
+recalculating fitness value for wolf:  Wolf(405047c52df846689a07cff04d36eb7b)
+time for calculating fitness:  0:00:00.513198
+fitness value of wolf  Wolf(405047c52df846689a07cff04d36eb7b) 2.953907645481594
+recalculating fitness value for wolf:  Wolf(025e108022834cd7a57b7aa5bc52e3fa)
+time for calculating fitness:  0:00:00.816485
+fitness value of wolf  Wolf(025e108022834cd7a57b7aa5bc52e3fa) 2.4115165720339853
+recalculating fitness value for wolf:  Wolf(69b80f7468c34e0d89fc357d5d0670da)
+time for calculating fitness:  0:00:00.917184
+fitness value of wolf  Wolf(69b80f7468c34e0d89fc357d5d0670da) 2.7699404993585
+extracting alpha, beta, delta and omega wolves:
