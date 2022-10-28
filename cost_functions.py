@@ -80,5 +80,5 @@ def fitness_function(seed_set, graph):  # wolf,
 
     end = datetime.datetime.now()
     delta = end - start
-    print("time for calculating fitness: ", delta)
+    print({"action": "calculate_fitness", "time": str(delta)})
     return -(fitness)

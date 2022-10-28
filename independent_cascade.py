@@ -1,11 +1,9 @@
-from constants import (
-    PROPOGATION_PROBABILITY,
-    MONTE_CARLO_SIMULATION_NUMBER,
-)
 import numpy as np
 
 
-def independent_cascade_simulation(seed_set, graph):
+def independent_cascade_simulation(
+    seed_set, graph, PROPOGATION_PROBABILITY, MONTE_CARLO_SIMULATION_NUMBER
+):
     """
     Input:  graph object, set of seed nodes, propagation probability
             and the number of Monte-Carlo simulations
@@ -15,15 +13,12 @@ def independent_cascade_simulation(seed_set, graph):
     # Loop over the Monte-Carlo Simulations
     spread = []
     for i in range(MONTE_CARLO_SIMULATION_NUMBER):
-        print(
-            f"running simulation number {i} "
-            f"from {MONTE_CARLO_SIMULATION_NUMBER}"
-        )
+        print({"simulation": i})
         # Simulate propagation process
         new_active, all_activated_nodes = seed_set[:], seed_set[:]
         while new_active:
-            print(f"new active nodes in simulation {i} are: ")
-            print(len(new_active))
+            # print(f"new active nodes in simulation {i} are: ")
+            # print(len(new_active))
             # For each newly active node, find its neighbors
             # that become activated
             new_ones = []

@@ -10,40 +10,70 @@ from constants import (
 from cost_functions import fitness_function
 from independent_cascade import independent_cascade_simulation
 
-from utils import calculate_average_movement
+# from utils import calculate_average_movement
 from wolf import Wolf
 from network import initial_graph
 
 graph = initial_graph()
 
 
-def main():
+def main(
+    SEED_SET_SIZE,
+    MONTE_CARLO_SIMULATION_NUMBER,
+    POPULATION_SIZE,
+    PROPOGATION_PROBABILITY,
+    MAX_T,
+):
     """
     main function of gwim algorithm and running independent cascade for
     alpha wolf seed set
     """
-    print("SEED_SET_SIZE:", SEED_SET_SIZE)
-    print("MONTE_CARLO_SIMULATION_NUMBER:", MONTE_CARLO_SIMULATION_NUMBER)
-    print("POPULATION_SIZE:", POPULATION_SIZE)
-    print("PROPOGATION_PROBABILITY:", PROPOGATION_PROBABILITY)
-    print("MAX_T:", MAX_T)
 
     alpha_history = []
     # iteration counter
-    print("creating population before starting main algorithm:")
+    iteration = "starter"
+    print({"iteration": iteration, "action": "generate_population"})
     population = [Wolf() for _ in range(POPULATION_SIZE)]
 
     for wolf in population:
-        print("generating random position for wolf: ", wolf)
-        wolf.random_position(graph)
-        wolf.register_position_history(0)
-        print("generating random seed set for wolf: ", wolf)
-        wolf.generate_corresponding_seed_set(graph)
-        print("wolf ", wolf, " seed set is: ", wolf.S)
-        print("generating fitness value for wolf: ", wolf)
-        fitness_value = fitness_function(wolf.S, graph)
-        print("fitness value of wolf ", wolf, fitness_value)
+        print(
+            {
+                "iteration": iteration,
+                "action": "generate_position",
+                "wolf": wolf.id,
+            }
+        )
+
+        wolf.random_position(graph=graph)
+        # wolf.register_position_history(iteration)
+        print(
+            {
+                "iteration": iteration,
+                "action": "generate_seed_set",
+                "wolf": wolf.id,
+            }
+        )
+        wolf.generate_corresponding_seed_set(
+            graph=graph, SEED_SET_SIZE=SEED_SET_SIZE
+        )
+        print(
+            {
+                "iteration": iteration,
+                "action": "display_seed_set",
+                "wolf": wolf.id,
+                "seed_set": hash(tuple(wolf.S)),
+            }
+        )
+        print(
+            {
+                "iteration": iteration,
+                "action": "calculate_fitness",
+                "wolf": wolf.id,
+            }
+        )
+        fitness_value = fitness_function(seed_set=wolf.S, graph=graph)
         wolf.value = fitness_value
+        print({"iteration": iteration, "wolf": wolf.id, "value": wolf.value})
 
     print("extracting alpha, beta, delta and omega wolves:")
     population_sorted = sorted(
@@ -54,89 +84,244 @@ def main():
     alpha, beta, delta = population_sorted[:3]
     omega_wolves = population_sorted[3:]
 
+    # keep history of alphas before main iterations
+    if alpha not in alpha_history:
+        alpha_history.append(
+            {
+                "iteration": iteration,
+                "action": "register_alpha_history",
+                "wolf": alpha.id,
+                "value": alpha.value,
+                "seed_set": hash(tuple(alpha.S)),
+                "position": hash(tuple(alpha.X.values())),
+            }
+        )
+
     for iteration in range(MAX_T):
         print(f"---------- iteration {iteration} -----------")
         for wolf in omega_wolves:
-            print("updating position for omega wolf: ", wolf)
-            wolf.update_position(alpha, beta, delta, iteration, graph)
-            wolf.register_position_history(iteration)
-            print("updating seed set for wolf: ", wolf)
-            wolf.generate_corresponding_seed_set(graph)
-            print("wolf ", wolf, " seed set is: ", wolf.S)
+            print(
+                {
+                    "iteration": iteration,
+                    "action": "update_position",
+                    "wolf": wolf.id,
+                }
+            )
+            wolf.update_position(
+                alpha=alpha,
+                beta=beta,
+                delta=delta,
+                iteration=iteration,
+                graph=graph,
+                MAX_T=MAX_T,
+            )
+            # wolf.register_position_history(iteration)
+            print(
+                {
+                    "iteration": iteration,
+                    "action": "update_seed_set",
+                    "wolf": wolf.id,
+                }
+            )
+            wolf.generate_corresponding_seed_set(
+                graph=graph,
+                SEED_SET_SIZE=SEED_SET_SIZE,
+            )
+            print(
+                {
+                    "iteration": iteration,
+                    "action": "display_seed_set",
+                    "wolf": wolf.id,
+                    "seed_set": hash(tuple(wolf.S)),
+                }
+            )
 
         for wolf in population:
-            print("recalculating fitness value for wolf: ", wolf)
-            fitness_value = fitness_function(wolf.S, graph)
-            print("fitness value of wolf ", wolf, fitness_value)
+            print(
+                {
+                    "iteration": iteration,
+                    "action": "calculate_fitness",
+                    "wolf": wolf.id,
+                }
+            )
+            fitness_value = fitness_function(seed_set=wolf.S, graph=graph)
             wolf.value = fitness_value
+            print(
+                {
+                    "iteration": iteration,
+                    "action": "display_value",
+                    "wolf": wolf.id,
+                    "value": wolf.value,
+                }
+            )
 
-        print("extracting alpha, beta, delta and omega wolves:")
+        print(
+            {
+                "iteration": iteration,
+                "action": "extract_top_wolves",
+            }
+        )
         population_sorted = sorted(
             population,
             key=lambda wolf: wolf.value,
             reverse=True,
         )
         alpha, beta, delta = population_sorted[:3]
+        print(
+            {
+                "iteration": iteration,
+                "action": "display_top_wolves",
+                "alpha": {
+                    "wolf": alpha.id,
+                    "value": alpha.value,
+                    "seed_set": hash(tuple(alpha.S)),
+                    "position": hash(tuple(alpha.X)),
+                },
+                "beta": {
+                    "wolf": beta.id,
+                    "value": beta.value,
+                    "seed_set": hash(tuple(beta.S)),
+                    "position": hash(tuple(beta.X.values())),
+                },
+                "delta": {
+                    "wolf": delta.id,
+                    "value": delta.value,
+                    "seed_set": hash(tuple(delta.S)),
+                    "position": hash(tuple(delta.X.values())),
+                },
+            }
+        )
 
         # keep history of alphas during iterations
         if alpha not in alpha_history:
-            alpha_history.append(alpha)
+            alpha_history.append(
+                {
+                    "iteration": iteration,
+                    "action": "register_alpha_history",
+                    "wolf": alpha.id,
+                    "value": alpha.value,
+                    "seed_set": hash(tuple(alpha.S)),
+                    "position": hash(tuple(alpha.X.values())),
+                }
+            )
 
         omega_wolves = population_sorted[3:]
         if (beta.X.values() == alpha.X.values()) or (
             delta.X.values() == beta.X.values()
         ):
-            print("regenerating position for wolf beta: ", beta)
-            beta.random_position(graph)
-            beta.register_position_history(iteration)
+            print(
+                {
+                    "iteration": iteration,
+                    "action": "regenerate_beta_position",
+                    "wolf": beta.id,
+                }
+            )
+            beta.random_position(graph=graph)
+            # beta.register_position_history(iteration)
 
-            print("regenerating position for wolf delta: ", delta)
-            delta.random_position(graph)
-            delta.register_position_history(iteration)
+            print(
+                {
+                    "iteration": iteration,
+                    "action": "regenerate_delta_position",
+                    "wolf": delta.id,
+                }
+            )
+            delta.random_position(graph=graph)
+            # delta.register_position_history(iteration)
 
-        average_movement = calculate_average_movement(
-            population, iteration - 1, iteration
-        )
-        print(
-            f"average movement in: ({iteration - 1}, {iteration}) =>"
-            f" {average_movement}"
-        )
+        # average_movement = calculate_average_movement(
+        #     population, iteration - 1, iteration
+        # )
+        # print(
+        #     f"average movement in: ({iteration - 1}, {iteration}) =>"
+        #     f" {average_movement}"
+        # )
+    # end iteration
 
+    print({"action": "display_population", "status": "final"})
     for wolf in population:
         print(
-            wolf,
-            wolf.value,
-            wolf.S,
+            {
+                "wolf": wolf.id,
+                "value": wolf.value,
+                "seed_set": hash(tuple(wolf.S)),
+                "position": hash(tuple(wolf.X.values())),
+            }
         )
 
-    print("Final Alpha is:")
+    print({"action": "display_alpha", "status": "final"})
     print(
         alpha,
         alpha.value,
         alpha.S,
     )
-    print("all unique alpha throgh iterations are: ")
+
+    print({"action": "display_alpha_history"})
     for u_alpha in alpha_history:
-        print(
-            u_alpha,
-            u_alpha.value,
-            u_alpha.S,
-        )
-    print("running simulation of independent cascade:")
+        print(u_alpha)
+
+    print({"action": "run_ic_simulation"})
     independent_cascade_result = independent_cascade_simulation(
         seed_set=alpha.S,
         graph=graph,
+        PROPOGATION_PROBABILITY=PROPOGATION_PROBABILITY,
+        MONTE_CARLO_SIMULATION_NUMBER=MONTE_CARLO_SIMULATION_NUMBER,
     )
 
-    print("independent cascade simulation result is:")
+    print({"action": "display_ic_result"})
     print(independent_cascade_result)
 
-    return alpha
+    return {
+        "alpha": {
+            "wolf": alpha.id,
+            "seed_set": alpha.S,
+            "position": hash(tuple(alpha.X.values())),
+        },
+        "ic": independent_cascade_result,
+        "network_size": len(graph.nodes()),
+    }
 
 
 if __name__ == "__main__":
-    start_main = datetime.datetime.now()
-    main()
-    end_main = datetime.datetime.now()
-    delta_main = end_main - start_main
-    print("time of execution this algorithm: ", delta_main)
+    parameters = {
+        "SEED_SET_SIZE": SEED_SET_SIZE,
+        "MONTE_CARLO_SIMULATION_NUMBER": MONTE_CARLO_SIMULATION_NUMBER,
+        "POPULATION_SIZE": POPULATION_SIZE,
+        "PROPOGATION_PROBABILITY": PROPOGATION_PROBABILITY,
+        "MAX_T": MAX_T,
+    }
+
+    execute_history = []
+    test_parameters = {
+        "parameter": "SEED_SET_SIZE",
+        "AKA": "S",
+        "start": 10,
+        "end": 90,
+        "step": 10,
+    }
+
+    print("---TEST 5.3.1---")
+    print({"action": "display_test_paramters", "test": test_parameters})
+    for counter0 in range(
+        test_parameters["start"],
+        test_parameters["end"],
+        test_parameters["step"],
+    ):
+        execute_parameters = {
+            **parameters,
+        }
+        execute_parameters[test_parameters["parameter"]] = counter0
+        print(execute_parameters)
+        start_main = datetime.datetime.now()
+        algorithm_result = main(**execute_parameters)
+        end_main = datetime.datetime.now()
+        delta_main = end_main - start_main
+        history = {
+            "action": "display_algorithm_time",
+            "time": str(delta_main),
+            test_parameters["AKA"]: counter0,
+            "algorithm_result": algorithm_result,
+        }
+        execute_history.append(history)
+
+    print(execute_history)

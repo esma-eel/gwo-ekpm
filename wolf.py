@@ -3,8 +3,6 @@ import math
 import random
 import uuid
 
-from constants import MAX_T, SEED_SET_SIZE
-
 # POSITIONS_HISTORY_FILE
 from utils import (
     graph_length,
@@ -45,7 +43,7 @@ class Wolf(object):
         self.X = xi
         return self.X
 
-    def generate_corresponding_seed_set(self, graph):
+    def generate_corresponding_seed_set(self, graph, SEED_SET_SIZE):
         """
         calculating corresponding seed set based on
         K which is number of seed set
@@ -66,7 +64,7 @@ class Wolf(object):
         self.S = si
         return self.S
 
-    def update_position(self, alpha, beta, delta, iteration, graph):
+    def update_position(self, alpha, beta, delta, iteration, graph, MAX_T):
         """
         update position list of wolf i based on alpha, beta, delta wolves
         based on algorithm 4 in article
@@ -136,6 +134,10 @@ class Wolf(object):
     def value(self, value):
         self._history.append(value)
         self._value = value
+
+    @property
+    def id(self):
+        return self._id
 
     def register_position_history(self, t):
         # self._position_history[t] = self._position
