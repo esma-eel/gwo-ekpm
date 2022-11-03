@@ -1,4 +1,5 @@
 import datetime
+import pprint
 
 from constants import (
     MAX_T,
@@ -324,4 +325,5 @@ if __name__ == "__main__":
         }
         execute_history.append(history)
 
-    print(execute_history)
+    pp = pprint.PrettyPrinter(indent=4)
+    pp(execute_history)
