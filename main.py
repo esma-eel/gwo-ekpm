@@ -1,5 +1,4 @@
 import datetime
-import pprint
 
 from constants import (
     MAX_T,
@@ -273,17 +272,18 @@ def main(
     print(independent_cascade_result)
 
     return {
-        "alpha": {
-            "wolf": alpha.id,
-            "seed_set": alpha.S,
-            "position": hash(tuple(alpha.X.values())),
-        },
         "ic": independent_cascade_result,
         "network_size": len(graph.nodes()),
+        "alpha": {
+            "wolf": alpha.id,
+            "position": hash(tuple(alpha.X.values())),
+            "seed_set": alpha.S,
+        },
     }
 
 
 if __name__ == "__main__":
+    whole_process_start = datetime.datetime.now()
     parameters = {
         "SEED_SET_SIZE": SEED_SET_SIZE,
         "MONTE_CARLO_SIMULATION_NUMBER": MONTE_CARLO_SIMULATION_NUMBER,
@@ -295,7 +295,7 @@ if __name__ == "__main__":
     execute_history = []
     test_parameters = {
         "parameter": "SEED_SET_SIZE",
-        "AKA": "S",
+        "AKA": "K",
         "start": 10,
         "end": 90,
         "step": 10,
@@ -318,12 +318,15 @@ if __name__ == "__main__":
         end_main = datetime.datetime.now()
         delta_main = end_main - start_main
         history = {
-            "action": "display_algorithm_time",
+            "action": "display_finished_algorithm",
             "time": str(delta_main),
             test_parameters["AKA"]: counter0,
             "algorithm_result": algorithm_result,
         }
         execute_history.append(history)
+        print(history)
 
-    pp = pprint.PrettyPrinter(indent=4)
-    pp(execute_history)
+    print(execute_history)
+    whole_process_end = datetime.datetime.now()
+    delta_process = whole_process_end - whole_process_start
+    print("execution took: ", str(delta_process))

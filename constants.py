@@ -7,9 +7,9 @@ SEED_SET_SIZE = 10
 # number of simulations we have to do
 MONTE_CARLO_SIMULATION_NUMBER = 50
 # population of wolves number
-POPULATION_SIZE = 10
+POPULATION_SIZE = 50
 # maximum iteration number
-MAX_T = 10
+MAX_T = 100
 # V` degree limit which is 2
 V_PRIM_DEGREE_LIMIT = 2
 # probability in astroph dataset for activating nodes in IC simulations
