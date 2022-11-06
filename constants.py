@@ -3,7 +3,7 @@ DATASET_FILE = (
     "/home/esmaeel/work/thesis/thesis_main/src/dataset/CA-AstroPh3.tsv"
 )
 # number of K nodes we want in our seed set
-SEED_SET_SIZE = 10
+SEED_SET_SIZE = 40
 # number of simulations we have to do
 MONTE_CARLO_SIMULATION_NUMBER = 50
 # population of wolves number

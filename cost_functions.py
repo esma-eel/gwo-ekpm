@@ -3,7 +3,7 @@ from utils import knbrs, safe_ln
 import networkx as nx
 
 
-def fitness_function(seed_set, graph):  # wolf,
+def fitness_function(seed_set, graph, propogation_probability):  # wolf,
     start = datetime.datetime.now()
     """
     calculating the fitness value for 'wolf'
@@ -51,7 +51,7 @@ def fitness_function(seed_set, graph):  # wolf,
         except nx.PowerIterationFailedConvergence:
             tolerance_range -= 1
 
-    prb = 0.02
+    prb = propogation_probability
     s_prim_eigenvector = dict(
         sorted(
             s_prim_eigenvector.items(),

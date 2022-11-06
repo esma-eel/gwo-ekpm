@@ -1,4 +1,5 @@
 import datetime
+import numpy as np
 
 from constants import (
     MAX_T,
@@ -71,7 +72,11 @@ def main(
                 "wolf": wolf.id,
             }
         )
-        fitness_value = fitness_function(seed_set=wolf.S, graph=graph)
+        fitness_value = fitness_function(
+            seed_set=wolf.S,
+            graph=graph,
+            propogation_probability=PROPOGATION_PROBABILITY,
+        )
         wolf.value = fitness_value
         print({"iteration": iteration, "wolf": wolf.id, "value": wolf.value})
 
@@ -144,7 +149,11 @@ def main(
                     "wolf": wolf.id,
                 }
             )
-            fitness_value = fitness_function(seed_set=wolf.S, graph=graph)
+            fitness_value = fitness_function(
+                seed_set=wolf.S,
+                graph=graph,
+                propogation_probability=PROPOGATION_PROBABILITY,
+            )
             wolf.value = fitness_value
             print(
                 {
@@ -294,19 +303,25 @@ if __name__ == "__main__":
 
     execute_history = []
     test_parameters = {
-        "parameter": "SEED_SET_SIZE",
-        "AKA": "K",
-        "start": 10,
-        "end": 90,
-        "step": 10,
+        "parameter": "PROPOGATION_PROBABILITY",
+        "AKA": "P",
+        "start": 0.01,
+        "end": 0.1,
+        "step": 0.01,
+        "num": 10,
     }
 
-    print("---TEST 5.3.1---")
+    print("---TEST 5.3.2--")
     print({"action": "display_test_paramters", "test": test_parameters})
-    for counter0 in range(
+    # for counter0 in range(
+    #     test_parameters["start"],
+    #     test_parameters["end"],
+    #     test_parameters["step"],
+    # ):
+    for counter0 in np.linspace(
         test_parameters["start"],
         test_parameters["end"],
-        test_parameters["step"],
+        test_parameters["num"],
     ):
         execute_parameters = {
             **parameters,
