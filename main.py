@@ -1,5 +1,7 @@
 import datetime
-import numpy as np
+import copy
+
+# import numpy as np
 
 from constants import (
     MAX_T,
@@ -11,7 +13,7 @@ from constants import (
 from cost_functions import fitness_function
 from independent_cascade import independent_cascade_simulation
 
-# from utils import calculate_average_movement
+from utils import calculate_average_movement
 from wolf import Wolf
 from network import initial_graph
 
@@ -32,7 +34,7 @@ def main(
 
     alpha_history = []
     # iteration counter
-    iteration = "starter"
+    iteration = 0  # iteration 0 is starter iteration
     print({"iteration": iteration, "action": "generate_population"})
     population = [Wolf() for _ in range(POPULATION_SIZE)]
 
@@ -46,7 +48,6 @@ def main(
         )
 
         wolf.random_position(graph=graph)
-        # wolf.register_position_history(iteration)
         print(
             {
                 "iteration": iteration,
@@ -80,14 +81,42 @@ def main(
         wolf.value = fitness_value
         print({"iteration": iteration, "wolf": wolf.id, "value": wolf.value})
 
-    print("extracting alpha, beta, delta and omega wolves:")
-    population_sorted = sorted(
+    print(
+        {
+            "iteration": iteration,
+            "action": "extract_top_wolves",
+        }
+    )
+    population = sorted(
         population,
         key=lambda wolf: wolf.value,
         reverse=True,
     )
-    alpha, beta, delta = population_sorted[:3]
-    omega_wolves = population_sorted[3:]
+    alpha, beta, delta = copy.copy(population[:3])
+    print(
+        {
+            "iteration": iteration,
+            "action": "display_top_wolves",
+            "alpha": {
+                "wolf": alpha.id,
+                "value": alpha.value,
+                "seed_set": hash(tuple(alpha.S)),
+                "position": hash(tuple(alpha.X)),
+            },
+            "beta": {
+                "wolf": beta.id,
+                "value": beta.value,
+                "seed_set": hash(tuple(beta.S)),
+                "position": hash(tuple(beta.X.values())),
+            },
+            "delta": {
+                "wolf": delta.id,
+                "value": delta.value,
+                "seed_set": hash(tuple(delta.S)),
+                "position": hash(tuple(delta.X.values())),
+            },
+        }
+    )
 
     # keep history of alphas before main iterations
     if alpha not in alpha_history:
@@ -102,9 +131,11 @@ def main(
             }
         )
 
-    for iteration in range(MAX_T):
+    # omega_wolves = population_sorted[3:]
+
+    for iteration in range(1, MAX_T + 1, 1):
         print(f"---------- iteration {iteration} -----------")
-        for wolf in omega_wolves:
+        for wolf in population:
             print(
                 {
                     "iteration": iteration,
@@ -120,7 +151,6 @@ def main(
                 graph=graph,
                 MAX_T=MAX_T,
             )
-            # wolf.register_position_history(iteration)
             print(
                 {
                     "iteration": iteration,
@@ -170,12 +200,12 @@ def main(
                 "action": "extract_top_wolves",
             }
         )
-        population_sorted = sorted(
+        population = sorted(
             population,
             key=lambda wolf: wolf.value,
             reverse=True,
         )
-        alpha, beta, delta = population_sorted[:3]
+        alpha, beta, delta = copy.copy(population[:3])
         print(
             {
                 "iteration": iteration,
@@ -214,7 +244,7 @@ def main(
                 }
             )
 
-        omega_wolves = population_sorted[3:]
+        # omega_wolves = population_sorted[3:]
         if (beta.X.values() == alpha.X.values()) or (
             delta.X.values() == beta.X.values()
         ):
@@ -226,7 +256,7 @@ def main(
                 }
             )
             beta.random_position(graph=graph)
-            # beta.register_position_history(iteration)
+            beta.register_position_history(iteration)
 
             print(
                 {
@@ -236,15 +266,19 @@ def main(
                 }
             )
             delta.random_position(graph=graph)
-            # delta.register_position_history(iteration)
+            delta.register_position_history(iteration)
 
-        # average_movement = calculate_average_movement(
-        #     population, iteration - 1, iteration
-        # )
-        # print(
-        #     f"average movement in: ({iteration - 1}, {iteration}) =>"
-        #     f" {average_movement}"
-        # )
+        average_movement = calculate_average_movement(
+            population, iteration - 1, iteration
+        )
+        print(
+            {
+                "iteration": iteration,
+                "action": "display_average_movement",
+                "for": str((iteration - 1, iteration)),
+                "value": average_movement,
+            }
+        )
     # end iteration
 
     print({"action": "display_population", "status": "final"})
@@ -303,30 +337,30 @@ if __name__ == "__main__":
 
     execute_history = []
     test_parameters = {
-        "parameter": "PROPOGATION_PROBABILITY",
-        "AKA": "P",
-        "start": 0.1,
-        "end": 0.1,
-        "step": 0.1,
-        "num": 1,
+        # "parameter": "PROPOGATION_PROBABILITY",
+        # "AKA": "P",
+        "start": 1,
+        "end": 2,
+        "step": 1,
+        # "num": 1,
     }
 
-    print("---TEST 5.3.2--")
+    print("---TEST 5.2--")
     print({"action": "display_test_paramters", "test": test_parameters})
-    # for counter0 in range(
+    # for counter0 in np.linspace(
     #     test_parameters["start"],
     #     test_parameters["end"],
-    #     test_parameters["step"],
+    #     test_parameters["num"],
     # ):
-    for counter0 in np.linspace(
+    for counter0 in range(
         test_parameters["start"],
         test_parameters["end"],
-        test_parameters["num"],
+        test_parameters["step"],
     ):
         execute_parameters = {
             **parameters,
         }
-        execute_parameters[test_parameters["parameter"]] = counter0
+        # execute_parameters[test_parameters["parameter"]] = counter0
         print(execute_parameters)
         start_main = datetime.datetime.now()
         algorithm_result = main(**execute_parameters)
@@ -335,7 +369,7 @@ if __name__ == "__main__":
         history = {
             "action": "display_finished_algorithm",
             "time": str(delta_main),
-            test_parameters["AKA"]: counter0,
+            # test_parameters["AKA"]: counter0,
             "algorithm_result": algorithm_result,
         }
         execute_history.append(history)
