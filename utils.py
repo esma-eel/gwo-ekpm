@@ -1,5 +1,5 @@
 import math
-
+from constants import AVERAGE_MOVEMENT
 
 def safe_ln(value):
     """
@@ -46,6 +46,9 @@ def knbrs(G, start, k):
 
 
 def calculate_average_movement(wolves, prev_t, current_t):
+    if not AVERAGE_MOVEMENT:
+        return 0
+
     sum_movement = sum([wolf.move(prev_t, current_t) for wolf in wolves])
     return sum_movement / len(wolves)
 

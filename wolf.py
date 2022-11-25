@@ -3,7 +3,7 @@ import math
 import random
 import uuid
 
-# from constants import POSITIONS_HISTORY_FILE
+from constants import AVERAGE_MOVEMENT, REGISTER_HISTORY
 from utils import (
     graph_length,
     graph_nodes,
@@ -15,13 +15,16 @@ from utils import (
 class Wolf(object):
     def __init__(self, *args, **kwargs):
         self._position = kwargs.get("position")
-        self._positions = []
         self._seed_set = kwargs.get("seed_set")
-        self._seed_sets = []
         self._value = kwargs.get("value")
-        self._values = []
-        # self._position_history = {}
+
         self._id = uuid.uuid4().hex
+
+        if REGISTER_HISTORY:
+            self._positions = []
+            self._seed_sets = []
+            self._values = []
+
 
     def __str__(self):
         return f"Wolf({self._id})"
@@ -119,7 +122,8 @@ class Wolf(object):
     @X.setter
     def X(self, value):
         self._position = value
-        self._positions.append(value)
+        if REGISTER_HISTORY:
+            self._positions.append(value)
 
     @property
     def S(self):
@@ -128,7 +132,8 @@ class Wolf(object):
     @S.setter
     def S(self, value):
         self._seed_set = value
-        self._seed_sets.append(value)
+        if REGISTER_HISTORY:
+            self._seed_sets.append(value)
 
     @property
     def value(self):
@@ -137,7 +142,8 @@ class Wolf(object):
     @value.setter
     def value(self, value):
         self._value = value
-        self._values.append(value)
+        if REGISTER_HISTORY:
+            self._values.append(value)
 
     @property
     def id(self):
@@ -146,7 +152,6 @@ class Wolf(object):
     def move(self, prev_t, current_t):
         # mov(i,t,t+1)=
         # sqrt(sum_(j=1)^(|v|)( vec(X)_(ij)(t+1)- vec(X)_(ij)(t))^(2))
-
         if self._positions[current_t] and self._positions[prev_t]:
             distance_moved: float = math.dist(
                 self._positions[current_t].values(),
@@ -156,69 +161,3 @@ class Wolf(object):
             distance_moved = 0
 
         return distance_moved
-
-    """
-    def register_position_history(self, t):
-        self._position_history[t] = self._position
-        with open(POSITIONS_HISTORY_FILE, "r") as history_file:
-            data = history_file.read()
-            if data:
-                position_history = json.loads(data)
-            else:
-                position_history = {}
-
-        if t == 0 or not position_history.get(self._id):
-            position_history[self._id] = {}
-
-        position_history[self._id][t] = self._position
-        json_data = json.dumps(position_history)
-        with open(POSITIONS_HISTORY_FILE, "w") as history_file:
-            history_file.write(json_data)
-        self._position_history[t] = self._position
-
-    """
-
-    """
-    def move(self, t, t_next):
-        with open(POSITIONS_HISTORY_FILE, "r") as history_file:
-            data = history_file.read()
-            if data:
-                position_history = json.loads(data)
-
-        if not position_history.get(self._id):
-            return 0
-        # mov(i,t,t+1)=
-        # sqrt(sum_(j=1)^(|v|)( vec(X)_(ij)(t+1)- vec(X)_(ij)(t))^(2))
-
-        wolf_history = position_history.get(self._id)
-        wolf_history = convert_positions_data(wolf_history)
-        wolf_history = {**self._position_history}
-
-        if wolf_history.get(t_next) and wolf_history.get(t):
-            distance_moved = math.dist(
-                wolf_history[t_next].values(), wolf_history[t].values()
-            )
-        elif wolf_history.get(t):
-            distance_moved = math.dist(
-                [0] * len(wolf_history[t]), wolf_history[t].values()
-            )
-        else:
-            distance_moved = 0
-
-        return distance_moved
-    """
-
-
-# if __name__ == "__main__":
-#     w = Wolf()
-#     w._id = "25e2448455174193be2da83ad33a229a"
-#     print(w.move(0, 1))
-#     print(w.move(1, 2))
-#     print(w.move(2, 3))
-#     print(w.move(3, 4))
-#     print(w.move(4, 5))
-#     print(w.move(5, 6))
-#     print(w.move(6, 7))
-#     print(w.move(7, 8))
-#     print(w.move(8, 9))
-#     # w.move(9, 2)

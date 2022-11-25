@@ -14,7 +14,11 @@ MAX_T = 100
 V_PRIM_DEGREE_LIMIT = 2
 # probability in astroph dataset for activating nodes in IC simulations
 PROPOGATION_PROBABILITY = 0.02
+IMPACT_RANGE = 60
 # for positions history
+AVERAGE_MOVEMENT = False
+# in order t oaverage movement be true this must be true too
+REGISTER_HISTORY = False and AVERAGE_MOVEMENT
 # POSITIONS_HISTORY_FILE = (
 #     "/home/esmaeel/work/thesis/thesis_main/src/results/test/"
 #     "positions_history1.json"

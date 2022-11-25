@@ -9,13 +9,15 @@ from constants import (
     SEED_SET_SIZE,
     MONTE_CARLO_SIMULATION_NUMBER,
     PROPOGATION_PROBABILITY,
+    AVERAGE_MOVEMENT,
 )
-from cost_functions import fitness_function
+from cost_functions import fitness_function_reverse as fitness_function
 from independent_cascade import independent_cascade_simulation
-
-from utils import calculate_average_movement
 from wolf import Wolf
 from network import initial_graph
+
+if AVERAGE_MOVEMENT:
+    from utils import calculate_average_movement
 
 graph = initial_graph()
 
@@ -256,7 +258,6 @@ def main(
                 }
             )
             beta.random_position(graph=graph)
-            beta.register_position_history(iteration)
 
             print(
                 {
@@ -266,19 +267,19 @@ def main(
                 }
             )
             delta.random_position(graph=graph)
-            delta.register_position_history(iteration)
 
-        average_movement = calculate_average_movement(
-            population, iteration - 1, iteration
-        )
-        print(
-            {
-                "iteration": iteration,
-                "action": "display_average_movement",
-                "for": str((iteration - 1, iteration)),
-                "value": average_movement,
-            }
-        )
+        if AVERAGE_MOVEMENT:
+            average_movement = calculate_average_movement(
+                population, iteration - 1, iteration
+            )
+            print(
+                {
+                    "iteration": iteration,
+                    "action": "display_average_movement",
+                    "for": str((iteration - 1, iteration)),
+                    "value": average_movement,
+                }
+            )
     # end iteration
 
     print({"action": "display_population", "status": "final"})
@@ -337,15 +338,15 @@ if __name__ == "__main__":
 
     execute_history = []
     test_parameters = {
-        # "parameter": "PROPOGATION_PROBABILITY",
-        # "AKA": "P",
-        "start": 1,
-        "end": 2,
-        "step": 1,
+        "parameter": "SEED_SET_SIZE",
+        "AKA": "K",
+        "start": 10,
+        "end": 90,
+        "step": 10,
         # "num": 1,
     }
 
-    print("---TEST 5.2--")
+    print("---TEST 5.3.1.1 reverse--")
     print({"action": "display_test_paramters", "test": test_parameters})
     # for counter0 in np.linspace(
     #     test_parameters["start"],
@@ -360,7 +361,7 @@ if __name__ == "__main__":
         execute_parameters = {
             **parameters,
         }
-        # execute_parameters[test_parameters["parameter"]] = counter0
+        execute_parameters[test_parameters["parameter"]] = counter0
         print(execute_parameters)
         start_main = datetime.datetime.now()
         algorithm_result = main(**execute_parameters)
@@ -369,7 +370,7 @@ if __name__ == "__main__":
         history = {
             "action": "display_finished_algorithm",
             "time": str(delta_main),
-            # test_parameters["AKA"]: counter0,
+            test_parameters["AKA"]: counter0,
             "algorithm_result": algorithm_result,
         }
         execute_history.append(history)
