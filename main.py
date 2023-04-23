@@ -11,7 +11,7 @@ from constants import (
     PROPOGATION_PROBABILITY,
     AVERAGE_MOVEMENT,
 )
-from cost_functions import gwim_fitness_function as fitness_function
+from cost_functions import proposed_method_fitness_function as fitness_function
 from independent_cascade import independent_cascade_simulation
 from wolf import Wolf
 from network import initial_graph
@@ -28,6 +28,7 @@ def main(
     POPULATION_SIZE,
     PROPOGATION_PROBABILITY,
     MAX_T,
+    REVERSE,
 ):
     """
     main function of gwim algorithm and running independent cascade for
@@ -76,11 +77,14 @@ def main(
             }
         )
         fitness_value = fitness_function(
-            wolf=wolf,
-            graph=graph
-            # seed_set=wolf.S,
-            # graph=graph,
-            # propogation_probability=PROPOGATION_PROBABILITY,
+            # gwim
+            # wolf=wolf,
+            # graph=graph
+            # proposed method 1
+            seed_set=wolf.S,
+            graph=graph,
+            propogation_probability=PROPOGATION_PROBABILITY,
+            reverse=REVERSE,
         )
         wolf.value = fitness_value
         print({"iteration": iteration, "wolf": wolf.id, "value": wolf.value})
@@ -184,11 +188,14 @@ def main(
                 }
             )
             fitness_value = fitness_function(
-                wolf=wolf,
-                graph=graph
-                # seed_set=wolf.S,
-                # graph=graph,
-                # propogation_probability=PROPOGATION_PROBABILITY,
+                # gwim
+                # wolf=wolf,
+                # graph=graph
+                # proposed method 1
+                seed_set=wolf.S,
+                graph=graph,
+                propogation_probability=PROPOGATION_PROBABILITY,
+                reverse=REVERSE,
             )
             wolf.value = fitness_value
             print(
@@ -332,12 +339,14 @@ def main(
 
 if __name__ == "__main__":
     whole_process_start = datetime.datetime.now()
+    reverse = False
     parameters = {
         "SEED_SET_SIZE": SEED_SET_SIZE,
         "MONTE_CARLO_SIMULATION_NUMBER": MONTE_CARLO_SIMULATION_NUMBER,
         "POPULATION_SIZE": POPULATION_SIZE,
         "PROPOGATION_PROBABILITY": PROPOGATION_PROBABILITY,
         "MAX_T": MAX_T,
+        "REVERSE": reverse,
     }
 
     execute_history = []
@@ -350,7 +359,7 @@ if __name__ == "__main__":
         # "num": 1,
     }
 
-    print("---TEST 5.3.1.1 reverse--")
+    print("---TEST 5.3.1.1 --")
     print({"action": "display_test_paramters", "test": test_parameters})
     # for counter0 in np.linspace(
     #     test_parameters["start"],
