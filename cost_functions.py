@@ -2,6 +2,7 @@ import datetime
 from utils import knbrs, safe_ln
 import networkx as nx
 from constants import IMPACT_RANGE
+from utils import graph_nodes
 
 
 def fitness_function(seed_set, graph, propogation_probability):  # wolf,
@@ -84,7 +85,6 @@ def fitness_function(seed_set, graph, propogation_probability):  # wolf,
     return -(fitness)
 
 
-
 def fitness_function_reverse(seed_set, graph, propogation_probability):  # wolf,
     start = datetime.datetime.now()
     """
@@ -163,3 +163,76 @@ def fitness_function_reverse(seed_set, graph, propogation_probability):  # wolf,
     delta = end - start
     print({"action": "calculate_fitness", "time": str(delta)})
     return -(fitness)
+
+
+def calculate_i_for_vj(node, seed_set, position, graph):
+    nodes_list = graph_nodes(graph)
+    first_order_neighbors = knbrs(graph, node, 1)
+    second_order_neighbors_unclean = knbrs(graph, node, 2)
+    second_order_neighbors = set()
+    for ng in second_order_neighbors_unclean:
+        if ng not in first_order_neighbors:
+            second_order_neighbors.add(ng)
+
+    sum_first_order_neighbors = 0
+    sum_second_order_neighbors = 0
+
+    for i in seed_set:
+        sum_first_order_neighbors += position[nodes_list.index(i)]
+
+    for i in seed_set:
+        for k in seed_set:
+            if i == k:
+                continue
+
+            sum_second_order_neighbors += (
+                position[nodes_list.index(i)] * position[nodes_list.index(k)]
+            )
+
+    return sum_first_order_neighbors + sum_second_order_neighbors
+
+
+def calculate_w_for_vj(node, seed_set, position, graph):
+    i_for_vj = calculate_i_for_vj(node, seed_set, position, graph)
+    degree_of_vj = graph.degree(node)
+
+    return i_for_vj * degree_of_vj
+
+
+def calculate_W_for_S(s_prim, seed_set, position, graph):
+    sum_w_of_s_prim_nodes = 0
+    for vj in s_prim:
+        sum_w_of_s_prim_nodes += calculate_w_for_vj(
+            vj, seed_set, position, graph
+        )
+
+    return sum_w_of_s_prim_nodes
+
+
+def gwim_fitness_function(wolf, graph):
+    start = datetime.datetime.now()
+    seed_set = wolf.S
+    position = wolf.X
+
+    s_prim = []
+    for seed_set_item in seed_set:
+        seed_set_item_neighbors = knbrs(graph, seed_set_item, 2)
+        s_prim += list(seed_set_item_neighbors)
+
+    s_prim = set(s_prim)
+
+    sum_of_entropy = 0
+    WS = calculate_W_for_S(s_prim, seed_set, position, graph)
+
+    for vj in s_prim:
+        wvj = calculate_w_for_vj(vj, seed_set, position, graph)
+        wvj_divide_WS = wvj / WS
+        wvj_divide_WS_ln = safe_ln(wvj_divide_WS)
+        wvj_WS = wvj_divide_WS * wvj_divide_WS_ln
+        sum_of_entropy += wvj_WS
+
+    end = datetime.datetime.now()
+    delta = end - start
+    print({"action": "calculate_fitness", "time": str(delta)})
+
+    return -sum_of_entropy

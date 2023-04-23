@@ -11,7 +11,7 @@ from constants import (
     PROPOGATION_PROBABILITY,
     AVERAGE_MOVEMENT,
 )
-from cost_functions import fitness_function_reverse as fitness_function
+from cost_functions import gwim_fitness_function as fitness_function
 from independent_cascade import independent_cascade_simulation
 from wolf import Wolf
 from network import initial_graph
@@ -76,9 +76,11 @@ def main(
             }
         )
         fitness_value = fitness_function(
-            seed_set=wolf.S,
-            graph=graph,
-            propogation_probability=PROPOGATION_PROBABILITY,
+            wolf=wolf,
+            graph=graph
+            # seed_set=wolf.S,
+            # graph=graph,
+            # propogation_probability=PROPOGATION_PROBABILITY,
         )
         wolf.value = fitness_value
         print({"iteration": iteration, "wolf": wolf.id, "value": wolf.value})
@@ -182,9 +184,11 @@ def main(
                 }
             )
             fitness_value = fitness_function(
-                seed_set=wolf.S,
-                graph=graph,
-                propogation_probability=PROPOGATION_PROBABILITY,
+                wolf=wolf,
+                graph=graph
+                # seed_set=wolf.S,
+                # graph=graph,
+                # propogation_probability=PROPOGATION_PROBABILITY,
             )
             wolf.value = fitness_value
             print(
