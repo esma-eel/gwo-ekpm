@@ -2,7 +2,7 @@ import numpy as np
 
 
 def independent_cascade_simulation(
-    seed_set, graph, PROPOGATION_PROBABILITY, MONTE_CARLO_SIMULATION_NUMBER
+    seed_set, graph, propogation_probability, monte_carlo_simulation_number
 ):
     """
     Input:  graph object, set of seed nodes, propagation probability
@@ -12,7 +12,7 @@ def independent_cascade_simulation(
 
     # Loop over the Monte-Carlo Simulations
     spread = []
-    for i in range(MONTE_CARLO_SIMULATION_NUMBER):
+    for i in range(monte_carlo_simulation_number):
         print({"simulation": i})
         # Simulate propagation process
         new_active, all_activated_nodes = seed_set[:], seed_set[:]
@@ -23,7 +23,6 @@ def independent_cascade_simulation(
             # that become activated
             new_ones = []
             for node in new_active:
-
                 # Determine neighbors that become infected
                 np.random.seed(i)
                 # for directed graph use ==> neighbors(node, mode="out")
@@ -31,7 +30,7 @@ def independent_cascade_simulation(
                 # make sure you make neighbors output as list with list(output)
                 success = (
                     np.random.uniform(0, 1, len(list(graph.neighbors(node))))
-                    < PROPOGATION_PROBABILITY
+                    < propogation_probability
                 )
 
                 array_of_neighbors = np.array(list(graph.neighbors(node)))

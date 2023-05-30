@@ -25,7 +25,6 @@ class Wolf(object):
             self._seed_sets = []
             self._values = []
 
-
     def __str__(self):
         return f"Wolf({self._id})"
 
@@ -48,7 +47,7 @@ class Wolf(object):
         self.X = xi
         return self.X
 
-    def generate_corresponding_seed_set(self, graph, SEED_SET_SIZE):
+    def generate_corresponding_seed_set(self, graph, seed_set_size):
         """
         calculating corresponding seed set based on
         K which is number of seed set
@@ -58,7 +57,7 @@ class Wolf(object):
         position_copy = dict(self.X)
         filtered_position = sorted(
             position_copy.items(), key=lambda item: item[1], reverse=True
-        )[:SEED_SET_SIZE]
+        )[:seed_set_size]
 
         filtered_position = dict(filtered_position)
         si = []
@@ -69,12 +68,12 @@ class Wolf(object):
         self.S = si
         return self.S
 
-    def update_position(self, alpha, beta, delta, iteration, graph, MAX_T):
+    def update_position(self, alpha, beta, delta, iteration, graph, max_t):
         """
         update position list of wolf i based on alpha, beta, delta wolves
         based on algorithm 4 in article
         """
-        a = 2 - 2 * (iteration / MAX_T)
+        a = 2 - 2 * (iteration / max_t)
 
         wolf_position = self.X
         new_position = dict(wolf_position)

@@ -1,12 +1,12 @@
 import networkx as nx
-from constants import DATASET_FILE, V_PRIM_DEGREE_LIMIT
+
+# from constants import DATASET_FILE, V_PRIM_DEGREE_LIMIT
 
 
-def initial_graph():
+def initial_graph(dataset_addres, v_prim_degree_limit):
     graph_type = nx.Graph()
-
     G = nx.read_edgelist(
-        DATASET_FILE,
+        dataset_addres,
         create_using=graph_type,
         data=(("days", int),),
         nodetype=int,
@@ -17,7 +17,7 @@ def initial_graph():
 
     # create new graph with nodes which degree >= V_PRIM_DEGREE_LIMIT
     for node in G:
-        if G.degree(node) >= V_PRIM_DEGREE_LIMIT:
+        if G.degree(node) >= v_prim_degree_limit:
             v_prim_nodes.append(node)
 
     V_PRIM_GRAPH = G.subgraph(v_prim_nodes)
