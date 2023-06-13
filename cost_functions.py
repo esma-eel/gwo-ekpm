@@ -238,15 +238,19 @@ def gwim_fitness_function(wolf, graph):
     return -sum_of_entropy
 
 
-def proposed_method_fitness_function(
-    seed_set, graph, propogation_probability, reverse=False
-):  # wolf,
+def proposed_method_fitness_function(**parameters):  # wolf,
     start = datetime.datetime.now()
     """
     calculating the fitness value for 'wolf'
     based on part 4.1 equation 13 in article
     """
-    impact_range = IMPACT_RANGE
+    graph = parameters.get("graph")
+    seed_set = parameters.get("seed_set")
+    reverse = parameters.get("reverse")
+
+    impact_range = parameters.get("impact_range")
+    propogation_probability = parameters.get("propogation_probability_start")
+
     # Creating s' set with using each item in seed set
     s_prim = []
     seed_set_with_neighbors = {}

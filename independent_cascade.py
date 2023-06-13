@@ -13,7 +13,6 @@ def independent_cascade_simulation(
     # Loop over the Monte-Carlo Simulations
     spread = []
     for i in range(monte_carlo_simulation_number):
-        print({"simulation": i})
         # Simulate propagation process
         new_active, all_activated_nodes = seed_set[:], seed_set[:]
         while new_active:
@@ -42,5 +41,15 @@ def independent_cascade_simulation(
             all_activated_nodes += new_active
 
         spread.append(len(all_activated_nodes))
+
+        print(
+            {
+                "action": "ic_simulation_result",
+                "simulation": i,
+                "new_active": len(new_active),
+                "all_activated_nodes": len(all_activated_nodes),
+                "spread": np.mean(spread),
+            }
+        )
 
     return np.mean(spread)

@@ -10,12 +10,10 @@ import numpy as np
 import datetime
 from cost_functions import (
     proposed_method_fitness_function,
-    gwim_fitness_function,
+    # gwim_fitness_function,
 )
 from algorithms import gwolf
 
-import datetime
-import copy
 
 # import numpy as np
 
@@ -27,9 +25,8 @@ import copy
 #     PROPOGATION_PROBABILITY,
 #     AVERAGE_MOVEMENT,
 # )
-from cost_functions import proposed_method_fitness_function as fitness_function
-from independent_cascade import independent_cascade_simulation
-from wolf import Wolf
+# from independent_cascade import independent_cascade_simulation
+# from wolf import Wolf
 from network import initial_graph
 
 # if AVERAGE_MOVEMENT:
@@ -194,7 +191,8 @@ def run_ekpm1(**paramters):
         "reverse": False,
         "cost_function": proposed_method_fitness_function,
     }
-    gwolf(**gwolf_args)
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
 
 
 def run_ekpm2(**kwargs):
@@ -273,5 +271,6 @@ if __name__ == "__main__":
 
 """
 # defualt
-python start.py -c 1 -kstart 40 -m 50 -ps 50 -t 100 -vdl 2 -ppstart 0.02 -i 60 -d "./dataset/CA-AstroPH3.tsv"
+python start.py -c 1 -kstart 40 -m 50 -ps 50 -t 100 -vdl 2 -ppstart 0.02 -i 60
+ -d "./dataset/CA-AstroPH3.tsv"
 """

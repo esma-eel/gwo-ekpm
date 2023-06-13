@@ -31,8 +31,8 @@ def gwolf(**gwolf_args):
     """
     population_size = gwolf_args.get("population_size")
     graph = gwolf_args.get("graph")
-    seed_set_size = gwolf.get("seed_set_size_start")
-    fitness_function = gwolf.get("cost_function")
+    seed_set_size = gwolf_args.get("seed_set_size_start")
+    fitness_function = gwolf_args.get("cost_function")
     max_t = gwolf_args.get("max_t")
 
     alpha_history = []
@@ -315,7 +315,7 @@ def gwolf(**gwolf_args):
     independent_cascade_result = independent_cascade_simulation(
         seed_set=alpha.S,
         graph=graph,
-        propogation_probability=gwolf_args.get("propogation_probability"),
+        propogation_probability=gwolf_args.get("propogation_probability_start"),
         monte_carlo_simulation_number=gwolf_args.get("monte_carlo"),
     )
 
