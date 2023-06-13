@@ -15,8 +15,6 @@ class Wolf(object):
         self._seed_set = kwargs.get("seed_set")
         self._value = kwargs.get("value")
         self._average_movement = bool(kwargs.get("average_movement", False))
-        print(self._average_movement)
-
         self._id = uuid.uuid4().hex
 
         if self._average_movement:
