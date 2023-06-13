@@ -195,8 +195,14 @@ def run_ekpm1(**paramters):
     return alogrithm_execution_result
 
 
-def run_ekpm2(**kwargs):
-    pass
+def run_ekpm2(**paramters):
+    gwolf_args = {
+        **paramters,
+        "reverse": True,
+        "cost_function": proposed_method_fitness_function,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
 
 
 def run_gwim(**kwrgs):

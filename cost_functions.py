@@ -247,7 +247,6 @@ def proposed_method_fitness_function(**parameters):  # wolf,
     graph = parameters.get("graph")
     seed_set = parameters.get("seed_set")
     reverse = parameters.get("reverse")
-
     impact_range = parameters.get("impact_range")
     propogation_probability = parameters.get("propogation_probability_start")
 
