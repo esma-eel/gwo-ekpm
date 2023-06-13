@@ -241,6 +241,7 @@ def run(**run_args):
 
     range = range_dict(**run_args)
     parameters = {**run_args, "graph": graph}
+    execute_history = []
 
     for counter in range.get("function"):
         iteration_start_datetiem = datetime.datetime.now()
@@ -251,12 +252,29 @@ def run(**run_args):
         iteration_end_datetime = datetime.datetime.now()
 
         iteration_delta = iteration_end_datetime - iteration_start_datetiem
-        print(counter_result)
-        print(iteration_delta)
+
+        history = {
+            "action": "display_finished_algorithm",
+            "time": str(iteration_delta),
+            "params": parameters,
+            "algorithm_result": counter_result,
+        }
+        if range.get("iterate"):
+            history["changing_parameter"] = range.get("parameter")
+
+        execute_history.append(history)
+        print(history)
 
     run_end_dateitme = datetime.datetime.now()
     run_delta = run_end_dateitme - run_start_datetime
-    print(run_delta)
+
+    print(
+        {
+            "action": "display_end_execution",
+            "total": run_delta,
+            "executions": execute_history,
+        }
+    )
 
 
 if __name__ == "__main__":
