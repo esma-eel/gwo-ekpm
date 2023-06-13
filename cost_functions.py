@@ -209,10 +209,12 @@ def calculate_W_for_S(s_prim, seed_set, position, graph):
     return sum_w_of_s_prim_nodes
 
 
-def gwim_fitness_function(wolf, graph):
+def gwim_fitness_function(**parameters):
     start = datetime.datetime.now()
-    seed_set = wolf.S
-    position = wolf.X
+
+    seed_set = parameters.get("seed_set")
+    position = parameters.get("position")
+    graph = parameters.get("graph")
 
     s_prim = []
     for seed_set_item in seed_set:
@@ -238,7 +240,7 @@ def gwim_fitness_function(wolf, graph):
     return -sum_of_entropy
 
 
-def proposed_method_fitness_function(**parameters):  # wolf,
+def proposed_method_fitness_function(**parameters):
     start = datetime.datetime.now()
     """
     calculating the fitness value for 'wolf'

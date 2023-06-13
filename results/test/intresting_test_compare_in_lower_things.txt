@@ -1,0 +1,24 @@
+python start.py -c 3 -kstart 5 -m 5 -ps 5 -t 2 -vdl 2 -ppstart 0.02 -i 60 -d "./dataset/CA-AstroPh3.tsv"
+
+gwim
+{'action': 'display_ic_result'}
+1687.0
+{'ic': 1687.0, 'network_size': 17491, 'alpha': {'wolf': 'e9117062536645e4a6b0cab459c25706', 'position': 4638680527066759794, 'seed_set': [92790, 53213, 62821, 36907, 35290]}}
+0:11:43.844088
+0:11:43.844251
+
+ekpm1
+python start.py -c 1 -kstart 5 -m 5 -ps 5 -t 2 -vdl 2 -ppstart 0.02 -i 60 -d "./dataset/CA-AstroPh3.tsv"
+{'action': 'display_ic_result'}
+1691.2
+{'ic': 1691.2, 'network_size': 17491, 'alpha': {'wolf': 'c790637166a445f094fa8e0e213cd59f', 'position': -5117387431459700047, 'seed_set': [53213, 34608, 124741, 77754, 35290]}}
+0:00:18.615336
+0:00:18.615463
+
+ekpm2
+python start.py -c 2 -kstart 5 -m 5 -ps 5 -t 2 -vdl 2 -ppstart 0.02 -i 60 -d "./dataset/CA-AstroPh3.tsv"
+{'action': 'display_ic_result'}
+1688.4
+{'ic': 1688.4, 'network_size': 17491, 'alpha': {'wolf': 'cbfcdab01c1d4d66a19ad08e0440a73e', 'position': -6420191997014807933, 'seed_set': [62821, 35290, 92790, 53213, 38966]}}
+0:00:09.919828
+0:00:09.919947

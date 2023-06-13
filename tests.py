@@ -1,5 +1,6 @@
 import math
 
+
 def move(wolf, prev_t, current_t):
     """
     position in prev_t --> t
@@ -7,3 +8,4 @@ def move(wolf, prev_t, current_t):
     for j in positions:
         positions[current_t][j] - positions[prev_t][j]
     """
+    pass

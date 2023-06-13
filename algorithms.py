@@ -1,27 +1,8 @@
-# import datetime
 import copy
 
-# import numpy as np
-
-# from constants import (
-#     MAX_T,
-#     POPULATION_SIZE,
-#     SEED_SET_SIZE,
-#     MONTE_CARLO_SIMULATION_NUMBER,
-#     PROPOGATION_PROBABILITY,
-#     AVERAGE_MOVEMENT,
-# )
-# from cost_functions import
-# proposed_method_fitness_function as fitness_function
 from independent_cascade import independent_cascade_simulation
-from wolf import Wolf
-
-# from network import initial_graph
-
-# if AVERAGE_MOVEMENT:
 from utils import calculate_average_movement
-
-# graph = initial_graph()
+from wolf import Wolf
 
 
 def gwolf(**gwolf_args):
@@ -34,12 +15,16 @@ def gwolf(**gwolf_args):
     seed_set_size = gwolf_args.get("seed_set_size_start")
     fitness_function = gwolf_args.get("cost_function")
     max_t = gwolf_args.get("max_t")
+    wolf_average_movement = gwolf_args.get("average_movement")
 
     alpha_history = []
     # iteration counter
     iteration = 0  # iteration 0 is starter iteration
     print({"iteration": iteration, "action": "generate_population"})
-    population = [Wolf() for _ in range(population_size)]
+    population = [
+        Wolf(average_movement=wolf_average_movement)
+        for _ in range(population_size)
+    ]
 
     for wolf in population:
         print(
@@ -77,11 +62,8 @@ def gwolf(**gwolf_args):
             }
         )
         fitness_value = fitness_function(
-            # gwim
-            # wolf=wolf,
-            # graph=graph
-            # proposed method 1
             seed_set=wolf.S,
+            position=wolf.X,
             **gwolf_args,
         )
         wolf.value = fitness_value
@@ -186,12 +168,9 @@ def gwolf(**gwolf_args):
                 }
             )
             fitness_value = fitness_function(
-                # gwim
-                # wolf=wolf,
-                # graph=graph
-                # proposed method 1
                 **gwolf_args,
                 seed_set=wolf.S,
+                position=wolf.X,
             )
             wolf.value = fitness_value
             print(
@@ -277,7 +256,10 @@ def gwolf(**gwolf_args):
 
         if gwolf_args.get("average_movement"):
             average_movement = calculate_average_movement(
-                population, iteration - 1, iteration
+                wolves=population,
+                prev_t=iteration - 1,
+                current_t=iteration,
+                average_movement=gwolf_args.get("average_movement"),
             )
             print(
                 {

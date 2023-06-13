@@ -1,7 +1,5 @@
 import networkx as nx
 
-# from constants import DATASET_FILE, V_PRIM_DEGREE_LIMIT
-
 
 def initial_graph(dataset_addres, v_prim_degree_limit):
     graph_type = nx.Graph()

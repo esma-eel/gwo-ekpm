@@ -1,14 +1,11 @@
-import json
 import math
 import random
 import uuid
 
-from constants import AVERAGE_MOVEMENT, REGISTER_HISTORY
 from utils import (
     graph_length,
     graph_nodes,
     maximum_degree,
-    # convert_positions_data,
 )
 
 
@@ -17,10 +14,11 @@ class Wolf(object):
         self._position = kwargs.get("position")
         self._seed_set = kwargs.get("seed_set")
         self._value = kwargs.get("value")
+        self._average_movement = kwargs.get("average_movement")
 
         self._id = uuid.uuid4().hex
 
-        if REGISTER_HISTORY:
+        if self._average_movement:
             self._positions = []
             self._seed_sets = []
             self._values = []
@@ -121,7 +119,7 @@ class Wolf(object):
     @X.setter
     def X(self, value):
         self._position = value
-        if REGISTER_HISTORY:
+        if self._average_movement:
             self._positions.append(value)
 
     @property
@@ -131,7 +129,7 @@ class Wolf(object):
     @S.setter
     def S(self, value):
         self._seed_set = value
-        if REGISTER_HISTORY:
+        if self._average_movement:
             self._seed_sets.append(value)
 
     @property
@@ -141,7 +139,7 @@ class Wolf(object):
     @value.setter
     def value(self, value):
         self._value = value
-        if REGISTER_HISTORY:
+        if self._average_movement:
             self._values.append(value)
 
     @property
@@ -149,8 +147,6 @@ class Wolf(object):
         return self._id
 
     def move(self, prev_t, current_t):
-        # mov(i,t,t+1)=
-        # sqrt(sum_(j=1)^(|v|)( vec(X)_(ij)(t+1)- vec(X)_(ij)(t))^(2))
         if self._positions[current_t] and self._positions[prev_t]:
             distance_moved: float = math.dist(
                 self._positions[current_t].values(),

@@ -2,36 +2,20 @@
 """
 Esmaeel Komijani's Master Thesis Project (EKPM)
 Created: 1402-03-08
-Modified: 1402-03-08
+Modified: 1402-03-23
 """
 
 import argparse
-import numpy as np
 import datetime
-from cost_functions import (
-    proposed_method_fitness_function,
-    # gwim_fitness_function,
-)
+
+import numpy as np
+
 from algorithms import gwolf
-
-
-# import numpy as np
-
-# from constants import (
-#     MAX_T,
-#     POPULATION_SIZE,
-#     SEED_SET_SIZE,
-#     MONTE_CARLO_SIMULATION_NUMBER,
-#     PROPOGATION_PROBABILITY,
-#     AVERAGE_MOVEMENT,
-# )
-# from independent_cascade import independent_cascade_simulation
-# from wolf import Wolf
+from cost_functions import (
+    gwim_fitness_function,
+    proposed_method_fitness_function,
+)
 from network import initial_graph
-
-# if AVERAGE_MOVEMENT:
-#     from utils import calculate_average_movement
-
 
 parser = argparse.ArgumentParser(
     description="EKPM (Esmaeel Komijani's Project Master)"
@@ -205,8 +189,13 @@ def run_ekpm2(**paramters):
     return alogrithm_execution_result
 
 
-def run_gwim(**kwrgs):
-    pass
+def run_gwim(**paramters):
+    gwolf_args = {
+        **paramters,
+        "cost_function": gwim_fitness_function,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
 
 
 def get_run_options():
