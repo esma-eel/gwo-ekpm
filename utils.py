@@ -46,7 +46,7 @@ def knbrs(G, start, k):
 
 
 def calculate_average_movement(wolves, prev_t, current_t, average_movement):
-    if not average_movement:
+    if not bool(average_movement):
         return 0
 
     sum_movement = sum([wolf.move(prev_t, current_t) for wolf in wolves])

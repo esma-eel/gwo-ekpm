@@ -143,9 +143,9 @@ parser.add_argument(
     "-am",
     "--average_movement",
     metavar="A",
-    type=float,
+    type=int,
     required=False,
-    default=False,
+    default=0,
     help="Average movement activation",
 )
 

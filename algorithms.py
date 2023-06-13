@@ -15,15 +15,14 @@ def gwolf(**gwolf_args):
     seed_set_size = gwolf_args.get("seed_set_size_start")
     fitness_function = gwolf_args.get("cost_function")
     max_t = gwolf_args.get("max_t")
-    wolf_average_movement = gwolf_args.get("average_movement")
+    average_movement = gwolf_args.get("average_movement")
 
     alpha_history = []
     # iteration counter
     iteration = 0  # iteration 0 is starter iteration
     print({"iteration": iteration, "action": "generate_population"})
     population = [
-        Wolf(average_movement=wolf_average_movement)
-        for _ in range(population_size)
+        Wolf(average_movement=average_movement) for _ in range(population_size)
     ]
 
     for wolf in population:
@@ -254,19 +253,19 @@ def gwolf(**gwolf_args):
             )
             delta.random_position(graph=graph)
 
-        if gwolf_args.get("average_movement"):
+        if bool(average_movement):
             average_movement = calculate_average_movement(
                 wolves=population,
                 prev_t=iteration - 1,
                 current_t=iteration,
-                average_movement=gwolf_args.get("average_movement"),
+                average_movement=average_movement,
             )
             print(
                 {
                     "iteration": iteration,
                     "action": "display_average_movement",
                     "for": str((iteration - 1, iteration)),
-                    "value": average_movement,
+                    "value": bool(average_movement),
                 }
             )
     # end iteration
