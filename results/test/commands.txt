@@ -1,24 +1,33 @@
 TEST 5.2
 
 ekpm1
+python start.py -c 1 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 1 -d "./dataset/CA-AstroPh3.tsv"
 
 ekpm2
+python start.py -c 2 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 1 -d "./dataset/CA-AstroPh3.tsv"
 
 gwim
+python start.py -c 3 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 1 -d "./dataset/CA-AstroPh3.tsv"
 
 
 TEST 5.3.1.1
 
 ekpm1
+python start.py -c 1 -kstart 10 -kstop 80 -kstep 10 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 0 -d "./dataset/CA-AstroPh3.tsv"
 
 ekpm2
+python start.py -c 2 -kstart 10 -kstop 80 -kstep 10 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 0 -d "./dataset/CA-AstroPh3.tsv"
 
 gwim
+python start.py -c 3 -kstart 10 -kstop 80 -kstep 10 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 0 -d "./dataset/CA-AstroPh3.tsv"
 
 TEST 5.3.1.2
 
 ekpm1
+python start.py -c 1 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.01 -ppstop 0.1 -ppstep 0.01 -i 60 -am 0 -d "./dataset/CA-AstroPh3.tsv"
 
 ekpm2
+python start.py -c 2 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.01 -ppstop 0.1 -ppstep 0.01 -i 60 -am 0 -d "./dataset/CA-AstroPh3.tsv"
 
 gwim
+python start.py -c 3 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.01 -ppstop 0.1 -ppstep 0.01 -i 60 -am 0 -d "./dataset/CA-AstroPh3.tsv"
