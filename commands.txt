@@ -2,15 +2,15 @@ TEST 5.2
 
 ekpm1
 python start.py -c 1 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 1 -vdl 2 -d "./dataset/CA-AstroPh3.tsv"
-python -u start.py -c 1 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 1 -vdl 2 -d "./dataset/CA-AstroPh3.tsv" | tee results/ekpm1_5.2.txt > outputlog.txt 2>&1 &
+python -u start.py -c 1 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 1 -vdl 2 -d "./dataset/CA-AstroPh3.tsv" | tee results/ekpm1_5.2.txt > outputlog1.txt 2>&1 &
 
 ekpm2
 python start.py -c 2 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 1 -vdl 2 -d "./dataset/CA-AstroPh3.tsv"
-python -u start.py -c 2 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 1 -vdl 2 -d "./dataset/CA-AstroPh3.tsv" | tee results/ekpm2_5.2.txt > outputlog.txt 2>&1 &
+python -u start.py -c 2 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 1 -vdl 2 -d "./dataset/CA-AstroPh3.tsv" | tee results/ekpm2_5.2.txt > outputlog2.txt 2>&1 &
 
 gwim
 python start.py -c 3 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 1 -vdl 2 -d "./dataset/CA-AstroPh3.tsv"
-python -u start.py -c 3 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 1 -vdl 2 -d "./dataset/CA-AstroPh3.tsv" | tee results/gwim_5.2.txt > outputlog.txt 2>&1 &
+python -u start.py -c 3 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 1 -vdl 2 -d "./dataset/CA-AstroPh3.tsv" | tee results/gwim_5.2.txt > outputlog3.txt 2>&1 &
 
 
 
@@ -18,26 +18,26 @@ TEST 5.3.1.1
 
 ekpm1
 python start.py -c 1 -kstart 10 -kstop 80 -kstep 10 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 0 -vdl 2 -d "./dataset/CA-AstroPh3.tsv"
-python -u start.py -c 1 -kstart 10 -kstop 80 -kstep 10 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 0 -vdl 2 -d "./dataset/CA-AstroPh3.tsv" | tee results/ekpm1_5.3.1.1.txt > outputlog.txt 2>&1 &
+python -u start.py -c 1 -kstart 10 -kstop 80 -kstep 10 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 0 -vdl 2 -d "./dataset/CA-AstroPh3.tsv" | tee results/ekpm1_5.3.1.1.txt > outputlog4.txt 2>&1 &
 
 ekpm2
 python start.py -c 2 -kstart 10 -kstop 80 -kstep 10 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 0 -vdl 2 -d "./dataset/CA-AstroPh3.tsv"
-python -u start.py -c 2 -kstart 10 -kstop 80 -kstep 10 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 0 -vdl 2 -d "./dataset/CA-AstroPh3.tsv" | tee results/ekpm2_5.3.1.1.txt > outputlog.txt 2>&1 &
+python -u start.py -c 2 -kstart 10 -kstop 80 -kstep 10 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 0 -vdl 2 -d "./dataset/CA-AstroPh3.tsv" | tee results/ekpm2_5.3.1.1.txt > outputlog5.txt 2>&1 &
 
 gwim
 python start.py -c 3 -kstart 10 -kstop 80 -kstep 10 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 0 -vdl 2 -d "./dataset/CA-AstroPh3.tsv"
-python -u start.py -c 3 -kstart 10 -kstop 80 -kstep 10 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 0 -vdl 2 -d "./dataset/CA-AstroPh3.tsv" | tee results/gwim_5.3.1.1.txt > outputlog.txt 2>&1 &
+python -u start.py -c 3 -kstart 10 -kstop 80 -kstep 10 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 0 -vdl 2 -d "./dataset/CA-AstroPh3.tsv" | tee results/gwim_5.3.1.1.txt > outputlog6.txt 2>&1 &
 
 TEST 5.3.1.2
 
 ekpm1
-python start.py -c 1 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.01 -ppstop 0.1 -ppstep 0.01 -i 60 -am 0 -vdl 2 -d "./dataset/CA-AstroPh3.tsv"
-python -u start.py -c 1 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.01 -ppstop 0.1 -ppstep 0.01 -i 60 -am 0 -vdl 2 -d "./dataset/CA-AstroPh3.tsv" | tee results/ekpm1_5.3.1.2.txt > outputlog.txt 2>&1 &
+python start.py -c 1 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.01 -ppstop 0.1 -ppstep 10 -i 60 -am 0 -vdl 2 -d "./dataset/CA-AstroPh3.tsv"
+python -u start.py -c 1 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.01 -ppstop 0.1 -ppstep 10 -i 60 -am 0 -vdl 2 -d "./dataset/CA-AstroPh3.tsv" | tee results/ekpm1_5.3.1.2.txt > outputlog7.txt 2>&1 &
 
 ekpm2
-python start.py -c 2 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.01 -ppstop 0.1 -ppstep 0.01 -i 60 -am 0 -vdl 2 -d "./dataset/CA-AstroPh3.tsv"
-python -u start.py -c 2 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.01 -ppstop 0.1 -ppstep 0.01 -i 60 -am 0 -vdl 2 -d "./dataset/CA-AstroPh3.tsv" | tee results/ekpm2_5.3.1.2.txt > outputlog.txt 2>&1 &
+python start.py -c 2 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.01 -ppstop 0.1 -ppstep 10 -i 60 -am 0 -vdl 2 -d "./dataset/CA-AstroPh3.tsv"
+python -u start.py -c 2 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.01 -ppstop 0.1 -ppstep 10 -i 60 -am 0 -vdl 2 -d "./dataset/CA-AstroPh3.tsv" | tee results/ekpm2_5.3.1.2.txt > outputlog8.txt 2>&1 &
 
 gwim
-python start.py -c 3 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.01 -ppstop 0.1 -ppstep 0.01 -i 60 -am 0 -vdl 2 -d "./dataset/CA-AstroPh3.tsv"
-python -u start.py -c 3 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.01 -ppstop 0.1 -ppstep 0.01 -i 60 -am 0 -vdl 2 -d "./dataset/CA-AstroPh3.tsv" | tee results/gwim_5.3.1.2.txt > outputlog.txt 2>&1 &
+python start.py -c 3 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.01 -ppstop 0.1 -ppstep 10 -i 60 -am 0 -vdl 2 -d "./dataset/CA-AstroPh3.tsv"
+python -u start.py -c 3 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.01 -ppstop 0.1 -ppstep 10 -i 60 -am 0 -vdl 2 -d "./dataset/CA-AstroPh3.tsv" | tee results/gwim_5.3.1.2.txt > outputlog9.txt 2>&1 &

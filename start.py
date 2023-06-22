@@ -122,7 +122,7 @@ parser.add_argument(
     "-ppstep",
     "--propogation_probability_step",
     metavar="P",
-    type=float,
+    type=int,
     required=False,
     help="Propogation probability to activate nodes start",
 )
