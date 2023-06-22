@@ -1,0 +1,4 @@
+3
+40
+Namespace(cost_function=3, seed_set_size_start=40, seed_set_size_stop=None, seed_set_size_step=None, monte_carlo=50, population_size=50, max_t=100, v_prim_degree_limit=2, propogation_probability_start=0.01, propogation_probability_stop=0.1, propogation_probability_step=0.01, impact_range=60, average_movement=0, dataset='./dataset/CA-AstroPh3.tsv')
+{'cost_function': 3, 'seed_set_size_start': 40, 'seed_set_size_stop': None, 'seed_set_size_step': None, 'monte_carlo': 50, 'population_size': 50, 'max_t': 100, 'v_prim_degree_limit': 2, 'propogation_probability_start': 0.01, 'propogation_probability_stop': 0.1, 'propogation_probability_step': 0.01, 'impact_range': 60, 'average_movement': 0, 'dataset': './dataset/CA-AstroPh3.tsv'}
