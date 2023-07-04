@@ -9,16 +9,16 @@ time_between_dates = end_date - start_date
 days_between_dates = time_between_dates.days
 file_lines = []
 
-with open("dataset/out.arenas-pgp", "r") as old_dataset:
+with open("dataset/out.petster-hamster", "r") as old_dataset:
     for line in old_dataset.readlines():
         line = line.strip()
         random_number_of_days = random.randrange(days_between_dates)
-        line = "\t".join(line.split('\t'))
+        line = "\t".join(line.split("\t"))
         new_line = "\t".join([line, str(random_number_of_days), "\n"])
         file_lines.append(new_line)
 
 
-with open("dataset/out.arenas-pgp.tsv", "w+") as new_dataset:
+with open("dataset/out.petster-hamster.tsv", "w+") as new_dataset:
     new_dataset.writelines(file_lines)
 
 # print(random_number_of_days)
