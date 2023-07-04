@@ -9,7 +9,7 @@ time_between_dates = end_date - start_date
 days_between_dates = time_between_dates.days
 file_lines = []
 
-with open("dataset/CA-AstroPh2.txt", "r") as old_dataset:
+with open("dataset/out.arenas-pgp", "r") as old_dataset:
     for line in old_dataset.readlines():
         line = line.strip()
         random_number_of_days = random.randrange(days_between_dates)
@@ -18,7 +18,7 @@ with open("dataset/CA-AstroPh2.txt", "r") as old_dataset:
         file_lines.append(new_line)
 
 
-with open("dataset/CA-AstroPh3.tsv", "w+") as new_dataset:
+with open("dataset/out.arenas-pgp.tsv", "w+") as new_dataset:
     new_dataset.writelines(file_lines)
 
 # print(random_number_of_days)
