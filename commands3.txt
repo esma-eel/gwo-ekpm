@@ -1,0 +1,43 @@
+TEST 5.2
+
+ekpm1
+python start.py -c 1 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 1 -vdl 2 -d "./dataset/out.petster-hamster.tsv"
+python -u start.py -c 1 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 1 -vdl 2 -d "./dataset/out.petster-hamster.tsv" | tee results/ekpm1_5.2_ham.txt > outputlog_ekpm1_ham.txt 2>&1 &
+
+ekpm2
+python start.py -c 2 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 1 -vdl 2 -d "./dataset/out.petster-hamster.tsv"
+python -u start.py -c 2 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 1 -vdl 2 -d "./dataset/out.petster-hamster.tsv" | tee results/ekpm2_5.2_ham.txt > outputlog_ekpm2_ham.txt 2>&1 &
+
+gwim
+python start.py -c 3 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 1 -vdl 2 -d "./dataset/out.petster-hamster.tsv"
+python -u start.py -c 3 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 1 -vdl 2 -d "./dataset/out.petster-hamster.tsv" | tee results/gwim_5.2_ham.txt > outputlog_gwim_ham.txt 2>&1 &
+
+
+
+TEST 5.3.1.1
+
+ekpm1
+python start.py -c 1 -kstart 10 -kstop 80 -kstep 10 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 0 -vdl 2 -d "./dataset/out.petster-hamster.tsv"
+python -u start.py -c 1 -kstart 10 -kstop 80 -kstep 10 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 0 -vdl 2 -d "./dataset/out.petster-hamster.tsv" | tee results/ekpm1_5.3.1.1_ham.txt > outputlog_ham_ekpm14.txt 2>&1 &
+
+ekpm2
+python start.py -c 2 -kstart 10 -kstop 80 -kstep 10 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 0 -vdl 2 -d "./dataset/out.petster-hamster.tsv"
+python -u start.py -c 2 -kstart 10 -kstop 80 -kstep 10 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 0 -vdl 2 -d "./dataset/out.petster-hamster.tsv" | tee results/ekpm2_5.3.1.1_ham.txt > outputlog_ham_ekmp25.txt 2>&1 &
+
+gwim
+python start.py -c 3 -kstart 10 -kstop 80 -kstep 10 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 0 -vdl 2 -d "./dataset/out.petster-hamster.tsv"
+python -u start.py -c 3 -kstart 10 -kstop 80 -kstep 10 -m 50 -ps 50 -t 100 -ppstart 0.02 -i 60 -am 0 -vdl 2 -d "./dataset/out.petster-hamster.tsv" | tee results/gwim_5.3.1.1_ham.txt > outputlog_ham_gwim36.txt 2>&1 &
+
+TEST 5.3.1.2
+
+ekpm1
+python start.py -c 1 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.01 -ppstop 0.1 -ppstep 10 -i 60 -am 0 -vdl 2 -d "./dataset/out.petster-hamster.tsv"
+python -u start.py -c 1 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.01 -ppstop 0.1 -ppstep 10 -i 60 -am 0 -vdl 2 -d "./dataset/out.petster-hamster.tsv" | tee results/ekpm1_5.3.1.2_ham.txt > outputlog_ham_ekmp17.txt 2>&1 &
+
+ekpm2
+python start.py -c 2 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.01 -ppstop 0.1 -ppstep 10 -i 60 -am 0 -vdl 2 -d "./dataset/out.petster-hamster.tsv"
+python -u start.py -c 2 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.01 -ppstop 0.1 -ppstep 10 -i 60 -am 0 -vdl 2 -d "./dataset/out.petster-hamster.tsv" | tee results/ekpm2_5.3.1.2_ham.txt > outputlog_ham_ekmp28.txt 2>&1 &
+
+gwim
+python start.py -c 3 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.01 -ppstop 0.1 -ppstep 10 -i 60 -am 0 -vdl 2 -d "./dataset/out.petster-hamster.tsv"
+python -u start.py -c 3 -kstart 40 -m 50 -ps 50 -t 100 -ppstart 0.01 -ppstop 0.1 -ppstep 10 -i 60 -am 0 -vdl 2 -d "./dataset/out.petster-hamster.tsv" | tee results/gwim_5.3.1.2_ham.txt > outputlog_ham_gwim9.txt 2>&1 &

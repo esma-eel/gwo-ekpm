@@ -31,7 +31,10 @@ def fitness_function(seed_set, graph, propogation_probability):  # wolf,
 
     s_prim_graph = graph.subgraph(s_prim)
     s_prim_sum_degrees = sum([degree for node, degree in s_prim_graph.degree()])
-    s_prim_mean_degrees = s_prim_sum_degrees // len(s_prim)
+    try:
+        s_prim_mean_degrees = s_prim_sum_degrees // len(s_prim)
+    except ZeroDivisionError:
+        s_prim_mean_degrees = s_prim_sum_degrees // 2
     # we use k shell in order to remove the nodes below mean degree of s_prim
     filtered_s_prim_graph = nx.k_core(s_prim_graph, k=s_prim_mean_degrees)
 
@@ -111,7 +114,10 @@ def fitness_function_reverse(seed_set, graph, propogation_probability):  # wolf,
 
     s_prim_graph = graph.subgraph(s_prim)
     s_prim_sum_degrees = sum([degree for node, degree in s_prim_graph.degree()])
-    s_prim_mean_degrees = s_prim_sum_degrees // len(s_prim)
+    try:
+        s_prim_mean_degrees = s_prim_sum_degrees // len(s_prim)
+    except ZeroDivisionError:
+        s_prim_mean_degrees = s_prim_sum_degrees // 2
     # we use k shell in order to remove the nodes below mean degree of s_prim
     filtered_s_prim_graph = nx.k_core(s_prim_graph, k=s_prim_mean_degrees)
 
@@ -275,7 +281,11 @@ def proposed_method_fitness_function(**parameters):
 
     s_prim_graph = graph.subgraph(s_prim)
     s_prim_sum_degrees = sum([degree for node, degree in s_prim_graph.degree()])
-    s_prim_mean_degrees = s_prim_sum_degrees // len(s_prim)
+    try:
+        s_prim_mean_degrees = s_prim_sum_degrees // len(s_prim)
+    except ZeroDivisionError:
+        s_prim_mean_degrees = s_prim_sum_degrees // 2
+
     # we use k shell in order to remove the nodes below mean degree of s_prim
     filtered_s_prim_graph = nx.k_core(s_prim_graph, k=s_prim_mean_degrees)
 
