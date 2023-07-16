@@ -55,7 +55,7 @@ def test_5_3_1_graph_data(data):
 def test_5_3_1_astro_data():
     data = test_5_3_1_data_extraction(
         "/home/esmaeel/work/thesis/thesis_main/src"
-        "/results/ekpm1/5.3.1.1/astro/ekpm1_5.3.1_astro.json"
+        "/results/ekpm2/5.3.1.1/astro/ekpm2_5.3.1_astro.json"
     )
 
     graph_data = test_5_3_1_graph_data(data)
@@ -65,7 +65,7 @@ def test_5_3_1_astro_data():
 def test_5_3_1_ham_data():
     data = test_5_3_1_data_extraction(
         "/home/esmaeel/work/thesis/thesis_main/src"
-        "/results/ekpm1/5.3.1.1/ham/ekpm1_5.3.1_ham.json"
+        "/results/ekpm2/5.3.1.1/ham/ekpm2_5.3.1_ham.json"
     )
 
     graph_data = test_5_3_1_graph_data(data)
@@ -75,7 +75,7 @@ def test_5_3_1_ham_data():
 def test_5_3_1_pgp_data():
     data = test_5_3_1_data_extraction(
         "/home/esmaeel/work/thesis/thesis_main/src"
-        "/results/ekpm1/5.3.1.1/pgp/ekpm1_5.3.1_pgp.json"
+        "/results/ekpm2/5.3.1.1/pgp/ekpm2_5.3.1_pgp.json"
     )
 
     graph_data = test_5_3_1_graph_data(data)
@@ -106,6 +106,6 @@ plt.plot(
 
 plt.xlabel("Seed Set Sizes (K)")
 plt.ylabel("Influentiality")
-plt.title("Evaluation Influentiality [Seed Set Size] (EKPM 1)")
+plt.title("Evaluation Influentiality [Seed Set Size] (EKPM 2)")
 plt.legend()
 plt.show()
