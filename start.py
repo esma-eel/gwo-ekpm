@@ -26,16 +26,167 @@ parser = argparse.ArgumentParser(
     description="EKPM (Esmaeel Komijani's Project Master)"
 )
 
+
+def run_ekpm_default_s1(**paramters):
+    # ekpm longtime connection
+    gwolf_args = {
+        **paramters,
+        "reverse": False,
+        "cost_function": ekpm_full,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm_default_s2(**paramters):
+    # ekpm shorttime connection
+    gwolf_args = {
+        **paramters,
+        "reverse": True,
+        "cost_function": ekpm_full,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm_ir_gwim_s1(**paramters):
+    gwolf_args = {
+        **paramters,
+        "reverse": False,
+        "cost_function": ekpm_impact_range_gwim,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm_ir_gwim_s2(**paramters):
+    gwolf_args = {
+        **paramters,
+        "reverse": True,
+        "cost_function": ekpm_impact_range_gwim,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm_ir_eigv_s1(**paramters):
+    gwolf_args = {
+        **paramters,
+        "reverse": False,
+        "cost_function": ekpm_impact_range_eigv,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm_ir_eigv_s2(**paramters):
+    gwolf_args = {
+        **paramters,
+        "reverse": True,
+        "cost_function": ekpm_impact_range_eigv,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm_ir_eigv_kshell_s1(**paramters):
+    gwolf_args = {
+        **paramters,
+        "reverse": False,
+        "cost_function": ekpm_impact_range_eigv_kshell_filter,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm_ir_eigv_kshell_s2(**paramters):
+    gwolf_args = {
+        **paramters,
+        "reverse": True,
+        "cost_function": ekpm_impact_range_eigv_kshell_filter,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm_ir_eigv_prb_s1(**paramters):
+    gwolf_args = {
+        **paramters,
+        "reverse": False,
+        "cost_function": ekpm_impact_range_eigv_prb_filter,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm_ir_eigv_prb_s2(**paramters):
+    gwolf_args = {
+        **paramters,
+        "reverse": True,
+        "cost_function": ekpm_impact_range_eigv_prb_filter,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm_ir_eigv_kshell_prb_s1(**paramters):
+    gwolf_args = {
+        **paramters,
+        "reverse": False,
+        "cost_function": ekpm_impact_range_eigv_kshell_prb_filter,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm_ir_eigv_kshell_prb_s2(**paramters):
+    gwolf_args = {
+        **paramters,
+        "reverse": True,
+        "cost_function": ekpm_impact_range_eigv_kshell_prb_filter,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_gwim_default(**paramters):
+    gwolf_args = {
+        **paramters,
+        "cost_function": gwim_default,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def get_run_options():
+    return {
+        "ekpm_default_s1": run_ekpm_default_s1,
+        "ekpm_default_s2": run_ekpm_default_s2,
+        "ekpm_ir_gwim_s1": run_ekpm_ir_gwim_s1,
+        "ekpm_ir_gwim_s2": run_ekpm_ir_gwim_s2,
+        "ekpm_ir_eigv_s1": run_ekpm_ir_eigv_s1,
+        "ekpm_ir_eigv_s2": run_ekpm_ir_eigv_s2,
+        "ekpm_ir_eigv_kshell_s1": run_ekpm_ir_eigv_kshell_s1,
+        "ekpm_ir_eigv_kshell_s2": run_ekpm_ir_eigv_kshell_s2,
+        "ekpm_ir_eigv_prb_s1": run_ekpm_ir_eigv_prb_s1,
+        "ekpm_ir_eigv_prb_s2": run_ekpm_ir_eigv_prb_s2,
+        "ekpm_ir_eigv_kshell_prb_s1": run_ekpm_ir_eigv_kshell_prb_s1,
+        "ekpm_ir_eigv_kshell_prb_s2": run_ekpm_ir_eigv_kshell_prb_s2,
+        "gwim_default": run_gwim_default,
+    }
+
+
 # cost function number
 parser.add_argument(
     "-c",
     "--cost_function",
     metavar="Cname",
-    type=int,
+    type=str,
     required=False,
-    default=1,
-    help="Costfuncions List are [ 1)EKMP1 2)EKPM2 3)GWIM ]",
+    default="ekpm_default_s1",
+    help=str(get_run_options().keys()),
 )
+
 
 # seed set size
 parser.add_argument(
@@ -165,127 +316,12 @@ parser.add_argument(
     help="Dataset file address",
 )
 
-
 args = parser.parse_args()
 
 print(args.cost_function)
 print(args.seed_set_size_start)
 print(args)
 print(vars(args))
-
-
-def run_ekpm1(**paramters):
-    gwolf_args = {
-        **paramters,
-        "reverse": False,
-        "cost_function": ekpm_full,
-    }
-    alogrithm_execution_result = gwolf(**gwolf_args)
-    return alogrithm_execution_result
-
-
-def run_ekpm2(**paramters):
-    gwolf_args = {
-        **paramters,
-        "reverse": True,
-        "cost_function": ekpm_full,
-    }
-    alogrithm_execution_result = gwolf(**gwolf_args)
-    return alogrithm_execution_result
-
-
-def run_ekpm3(**paramters):
-    gwolf_args = {
-        **paramters,
-        "reverse": False,
-        "cost_function": ekpm_impact_range_gwim,
-    }
-    alogrithm_execution_result = gwolf(**gwolf_args)
-    return alogrithm_execution_result
-
-
-def run_ekpm4(**paramters):
-    gwolf_args = {
-        **paramters,
-        "reverse": True,
-        "cost_function": ekpm_impact_range_gwim,
-    }
-    alogrithm_execution_result = gwolf(**gwolf_args)
-    return alogrithm_execution_result
-
-
-def run_ekpm5(**paramters):
-    gwolf_args = {
-        **paramters,
-        "reverse": True,
-        "cost_function": ekpm_impact_range_eigv,
-    }
-    alogrithm_execution_result = gwolf(**gwolf_args)
-    return alogrithm_execution_result
-
-
-def run_ekpm6(**paramters):
-    gwolf_args = {
-        **paramters,
-        "reverse": False,
-        "cost_function": ekpm_impact_range_eigv,
-    }
-    alogrithm_execution_result = gwolf(**gwolf_args)
-    return alogrithm_execution_result
-
-
-def run_gwim(**paramters):
-    gwolf_args = {
-        **paramters,
-        "cost_function": gwim_default,
-    }
-    alogrithm_execution_result = gwolf(**gwolf_args)
-    return alogrithm_execution_result
-
-
-def run_ekpm8(**paramters):
-    gwolf_args = {
-        **paramters,
-        "reverse": False,
-        "cost_function": ekpm_impact_range_eigv_kshell_filter,
-    }
-    alogrithm_execution_result = gwolf(**gwolf_args)
-    return alogrithm_execution_result
-
-
-def run_ekpm9(**paramters):
-    gwolf_args = {
-        **paramters,
-        "reverse": False,
-        "cost_function": ekpm_impact_range_eigv_prb_filter,
-    }
-    alogrithm_execution_result = gwolf(**gwolf_args)
-    return alogrithm_execution_result
-
-
-def run_ekpm10(**paramters):
-    gwolf_args = {
-        **paramters,
-        "reverse": False,
-        "cost_function": ekpm_impact_range_eigv_kshell_prb_filter,
-    }
-    alogrithm_execution_result = gwolf(**gwolf_args)
-    return alogrithm_execution_result
-
-
-def get_run_options():
-    return {
-        1: run_ekpm1,
-        2: run_ekpm2,
-        3: run_gwim,
-        4: run_ekpm3,
-        5: run_ekpm4,
-        6: run_ekpm6,
-        7: run_ekpm5,
-        8: run_ekpm8,
-        9: run_ekpm9,
-        10: run_ekpm10,
-    }
 
 
 def range_dict(**range_args):
