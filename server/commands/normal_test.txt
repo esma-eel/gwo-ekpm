@@ -1,0 +1,11 @@
+astro
+
+python start.py -c 3 -kstart 10 -m 50 -ps 20 -t 50 -ppstart 0.02 -i 60 -am 0 -vdl 2 -d "./dataset/CA-AstroPh3.tsv" | tee results/gwim_normal20231.txt > test20231.txt 2>&1
+
+ham
+
+python start.py -c 3 -kstart 10 -m 50 -ps 20 -t 50 -ppstart 0.03 -i 60 -am 0 -vdl 2 -d "./dataset/out.petster-hamster.tsv" | tee results/gwim_normal20232.txt > test20232.txt 2>&1
+
+pgb
+python start.py -c 3 -kstart 10 -m 50 -ps 20 -t 50 -ppstart 0.06 -i 60 -am 0 -vdl 2 -d "./dataset/out.arenas-pgp.tsv" | tee results/gwim_normal20233.txt > test20233.txt 2>&1
+

@@ -1,0 +1,417 @@
+3
+10
+Namespace(cost_function=3, seed_set_size_start=10, seed_set_size_stop=None, seed_set_size_step=None, monte_carlo=50, population_size=20, max_t=50, v_prim_degree_limit=2, propogation_probability_start=0.06, propogation_probability_stop=None, propogation_probability_step=None, impact_range=60, average_movement=0, dataset='./dataset/out.arenas-pgp.tsv')
+{'cost_function': 3, 'seed_set_size_start': 10, 'seed_set_size_stop': None, 'seed_set_size_step': None, 'monte_carlo': 50, 'population_size': 20, 'max_t': 50, 'v_prim_degree_limit': 2, 'propogation_probability_start': 0.06, 'propogation_probability_stop': None, 'propogation_probability_step': None, 'impact_range': 60, 'average_movement': 0, 'dataset': './dataset/out.arenas-pgp.tsv'}
+{'iteration': 0, 'action': 'generate_population'}
+{'iteration': 0, 'action': 'generate_position', 'wolf': '01a7f7f65aea4f68bbd990e19c3f38bc'}
+{'iteration': 0, 'action': 'generate_seed_set', 'wolf': '01a7f7f65aea4f68bbd990e19c3f38bc'}
+{'iteration': 0, 'action': 'display_seed_set', 'wolf': '01a7f7f65aea4f68bbd990e19c3f38bc', 'seed_set': -5748487385937596491}
+{'iteration': 0, 'action': 'calculate_fitness', 'wolf': '01a7f7f65aea4f68bbd990e19c3f38bc'}
+{'action': 'calculate_fitness', 'time': '0:00:01.508028'}
+{'iteration': 0, 'wolf': '01a7f7f65aea4f68bbd990e19c3f38bc', 'value': 5.668113932202499}
+{'iteration': 0, 'action': 'generate_position', 'wolf': 'a4d609d1f18b45beab803e24f7c75d85'}
+{'iteration': 0, 'action': 'generate_seed_set', 'wolf': 'a4d609d1f18b45beab803e24f7c75d85'}
+{'iteration': 0, 'action': 'display_seed_set', 'wolf': 'a4d609d1f18b45beab803e24f7c75d85', 'seed_set': -3283756958849035586}
+{'iteration': 0, 'action': 'calculate_fitness', 'wolf': 'a4d609d1f18b45beab803e24f7c75d85'}
+{'action': 'calculate_fitness', 'time': '0:00:01.513919'}
+{'iteration': 0, 'wolf': 'a4d609d1f18b45beab803e24f7c75d85', 'value': 5.662319953246477}
+{'iteration': 0, 'action': 'generate_position', 'wolf': 'af2d5169acde4667b6d19f7397774baa'}
+{'iteration': 0, 'action': 'generate_seed_set', 'wolf': 'af2d5169acde4667b6d19f7397774baa'}
+{'iteration': 0, 'action': 'display_seed_set', 'wolf': 'af2d5169acde4667b6d19f7397774baa', 'seed_set': 8209363468213553216}
+{'iteration': 0, 'action': 'calculate_fitness', 'wolf': 'af2d5169acde4667b6d19f7397774baa'}
+{'action': 'calculate_fitness', 'time': '0:00:01.330544'}
+{'iteration': 0, 'wolf': 'af2d5169acde4667b6d19f7397774baa', 'value': 5.634544722680423}
+{'iteration': 0, 'action': 'generate_position', 'wolf': 'd81cf81dcf43451d9fa525b1ffbba4fc'}
+{'iteration': 0, 'action': 'generate_seed_set', 'wolf': 'd81cf81dcf43451d9fa525b1ffbba4fc'}
+{'iteration': 0, 'action': 'display_seed_set', 'wolf': 'd81cf81dcf43451d9fa525b1ffbba4fc', 'seed_set': 587364532313316417}
+{'iteration': 0, 'action': 'calculate_fitness', 'wolf': 'd81cf81dcf43451d9fa525b1ffbba4fc'}
+{'action': 'calculate_fitness', 'time': '0:00:01.283030'}
+{'iteration': 0, 'wolf': 'd81cf81dcf43451d9fa525b1ffbba4fc', 'value': 5.693998213458388}
+{'iteration': 0, 'action': 'generate_position', 'wolf': '800e2bd98a41439cb009e6fb9d40d4b6'}
+{'iteration': 0, 'action': 'generate_seed_set', 'wolf': '800e2bd98a41439cb009e6fb9d40d4b6'}
+{'iteration': 0, 'action': 'display_seed_set', 'wolf': '800e2bd98a41439cb009e6fb9d40d4b6', 'seed_set': -7635256207052788760}
+{'iteration': 0, 'action': 'calculate_fitness', 'wolf': '800e2bd98a41439cb009e6fb9d40d4b6'}
+{'action': 'calculate_fitness', 'time': '0:00:01.456183'}
+{'iteration': 0, 'wolf': '800e2bd98a41439cb009e6fb9d40d4b6', 'value': 5.620541147573361}
+{'iteration': 0, 'action': 'generate_position', 'wolf': 'c002af12f21c4023a1103f830dc67151'}
+{'iteration': 0, 'action': 'generate_seed_set', 'wolf': 'c002af12f21c4023a1103f830dc67151'}
+{'iteration': 0, 'action': 'display_seed_set', 'wolf': 'c002af12f21c4023a1103f830dc67151', 'seed_set': 1528164917902344177}
+{'iteration': 0, 'action': 'calculate_fitness', 'wolf': 'c002af12f21c4023a1103f830dc67151'}
+{'action': 'calculate_fitness', 'time': '0:00:01.262302'}
+{'iteration': 0, 'wolf': 'c002af12f21c4023a1103f830dc67151', 'value': 5.429664099780156}
+{'iteration': 0, 'action': 'generate_position', 'wolf': '84125c3361184b9b9ee793788c4ebb56'}
+{'iteration': 0, 'action': 'generate_seed_set', 'wolf': '84125c3361184b9b9ee793788c4ebb56'}
+{'iteration': 0, 'action': 'display_seed_set', 'wolf': '84125c3361184b9b9ee793788c4ebb56', 'seed_set': -7495426939192045127}
+{'iteration': 0, 'action': 'calculate_fitness', 'wolf': '84125c3361184b9b9ee793788c4ebb56'}
+{'action': 'calculate_fitness', 'time': '0:00:01.328687'}
+{'iteration': 0, 'wolf': '84125c3361184b9b9ee793788c4ebb56', 'value': 5.637289048743543}
+{'iteration': 0, 'action': 'generate_position', 'wolf': 'b25d8b1fef954a6c9f3a78797007195a'}
+{'iteration': 0, 'action': 'generate_seed_set', 'wolf': 'b25d8b1fef954a6c9f3a78797007195a'}
+{'iteration': 0, 'action': 'display_seed_set', 'wolf': 'b25d8b1fef954a6c9f3a78797007195a', 'seed_set': 4207156207397795405}
+{'iteration': 0, 'action': 'calculate_fitness', 'wolf': 'b25d8b1fef954a6c9f3a78797007195a'}
+{'action': 'calculate_fitness', 'time': '0:00:01.427410'}
+{'iteration': 0, 'wolf': 'b25d8b1fef954a6c9f3a78797007195a', 'value': 5.677361951159756}
+{'iteration': 0, 'action': 'generate_position', 'wolf': '6b5ffe56d81040f89d707f363d987327'}
+{'iteration': 0, 'action': 'generate_seed_set', 'wolf': '6b5ffe56d81040f89d707f363d987327'}
+{'iteration': 0, 'action': 'display_seed_set', 'wolf': '6b5ffe56d81040f89d707f363d987327', 'seed_set': -3766702259074879693}
+{'iteration': 0, 'action': 'calculate_fitness', 'wolf': '6b5ffe56d81040f89d707f363d987327'}
+{'action': 'calculate_fitness', 'time': '0:00:01.165466'}
+{'iteration': 0, 'wolf': '6b5ffe56d81040f89d707f363d987327', 'value': 5.3205447181533865}
+{'iteration': 0, 'action': 'generate_position', 'wolf': '3305b9f16c364f3dae4eaecd66ca9d73'}
+{'iteration': 0, 'action': 'generate_seed_set', 'wolf': '3305b9f16c364f3dae4eaecd66ca9d73'}
+{'iteration': 0, 'action': 'display_seed_set', 'wolf': '3305b9f16c364f3dae4eaecd66ca9d73', 'seed_set': 3997915631079032834}
+{'iteration': 0, 'action': 'calculate_fitness', 'wolf': '3305b9f16c364f3dae4eaecd66ca9d73'}
+{'action': 'calculate_fitness', 'time': '0:00:01.515229'}
+{'iteration': 0, 'wolf': '3305b9f16c364f3dae4eaecd66ca9d73', 'value': 5.4802650193132205}
+{'iteration': 0, 'action': 'generate_position', 'wolf': 'a5d9b1f2648b4e7d82cb240b41477899'}
+{'iteration': 0, 'action': 'generate_seed_set', 'wolf': 'a5d9b1f2648b4e7d82cb240b41477899'}
+{'iteration': 0, 'action': 'display_seed_set', 'wolf': 'a5d9b1f2648b4e7d82cb240b41477899', 'seed_set': 4471943333950249077}
+{'iteration': 0, 'action': 'calculate_fitness', 'wolf': 'a5d9b1f2648b4e7d82cb240b41477899'}
+{'action': 'calculate_fitness', 'time': '0:00:01.513321'}
+{'iteration': 0, 'wolf': 'a5d9b1f2648b4e7d82cb240b41477899', 'value': 5.6212667387655655}
+{'iteration': 0, 'action': 'generate_position', 'wolf': '80cf50d35a174437bfc031b1b2005f2d'}
+{'iteration': 0, 'action': 'generate_seed_set', 'wolf': '80cf50d35a174437bfc031b1b2005f2d'}
+{'iteration': 0, 'action': 'display_seed_set', 'wolf': '80cf50d35a174437bfc031b1b2005f2d', 'seed_set': 3961955681717196825}
+{'iteration': 0, 'action': 'calculate_fitness', 'wolf': '80cf50d35a174437bfc031b1b2005f2d'}
+{'action': 'calculate_fitness', 'time': '0:00:01.502730'}
+{'iteration': 0, 'wolf': '80cf50d35a174437bfc031b1b2005f2d', 'value': 5.707729608777958}
+{'iteration': 0, 'action': 'generate_position', 'wolf': 'ad00c63171c947bdba168f9be4678cae'}
+{'iteration': 0, 'action': 'generate_seed_set', 'wolf': 'ad00c63171c947bdba168f9be4678cae'}
+{'iteration': 0, 'action': 'display_seed_set', 'wolf': 'ad00c63171c947bdba168f9be4678cae', 'seed_set': -2802150061130218151}
+{'iteration': 0, 'action': 'calculate_fitness', 'wolf': 'ad00c63171c947bdba168f9be4678cae'}
+{'action': 'calculate_fitness', 'time': '0:00:01.252935'}
+{'iteration': 0, 'wolf': 'ad00c63171c947bdba168f9be4678cae', 'value': 5.722134466893999}
+{'iteration': 0, 'action': 'generate_position', 'wolf': 'a1c12af4ccf448419579579adffcdf3a'}
+{'iteration': 0, 'action': 'generate_seed_set', 'wolf': 'a1c12af4ccf448419579579adffcdf3a'}
+{'iteration': 0, 'action': 'display_seed_set', 'wolf': 'a1c12af4ccf448419579579adffcdf3a', 'seed_set': -3696057643925662393}
+{'iteration': 0, 'action': 'calculate_fitness', 'wolf': 'a1c12af4ccf448419579579adffcdf3a'}
+{'action': 'calculate_fitness', 'time': '0:00:01.314361'}
+{'iteration': 0, 'wolf': 'a1c12af4ccf448419579579adffcdf3a', 'value': 5.6478906784133125}
+{'iteration': 0, 'action': 'generate_position', 'wolf': '0ac80b1fc9f447ceb5467788adbc6e91'}
+{'iteration': 0, 'action': 'generate_seed_set', 'wolf': '0ac80b1fc9f447ceb5467788adbc6e91'}
+{'iteration': 0, 'action': 'display_seed_set', 'wolf': '0ac80b1fc9f447ceb5467788adbc6e91', 'seed_set': -7670878180047925295}
+{'iteration': 0, 'action': 'calculate_fitness', 'wolf': '0ac80b1fc9f447ceb5467788adbc6e91'}
+{'action': 'calculate_fitness', 'time': '0:00:01.293489'}
+{'iteration': 0, 'wolf': '0ac80b1fc9f447ceb5467788adbc6e91', 'value': 5.604016766035145}
+{'iteration': 0, 'action': 'generate_position', 'wolf': 'b268978341164196bb75539715ef3978'}
+{'iteration': 0, 'action': 'generate_seed_set', 'wolf': 'b268978341164196bb75539715ef3978'}
+{'iteration': 0, 'action': 'display_seed_set', 'wolf': 'b268978341164196bb75539715ef3978', 'seed_set': 6761459800938777841}
+{'iteration': 0, 'action': 'calculate_fitness', 'wolf': 'b268978341164196bb75539715ef3978'}
+{'action': 'calculate_fitness', 'time': '0:00:01.128678'}
+{'iteration': 0, 'wolf': 'b268978341164196bb75539715ef3978', 'value': 5.544276742112193}
+{'iteration': 0, 'action': 'generate_position', 'wolf': 'af5b71cec3da465a8d2273640576031c'}
+{'iteration': 0, 'action': 'generate_seed_set', 'wolf': 'af5b71cec3da465a8d2273640576031c'}
+{'iteration': 0, 'action': 'display_seed_set', 'wolf': 'af5b71cec3da465a8d2273640576031c', 'seed_set': -9082000007601277234}
+{'iteration': 0, 'action': 'calculate_fitness', 'wolf': 'af5b71cec3da465a8d2273640576031c'}
+{'action': 'calculate_fitness', 'time': '0:00:01.276397'}
+{'iteration': 0, 'wolf': 'af5b71cec3da465a8d2273640576031c', 'value': 5.57055500895958}
+{'iteration': 0, 'action': 'generate_position', 'wolf': 'c3d17f727de843748e9ade5a02304a8f'}
+{'iteration': 0, 'action': 'generate_seed_set', 'wolf': 'c3d17f727de843748e9ade5a02304a8f'}
+{'iteration': 0, 'action': 'display_seed_set', 'wolf': 'c3d17f727de843748e9ade5a02304a8f', 'seed_set': 744728073169716987}
+{'iteration': 0, 'action': 'calculate_fitness', 'wolf': 'c3d17f727de843748e9ade5a02304a8f'}
+{'action': 'calculate_fitness', 'time': '0:00:01.472190'}
+{'iteration': 0, 'wolf': 'c3d17f727de843748e9ade5a02304a8f', 'value': 5.5950170607723795}
+{'iteration': 0, 'action': 'generate_position', 'wolf': 'ad58ca398d124ffdbb90d6778a6a8633'}
+{'iteration': 0, 'action': 'generate_seed_set', 'wolf': 'ad58ca398d124ffdbb90d6778a6a8633'}
+{'iteration': 0, 'action': 'display_seed_set', 'wolf': 'ad58ca398d124ffdbb90d6778a6a8633', 'seed_set': -8326334735419464179}
+{'iteration': 0, 'action': 'calculate_fitness', 'wolf': 'ad58ca398d124ffdbb90d6778a6a8633'}
+{'action': 'calculate_fitness', 'time': '0:00:01.261952'}
+{'iteration': 0, 'wolf': 'ad58ca398d124ffdbb90d6778a6a8633', 'value': 5.604810808003138}
+{'iteration': 0, 'action': 'generate_position', 'wolf': '1a22e48d085f439ab62e4362a7afb031'}
+{'iteration': 0, 'action': 'generate_seed_set', 'wolf': '1a22e48d085f439ab62e4362a7afb031'}
+{'iteration': 0, 'action': 'display_seed_set', 'wolf': '1a22e48d085f439ab62e4362a7afb031', 'seed_set': 5441293001489351063}
+{'iteration': 0, 'action': 'calculate_fitness', 'wolf': '1a22e48d085f439ab62e4362a7afb031'}
+{'action': 'calculate_fitness', 'time': '0:00:01.311658'}
+{'iteration': 0, 'wolf': '1a22e48d085f439ab62e4362a7afb031', 'value': 5.604747152977269}
+{'iteration': 0, 'action': 'extract_top_wolves'}
+{'iteration': 0, 'action': 'display_top_wolves', 'alpha': {'wolf': 'ad00c63171c947bdba168f9be4678cae', 'value': 5.722134466893999, 'seed_set': -2802150061130218151, 'position': 8817985751054078954}, 'beta': {'wolf': '80cf50d35a174437bfc031b1b2005f2d', 'value': 5.707729608777958, 'seed_set': 3961955681717196825, 'position': -9082656402555716681}, 'delta': {'wolf': 'd81cf81dcf43451d9fa525b1ffbba4fc', 'value': 5.693998213458388, 'seed_set': 587364532313316417, 'position': 4237697471127455984}}
+---------- iteration 1 -----------
+{'iteration': 1, 'action': 'update_position', 'wolf': 'ad00c63171c947bdba168f9be4678cae'}
+{'iteration': 1, 'action': 'update_seed_set', 'wolf': 'ad00c63171c947bdba168f9be4678cae'}
+{'iteration': 1, 'action': 'display_seed_set', 'wolf': 'ad00c63171c947bdba168f9be4678cae', 'seed_set': 69547679954452588}
+{'iteration': 1, 'action': 'update_position', 'wolf': '80cf50d35a174437bfc031b1b2005f2d'}
+{'iteration': 1, 'action': 'update_seed_set', 'wolf': '80cf50d35a174437bfc031b1b2005f2d'}
+{'iteration': 1, 'action': 'display_seed_set', 'wolf': '80cf50d35a174437bfc031b1b2005f2d', 'seed_set': -822016971932119039}
+{'iteration': 1, 'action': 'update_position', 'wolf': 'd81cf81dcf43451d9fa525b1ffbba4fc'}
+{'iteration': 1, 'action': 'update_seed_set', 'wolf': 'd81cf81dcf43451d9fa525b1ffbba4fc'}
+{'iteration': 1, 'action': 'display_seed_set', 'wolf': 'd81cf81dcf43451d9fa525b1ffbba4fc', 'seed_set': -8424442168634222}
+{'iteration': 1, 'action': 'update_position', 'wolf': 'b25d8b1fef954a6c9f3a78797007195a'}
+{'iteration': 1, 'action': 'update_seed_set', 'wolf': 'b25d8b1fef954a6c9f3a78797007195a'}
+{'iteration': 1, 'action': 'display_seed_set', 'wolf': 'b25d8b1fef954a6c9f3a78797007195a', 'seed_set': 5336843427231337786}
+{'iteration': 1, 'action': 'update_position', 'wolf': '01a7f7f65aea4f68bbd990e19c3f38bc'}
+{'iteration': 1, 'action': 'update_seed_set', 'wolf': '01a7f7f65aea4f68bbd990e19c3f38bc'}
+{'iteration': 1, 'action': 'display_seed_set', 'wolf': '01a7f7f65aea4f68bbd990e19c3f38bc', 'seed_set': 1115008847657671888}
+{'iteration': 1, 'action': 'update_position', 'wolf': 'a4d609d1f18b45beab803e24f7c75d85'}
+{'iteration': 1, 'action': 'update_seed_set', 'wolf': 'a4d609d1f18b45beab803e24f7c75d85'}
+{'iteration': 1, 'action': 'display_seed_set', 'wolf': 'a4d609d1f18b45beab803e24f7c75d85', 'seed_set': 7836103103976011030}
+{'iteration': 1, 'action': 'update_position', 'wolf': 'a1c12af4ccf448419579579adffcdf3a'}
+{'iteration': 1, 'action': 'update_seed_set', 'wolf': 'a1c12af4ccf448419579579adffcdf3a'}
+{'iteration': 1, 'action': 'display_seed_set', 'wolf': 'a1c12af4ccf448419579579adffcdf3a', 'seed_set': -8030612763732480979}
+{'iteration': 1, 'action': 'update_position', 'wolf': '84125c3361184b9b9ee793788c4ebb56'}
+{'iteration': 1, 'action': 'update_seed_set', 'wolf': '84125c3361184b9b9ee793788c4ebb56'}
+{'iteration': 1, 'action': 'display_seed_set', 'wolf': '84125c3361184b9b9ee793788c4ebb56', 'seed_set': -8755974471092799551}
+{'iteration': 1, 'action': 'update_position', 'wolf': 'af2d5169acde4667b6d19f7397774baa'}
+{'iteration': 1, 'action': 'update_seed_set', 'wolf': 'af2d5169acde4667b6d19f7397774baa'}
+{'iteration': 1, 'action': 'display_seed_set', 'wolf': 'af2d5169acde4667b6d19f7397774baa', 'seed_set': 3016771916154773217}
+{'iteration': 1, 'action': 'update_position', 'wolf': 'a5d9b1f2648b4e7d82cb240b41477899'}
+{'iteration': 1, 'action': 'update_seed_set', 'wolf': 'a5d9b1f2648b4e7d82cb240b41477899'}
+{'iteration': 1, 'action': 'display_seed_set', 'wolf': 'a5d9b1f2648b4e7d82cb240b41477899', 'seed_set': 222501637423546041}
+{'iteration': 1, 'action': 'update_position', 'wolf': '800e2bd98a41439cb009e6fb9d40d4b6'}
+{'iteration': 1, 'action': 'update_seed_set', 'wolf': '800e2bd98a41439cb009e6fb9d40d4b6'}
+{'iteration': 1, 'action': 'display_seed_set', 'wolf': '800e2bd98a41439cb009e6fb9d40d4b6', 'seed_set': 6117775674163552829}
+{'iteration': 1, 'action': 'update_position', 'wolf': 'ad58ca398d124ffdbb90d6778a6a8633'}
+{'iteration': 1, 'action': 'update_seed_set', 'wolf': 'ad58ca398d124ffdbb90d6778a6a8633'}
+{'iteration': 1, 'action': 'display_seed_set', 'wolf': 'ad58ca398d124ffdbb90d6778a6a8633', 'seed_set': 8689107677667423669}
+{'iteration': 1, 'action': 'update_position', 'wolf': '1a22e48d085f439ab62e4362a7afb031'}
+{'iteration': 1, 'action': 'update_seed_set', 'wolf': '1a22e48d085f439ab62e4362a7afb031'}
+{'iteration': 1, 'action': 'display_seed_set', 'wolf': '1a22e48d085f439ab62e4362a7afb031', 'seed_set': 1957333997419906115}
+{'iteration': 1, 'action': 'update_position', 'wolf': '0ac80b1fc9f447ceb5467788adbc6e91'}
+{'iteration': 1, 'action': 'update_seed_set', 'wolf': '0ac80b1fc9f447ceb5467788adbc6e91'}
+{'iteration': 1, 'action': 'display_seed_set', 'wolf': '0ac80b1fc9f447ceb5467788adbc6e91', 'seed_set': 3213203804365702077}
+{'iteration': 1, 'action': 'update_position', 'wolf': 'c3d17f727de843748e9ade5a02304a8f'}
+{'iteration': 1, 'action': 'update_seed_set', 'wolf': 'c3d17f727de843748e9ade5a02304a8f'}
+{'iteration': 1, 'action': 'display_seed_set', 'wolf': 'c3d17f727de843748e9ade5a02304a8f', 'seed_set': -5555930298560296821}
+{'iteration': 1, 'action': 'update_position', 'wolf': 'af5b71cec3da465a8d2273640576031c'}
+{'iteration': 1, 'action': 'update_seed_set', 'wolf': 'af5b71cec3da465a8d2273640576031c'}
+{'iteration': 1, 'action': 'display_seed_set', 'wolf': 'af5b71cec3da465a8d2273640576031c', 'seed_set': 6585190131593065710}
+{'iteration': 1, 'action': 'update_position', 'wolf': 'b268978341164196bb75539715ef3978'}
+{'iteration': 1, 'action': 'update_seed_set', 'wolf': 'b268978341164196bb75539715ef3978'}
+{'iteration': 1, 'action': 'display_seed_set', 'wolf': 'b268978341164196bb75539715ef3978', 'seed_set': 8579525578658854732}
+{'iteration': 1, 'action': 'update_position', 'wolf': '3305b9f16c364f3dae4eaecd66ca9d73'}
+{'iteration': 1, 'action': 'update_seed_set', 'wolf': '3305b9f16c364f3dae4eaecd66ca9d73'}
+{'iteration': 1, 'action': 'display_seed_set', 'wolf': '3305b9f16c364f3dae4eaecd66ca9d73', 'seed_set': -5491051362889077683}
+{'iteration': 1, 'action': 'update_position', 'wolf': 'c002af12f21c4023a1103f830dc67151'}
+{'iteration': 1, 'action': 'update_seed_set', 'wolf': 'c002af12f21c4023a1103f830dc67151'}
+{'iteration': 1, 'action': 'display_seed_set', 'wolf': 'c002af12f21c4023a1103f830dc67151', 'seed_set': -2037999172765883232}
+{'iteration': 1, 'action': 'update_position', 'wolf': '6b5ffe56d81040f89d707f363d987327'}
+{'iteration': 1, 'action': 'update_seed_set', 'wolf': '6b5ffe56d81040f89d707f363d987327'}
+{'iteration': 1, 'action': 'display_seed_set', 'wolf': '6b5ffe56d81040f89d707f363d987327', 'seed_set': -7166429197621256503}
+{'iteration': 1, 'action': 'calculate_fitness', 'wolf': 'ad00c63171c947bdba168f9be4678cae'}
+{'action': 'calculate_fitness', 'time': '0:00:01.410198'}
+{'iteration': 1, 'action': 'display_value', 'wolf': 'ad00c63171c947bdba168f9be4678cae', 'value': 5.738520704408481}
+{'iteration': 1, 'action': 'calculate_fitness', 'wolf': '80cf50d35a174437bfc031b1b2005f2d'}
+{'action': 'calculate_fitness', 'time': '0:00:01.262499'}
+{'iteration': 1, 'action': 'display_value', 'wolf': '80cf50d35a174437bfc031b1b2005f2d', 'value': 5.54763434061889}
+{'iteration': 1, 'action': 'calculate_fitness', 'wolf': 'd81cf81dcf43451d9fa525b1ffbba4fc'}
+{'action': 'calculate_fitness', 'time': '0:00:01.235287'}
+{'iteration': 1, 'action': 'display_value', 'wolf': 'd81cf81dcf43451d9fa525b1ffbba4fc', 'value': 5.650440330029963}
+{'iteration': 1, 'action': 'calculate_fitness', 'wolf': 'b25d8b1fef954a6c9f3a78797007195a'}
+{'action': 'calculate_fitness', 'time': '0:00:01.320652'}
+{'iteration': 1, 'action': 'display_value', 'wolf': 'b25d8b1fef954a6c9f3a78797007195a', 'value': 5.622253580946217}
+{'iteration': 1, 'action': 'calculate_fitness', 'wolf': '01a7f7f65aea4f68bbd990e19c3f38bc'}
+{'action': 'calculate_fitness', 'time': '0:00:01.165384'}
+{'iteration': 1, 'action': 'display_value', 'wolf': '01a7f7f65aea4f68bbd990e19c3f38bc', 'value': 5.522588037634802}
+{'iteration': 1, 'action': 'calculate_fitness', 'wolf': 'a4d609d1f18b45beab803e24f7c75d85'}
+{'action': 'calculate_fitness', 'time': '0:00:01.353738'}
+{'iteration': 1, 'action': 'display_value', 'wolf': 'a4d609d1f18b45beab803e24f7c75d85', 'value': 5.749850227925332}
+{'iteration': 1, 'action': 'calculate_fitness', 'wolf': 'a1c12af4ccf448419579579adffcdf3a'}
+{'action': 'calculate_fitness', 'time': '0:00:01.187421'}
+{'iteration': 1, 'action': 'display_value', 'wolf': 'a1c12af4ccf448419579579adffcdf3a', 'value': 5.349236858178466}
+{'iteration': 1, 'action': 'calculate_fitness', 'wolf': '84125c3361184b9b9ee793788c4ebb56'}
+{'action': 'calculate_fitness', 'time': '0:00:01.231302'}
+{'iteration': 1, 'action': 'display_value', 'wolf': '84125c3361184b9b9ee793788c4ebb56', 'value': 5.7405429884625345}
+{'iteration': 1, 'action': 'calculate_fitness', 'wolf': 'af2d5169acde4667b6d19f7397774baa'}
+{'action': 'calculate_fitness', 'time': '0:00:01.350742'}
+{'iteration': 1, 'action': 'display_value', 'wolf': 'af2d5169acde4667b6d19f7397774baa', 'value': 5.711854215590836}
+{'iteration': 1, 'action': 'calculate_fitness', 'wolf': 'a5d9b1f2648b4e7d82cb240b41477899'}
+{'action': 'calculate_fitness', 'time': '0:00:01.359443'}
+{'iteration': 1, 'action': 'display_value', 'wolf': 'a5d9b1f2648b4e7d82cb240b41477899', 'value': 5.609132391813425}
+{'iteration': 1, 'action': 'calculate_fitness', 'wolf': '800e2bd98a41439cb009e6fb9d40d4b6'}
+{'action': 'calculate_fitness', 'time': '0:00:01.222897'}
+{'iteration': 1, 'action': 'display_value', 'wolf': '800e2bd98a41439cb009e6fb9d40d4b6', 'value': 5.45593532580469}
+{'iteration': 1, 'action': 'calculate_fitness', 'wolf': 'ad58ca398d124ffdbb90d6778a6a8633'}
+{'action': 'calculate_fitness', 'time': '0:00:01.264086'}
+{'iteration': 1, 'action': 'display_value', 'wolf': 'ad58ca398d124ffdbb90d6778a6a8633', 'value': 5.667181070054819}
+{'iteration': 1, 'action': 'calculate_fitness', 'wolf': '1a22e48d085f439ab62e4362a7afb031'}
+{'action': 'calculate_fitness', 'time': '0:00:01.231986'}
+{'iteration': 1, 'action': 'display_value', 'wolf': '1a22e48d085f439ab62e4362a7afb031', 'value': 5.477049821539412}
+{'iteration': 1, 'action': 'calculate_fitness', 'wolf': '0ac80b1fc9f447ceb5467788adbc6e91'}
+{'action': 'calculate_fitness', 'time': '0:00:01.184590'}
+{'iteration': 1, 'action': 'display_value', 'wolf': '0ac80b1fc9f447ceb5467788adbc6e91', 'value': 5.653500321421989}
+{'iteration': 1, 'action': 'calculate_fitness', 'wolf': 'c3d17f727de843748e9ade5a02304a8f'}
+{'action': 'calculate_fitness', 'time': '0:00:01.276452'}
+{'iteration': 1, 'action': 'display_value', 'wolf': 'c3d17f727de843748e9ade5a02304a8f', 'value': 5.661514256382246}
+{'iteration': 1, 'action': 'calculate_fitness', 'wolf': 'af5b71cec3da465a8d2273640576031c'}
+{'action': 'calculate_fitness', 'time': '0:00:01.212069'}
+{'iteration': 1, 'action': 'display_value', 'wolf': 'af5b71cec3da465a8d2273640576031c', 'value': 5.671324620042223}
+{'iteration': 1, 'action': 'calculate_fitness', 'wolf': 'b268978341164196bb75539715ef3978'}
+{'action': 'calculate_fitness', 'time': '0:00:01.111478'}
+{'iteration': 1, 'action': 'display_value', 'wolf': 'b268978341164196bb75539715ef3978', 'value': 5.619535855679851}
+{'iteration': 1, 'action': 'calculate_fitness', 'wolf': '3305b9f16c364f3dae4eaecd66ca9d73'}
+{'action': 'calculate_fitness', 'time': '0:00:01.213191'}
+{'iteration': 1, 'action': 'display_value', 'wolf': '3305b9f16c364f3dae4eaecd66ca9d73', 'value': 5.45711134336556}
+{'iteration': 1, 'action': 'calculate_fitness', 'wolf': 'c002af12f21c4023a1103f830dc67151'}
+{'action': 'calculate_fitness', 'time': '0:00:01.232816'}
+{'iteration': 1, 'action': 'display_value', 'wolf': 'c002af12f21c4023a1103f830dc67151', 'value': 5.709247460303122}
+{'iteration': 1, 'action': 'calculate_fitness', 'wolf': '6b5ffe56d81040f89d707f363d987327'}
+{'action': 'calculate_fitness', 'time': '0:00:01.252945'}
+{'iteration': 1, 'action': 'display_value', 'wolf': '6b5ffe56d81040f89d707f363d987327', 'value': 5.646224079352094}
+{'iteration': 1, 'action': 'extract_top_wolves'}
+{'iteration': 1, 'action': 'display_top_wolves', 'alpha': {'wolf': 'a4d609d1f18b45beab803e24f7c75d85', 'value': 5.749850227925332, 'seed_set': 7836103103976011030, 'position': 8817985751054078954}, 'beta': {'wolf': '84125c3361184b9b9ee793788c4ebb56', 'value': 5.7405429884625345, 'seed_set': -8755974471092799551, 'position': -2837051027288098863}, 'delta': {'wolf': 'ad00c63171c947bdba168f9be4678cae', 'value': 5.738520704408481, 'seed_set': 69547679954452588, 'position': -313371259881536719}}
+---------- iteration 2 -----------
+{'iteration': 2, 'action': 'update_position', 'wolf': 'a4d609d1f18b45beab803e24f7c75d85'}
+{'iteration': 2, 'action': 'update_seed_set', 'wolf': 'a4d609d1f18b45beab803e24f7c75d85'}
+{'iteration': 2, 'action': 'display_seed_set', 'wolf': 'a4d609d1f18b45beab803e24f7c75d85', 'seed_set': 8212084627131900561}
+{'iteration': 2, 'action': 'update_position', 'wolf': '84125c3361184b9b9ee793788c4ebb56'}
+{'iteration': 2, 'action': 'update_seed_set', 'wolf': '84125c3361184b9b9ee793788c4ebb56'}
+{'iteration': 2, 'action': 'display_seed_set', 'wolf': '84125c3361184b9b9ee793788c4ebb56', 'seed_set': 3448206783964995495}
+{'iteration': 2, 'action': 'update_position', 'wolf': 'ad00c63171c947bdba168f9be4678cae'}
+{'iteration': 2, 'action': 'update_seed_set', 'wolf': 'ad00c63171c947bdba168f9be4678cae'}
+{'iteration': 2, 'action': 'display_seed_set', 'wolf': 'ad00c63171c947bdba168f9be4678cae', 'seed_set': -2373399705510890853}
+{'iteration': 2, 'action': 'update_position', 'wolf': 'af2d5169acde4667b6d19f7397774baa'}
+{'iteration': 2, 'action': 'update_seed_set', 'wolf': 'af2d5169acde4667b6d19f7397774baa'}
+{'iteration': 2, 'action': 'display_seed_set', 'wolf': 'af2d5169acde4667b6d19f7397774baa', 'seed_set': 8926355632154396777}
+{'iteration': 2, 'action': 'update_position', 'wolf': 'c002af12f21c4023a1103f830dc67151'}
+{'iteration': 2, 'action': 'update_seed_set', 'wolf': 'c002af12f21c4023a1103f830dc67151'}
+{'iteration': 2, 'action': 'display_seed_set', 'wolf': 'c002af12f21c4023a1103f830dc67151', 'seed_set': 4152925971513331560}
+{'iteration': 2, 'action': 'update_position', 'wolf': 'af5b71cec3da465a8d2273640576031c'}
+{'iteration': 2, 'action': 'update_seed_set', 'wolf': 'af5b71cec3da465a8d2273640576031c'}
+{'iteration': 2, 'action': 'display_seed_set', 'wolf': 'af5b71cec3da465a8d2273640576031c', 'seed_set': -4480078226740300847}
+{'iteration': 2, 'action': 'update_position', 'wolf': 'ad58ca398d124ffdbb90d6778a6a8633'}
+{'iteration': 2, 'action': 'update_seed_set', 'wolf': 'ad58ca398d124ffdbb90d6778a6a8633'}
+{'iteration': 2, 'action': 'display_seed_set', 'wolf': 'ad58ca398d124ffdbb90d6778a6a8633', 'seed_set': 8033384773769062874}
+{'iteration': 2, 'action': 'update_position', 'wolf': 'c3d17f727de843748e9ade5a02304a8f'}
+{'iteration': 2, 'action': 'update_seed_set', 'wolf': 'c3d17f727de843748e9ade5a02304a8f'}
+{'iteration': 2, 'action': 'display_seed_set', 'wolf': 'c3d17f727de843748e9ade5a02304a8f', 'seed_set': -6080883921841612384}
+{'iteration': 2, 'action': 'update_position', 'wolf': '0ac80b1fc9f447ceb5467788adbc6e91'}
+{'iteration': 2, 'action': 'update_seed_set', 'wolf': '0ac80b1fc9f447ceb5467788adbc6e91'}
+{'iteration': 2, 'action': 'display_seed_set', 'wolf': '0ac80b1fc9f447ceb5467788adbc6e91', 'seed_set': 3733545857874412349}
+{'iteration': 2, 'action': 'update_position', 'wolf': 'd81cf81dcf43451d9fa525b1ffbba4fc'}
+{'iteration': 2, 'action': 'update_seed_set', 'wolf': 'd81cf81dcf43451d9fa525b1ffbba4fc'}
+{'iteration': 2, 'action': 'display_seed_set', 'wolf': 'd81cf81dcf43451d9fa525b1ffbba4fc', 'seed_set': 8056415370239588303}
+{'iteration': 2, 'action': 'update_position', 'wolf': '6b5ffe56d81040f89d707f363d987327'}
+{'iteration': 2, 'action': 'update_seed_set', 'wolf': '6b5ffe56d81040f89d707f363d987327'}
+{'iteration': 2, 'action': 'display_seed_set', 'wolf': '6b5ffe56d81040f89d707f363d987327', 'seed_set': 6808818578154995629}
+{'iteration': 2, 'action': 'update_position', 'wolf': 'b25d8b1fef954a6c9f3a78797007195a'}
+{'iteration': 2, 'action': 'update_seed_set', 'wolf': 'b25d8b1fef954a6c9f3a78797007195a'}
+{'iteration': 2, 'action': 'display_seed_set', 'wolf': 'b25d8b1fef954a6c9f3a78797007195a', 'seed_set': -8673021144552620241}
+{'iteration': 2, 'action': 'update_position', 'wolf': 'b268978341164196bb75539715ef3978'}
+{'iteration': 2, 'action': 'update_seed_set', 'wolf': 'b268978341164196bb75539715ef3978'}
+{'iteration': 2, 'action': 'display_seed_set', 'wolf': 'b268978341164196bb75539715ef3978', 'seed_set': -9043282000930117324}
+{'iteration': 2, 'action': 'update_position', 'wolf': 'a5d9b1f2648b4e7d82cb240b41477899'}
+{'iteration': 2, 'action': 'update_seed_set', 'wolf': 'a5d9b1f2648b4e7d82cb240b41477899'}
+{'iteration': 2, 'action': 'display_seed_set', 'wolf': 'a5d9b1f2648b4e7d82cb240b41477899', 'seed_set': -7289697680603977871}
+{'iteration': 2, 'action': 'update_position', 'wolf': '80cf50d35a174437bfc031b1b2005f2d'}
+{'iteration': 2, 'action': 'update_seed_set', 'wolf': '80cf50d35a174437bfc031b1b2005f2d'}
+{'iteration': 2, 'action': 'display_seed_set', 'wolf': '80cf50d35a174437bfc031b1b2005f2d', 'seed_set': -3968331537550425385}
+{'iteration': 2, 'action': 'update_position', 'wolf': '01a7f7f65aea4f68bbd990e19c3f38bc'}
+{'iteration': 2, 'action': 'update_seed_set', 'wolf': '01a7f7f65aea4f68bbd990e19c3f38bc'}
+{'iteration': 2, 'action': 'display_seed_set', 'wolf': '01a7f7f65aea4f68bbd990e19c3f38bc', 'seed_set': 7195255689947366053}
+{'iteration': 2, 'action': 'update_position', 'wolf': '1a22e48d085f439ab62e4362a7afb031'}
+{'iteration': 2, 'action': 'update_seed_set', 'wolf': '1a22e48d085f439ab62e4362a7afb031'}
+{'iteration': 2, 'action': 'display_seed_set', 'wolf': '1a22e48d085f439ab62e4362a7afb031', 'seed_set': 5471754084936964306}
+{'iteration': 2, 'action': 'update_position', 'wolf': '3305b9f16c364f3dae4eaecd66ca9d73'}
+{'iteration': 2, 'action': 'update_seed_set', 'wolf': '3305b9f16c364f3dae4eaecd66ca9d73'}
+{'iteration': 2, 'action': 'display_seed_set', 'wolf': '3305b9f16c364f3dae4eaecd66ca9d73', 'seed_set': 6828865450494003621}
+{'iteration': 2, 'action': 'update_position', 'wolf': '800e2bd98a41439cb009e6fb9d40d4b6'}
+{'iteration': 2, 'action': 'update_seed_set', 'wolf': '800e2bd98a41439cb009e6fb9d40d4b6'}
+{'iteration': 2, 'action': 'display_seed_set', 'wolf': '800e2bd98a41439cb009e6fb9d40d4b6', 'seed_set': -6381224910566964056}
+{'iteration': 2, 'action': 'update_position', 'wolf': 'a1c12af4ccf448419579579adffcdf3a'}
+{'iteration': 2, 'action': 'update_seed_set', 'wolf': 'a1c12af4ccf448419579579adffcdf3a'}
+{'iteration': 2, 'action': 'display_seed_set', 'wolf': 'a1c12af4ccf448419579579adffcdf3a', 'seed_set': 5865548490296042469}
+{'iteration': 2, 'action': 'calculate_fitness', 'wolf': 'a4d609d1f18b45beab803e24f7c75d85'}
+{'action': 'calculate_fitness', 'time': '0:00:01.337415'}
+{'iteration': 2, 'action': 'display_value', 'wolf': 'a4d609d1f18b45beab803e24f7c75d85', 'value': 5.756682568403447}
+{'iteration': 2, 'action': 'calculate_fitness', 'wolf': '84125c3361184b9b9ee793788c4ebb56'}
+{'action': 'calculate_fitness', 'time': '0:00:01.262802'}
+{'iteration': 2, 'action': 'display_value', 'wolf': '84125c3361184b9b9ee793788c4ebb56', 'value': 5.668222956853014}
+{'iteration': 2, 'action': 'calculate_fitness', 'wolf': 'ad00c63171c947bdba168f9be4678cae'}
+{'action': 'calculate_fitness', 'time': '0:00:01.253760'}
+{'iteration': 2, 'action': 'display_value', 'wolf': 'ad00c63171c947bdba168f9be4678cae', 'value': 5.655755269502697}
+{'iteration': 2, 'action': 'calculate_fitness', 'wolf': 'af2d5169acde4667b6d19f7397774baa'}
+{'action': 'calculate_fitness', 'time': '0:00:01.183061'}
+{'iteration': 2, 'action': 'display_value', 'wolf': 'af2d5169acde4667b6d19f7397774baa', 'value': 5.495527107431581}
+{'iteration': 2, 'action': 'calculate_fitness', 'wolf': 'c002af12f21c4023a1103f830dc67151'}
+{'action': 'calculate_fitness', 'time': '0:00:01.267782'}
+{'iteration': 2, 'action': 'display_value', 'wolf': 'c002af12f21c4023a1103f830dc67151', 'value': 5.701931972750189}
+{'iteration': 2, 'action': 'calculate_fitness', 'wolf': 'af5b71cec3da465a8d2273640576031c'}
+{'action': 'calculate_fitness', 'time': '0:00:01.247411'}
+{'iteration': 2, 'action': 'display_value', 'wolf': 'af5b71cec3da465a8d2273640576031c', 'value': 5.798925281301544}
+{'iteration': 2, 'action': 'calculate_fitness', 'wolf': 'ad58ca398d124ffdbb90d6778a6a8633'}
+{'action': 'calculate_fitness', 'time': '0:00:01.302210'}
+{'iteration': 2, 'action': 'display_value', 'wolf': 'ad58ca398d124ffdbb90d6778a6a8633', 'value': 5.7230551406912715}
+{'iteration': 2, 'action': 'calculate_fitness', 'wolf': 'c3d17f727de843748e9ade5a02304a8f'}
+{'action': 'calculate_fitness', 'time': '0:00:01.163685'}
+{'iteration': 2, 'action': 'display_value', 'wolf': 'c3d17f727de843748e9ade5a02304a8f', 'value': 5.6536887249343355}
+{'iteration': 2, 'action': 'calculate_fitness', 'wolf': '0ac80b1fc9f447ceb5467788adbc6e91'}
+{'action': 'calculate_fitness', 'time': '0:00:01.338658'}
+{'iteration': 2, 'action': 'display_value', 'wolf': '0ac80b1fc9f447ceb5467788adbc6e91', 'value': 5.559732437363145}
+{'iteration': 2, 'action': 'calculate_fitness', 'wolf': 'd81cf81dcf43451d9fa525b1ffbba4fc'}
+{'action': 'calculate_fitness', 'time': '0:00:01.325502'}
+{'iteration': 2, 'action': 'display_value', 'wolf': 'd81cf81dcf43451d9fa525b1ffbba4fc', 'value': 5.760478528547604}
+{'iteration': 2, 'action': 'calculate_fitness', 'wolf': '6b5ffe56d81040f89d707f363d987327'}
+{'action': 'calculate_fitness', 'time': '0:00:01.400501'}
+{'iteration': 2, 'action': 'display_value', 'wolf': '6b5ffe56d81040f89d707f363d987327', 'value': 5.62849033887881}
+{'iteration': 2, 'action': 'calculate_fitness', 'wolf': 'b25d8b1fef954a6c9f3a78797007195a'}
+{'action': 'calculate_fitness', 'time': '0:00:01.440081'}
+{'iteration': 2, 'action': 'display_value', 'wolf': 'b25d8b1fef954a6c9f3a78797007195a', 'value': 5.571066451569289}
+{'iteration': 2, 'action': 'calculate_fitness', 'wolf': 'b268978341164196bb75539715ef3978'}
+{'action': 'calculate_fitness', 'time': '0:00:01.102793'}
+{'iteration': 2, 'action': 'display_value', 'wolf': 'b268978341164196bb75539715ef3978', 'value': 5.5363658449778415}
+{'iteration': 2, 'action': 'calculate_fitness', 'wolf': 'a5d9b1f2648b4e7d82cb240b41477899'}
+{'action': 'calculate_fitness', 'time': '0:00:01.151624'}
+{'iteration': 2, 'action': 'display_value', 'wolf': 'a5d9b1f2648b4e7d82cb240b41477899', 'value': 5.427049695429752}
+{'iteration': 2, 'action': 'calculate_fitness', 'wolf': '80cf50d35a174437bfc031b1b2005f2d'}
+{'action': 'calculate_fitness', 'time': '0:00:01.445986'}
+{'iteration': 2, 'action': 'display_value', 'wolf': '80cf50d35a174437bfc031b1b2005f2d', 'value': 5.7100187646957155}
+{'iteration': 2, 'action': 'calculate_fitness', 'wolf': '01a7f7f65aea4f68bbd990e19c3f38bc'}
+{'action': 'calculate_fitness', 'time': '0:00:01.587655'}
+{'iteration': 2, 'action': 'display_value', 'wolf': '01a7f7f65aea4f68bbd990e19c3f38bc', 'value': 5.707252678965365}
+{'iteration': 2, 'action': 'calculate_fitness', 'wolf': '1a22e48d085f439ab62e4362a7afb031'}
+{'action': 'calculate_fitness', 'time': '0:00:01.262850'}
+{'iteration': 2, 'action': 'display_value', 'wolf': '1a22e48d085f439ab62e4362a7afb031', 'value': 5.600993232059214}
+{'iteration': 2, 'action': 'calculate_fitness', 'wolf': '3305b9f16c364f3dae4eaecd66ca9d73'}
+{'action': 'calculate_fitness', 'time': '0:00:01.420824'}
+{'iteration': 2, 'action': 'display_value', 'wolf': '3305b9f16c364f3dae4eaecd66ca9d73', 'value': 5.7772026762063895}
+{'iteration': 2, 'action': 'calculate_fitness', 'wolf': '800e2bd98a41439cb009e6fb9d40d4b6'}
+{'action': 'calculate_fitness', 'time': '0:00:01.339067'}
+{'iteration': 2, 'action': 'display_value', 'wolf': '800e2bd98a41439cb009e6fb9d40d4b6', 'value': 5.677076137506749}
+{'iteration': 2, 'action': 'calculate_fitness', 'wolf': 'a1c12af4ccf448419579579adffcdf3a'}
+{'action': 'calculate_fitness', 'time': '0:00:01.238605'}
+{'iteration': 2, 'action': 'display_value', 'wolf': 'a1c12af4ccf448419579579adffcdf3a', 'value': 5.649467073983208}
+{'iteration': 2, 'action': 'extract_top_wolves'}
+{'iteration': 2, 'action': 'display_top_wolves', 'alpha': {'wolf': 'af5b71cec3da465a8d2273640576031c', 'value': 5.798925281301544, 'seed_set': -4480078226740300847, 'position': 8817985751054078954}, 'beta': {'wolf': '3305b9f16c364f3dae4eaecd66ca9d73', 'value': 5.7772026762063895, 'seed_set': 6828865450494003621, 'position': -5857592201224054352}, 'delta': {'wolf': 'd81cf81dcf43451d9fa525b1ffbba4fc', 'value': 5.760478528547604, 'seed_set': 8056415370239588303, 'position': -7878578553358652611}}
+---------- iteration 3 -----------
+{'iteration': 3, 'action': 'update_position', 'wolf': 'af5b71cec3da465a8d2273640576031c'}
+{'iteration': 3, 'action': 'update_seed_set', 'wolf': 'af5b71cec3da465a8d2273640576031c'}
+{'iteration': 3, 'action': 'display_seed_set', 'wolf': 'af5b71cec3da465a8d2273640576031c', 'seed_set': 6032025825293703515}
+{'iteration': 3, 'action': 'update_position', 'wolf': '3305b9f16c364f3dae4eaecd66ca9d73'}
+{'iteration': 3, 'action': 'update_seed_set', 'wolf': '3305b9f16c364f3dae4eaecd66ca9d73'}
+{'iteration': 3, 'action': 'display_seed_set', 'wolf': '3305b9f16c364f3dae4eaecd66ca9d73', 'seed_set': -2071779965703152874}
+{'iteration': 3, 'action': 'update_position', 'wolf': 'd81cf81dcf43451d9fa525b1ffbba4fc'}
+{'iteration': 3, 'action': 'update_seed_set', 'wolf': 'd81cf81dcf43451d9fa525b1ffbba4fc'}
+{'iteration': 3, 'action': 'display_seed_set', 'wolf': 'd81cf81dcf43451d9fa525b1ffbba4fc', 'seed_set': 3785809849521618391}
+{'iteration': 3, 'action': 'update_position', 'wolf': 'a4d609d1f18b45beab803e24f7c75d85'}
+{'iteration': 3, 'action': 'update_seed_set', 'wolf': 'a4d609d1f18b45beab803e24f7c75d85'}
+{'iteration': 3, 'action': 'display_seed_set', 'wolf': 'a4d609d1f18b45beab803e24f7c75d85', 'seed_set': -5319496353142797949}
+{'iteration': 3, 'action': 'update_position', 'wolf': 'ad58ca398d124ffdbb90d6778a6a8633'}
+{'iteration': 3, 'action': 'update_seed_set', 'wolf': 'ad58ca398d124ffdbb90d6778a6a8633'}
+{'iteration': 3, 'action': 'display_seed_set', 'wolf': 'ad58ca398d124ffdbb90d6778a6a8633', 'seed_set': 1353670529894949973}
+{'iteration': 3, 'action': 'update_position', 'wolf': '80cf50d35a174437bfc031b1b2005f2d'}
+{'iteration': 3, 'action': 'update_seed_set', 'wolf': '80cf50d35a174437bfc031b1b2005f2d'}
+{'iteration': 3, 'action': 'display_seed_set', 'wolf': '80cf50d35a174437bfc031b1b2005f2d', 'seed_set': 593774441861938050}
+{'iteration': 3, 'action': 'update_position', 'wolf': '01a7f7f65aea4f68bbd990e19c3f38bc'}
+{'iteration': 3, 'action': 'update_seed_set', 'wolf': '01a7f7f65aea4f68bbd990e19c3f38bc'}
+{'iteration': 3, 'action': 'display_seed_set', 'wolf': '01a7f7f65aea4f68bbd990e19c3f38bc', 'seed_set': -8678612701957830560}
+{'iteration': 3, 'action': 'update_position', 'wolf': 'c002af12f21c4023a1103f830dc67151'}
+{'iteration': 3, 'action': 'update_seed_set', 'wolf': 'c002af12f21c4023a1103f830dc67151'}
+{'iteration': 3, 'action': 'display_seed_set', 'wolf': 'c002af12f21c4023a1103f830dc67151', 'seed_set': 3195289067230200840}
+{'iteration': 3, 'action': 'update_position', 'wolf': '800e2bd98a41439cb009e6fb9d40d4b6'}
+{'iteration': 3, 'action': 'update_seed_set', 'wolf': '800e2bd98a41439cb009e6fb9d40d4b6'}
+{'iteration': 3, 'action': 'display_seed_set', 'wolf': '800e2bd98a41439cb009e6fb9d40d4b6', 'seed_set': 2852368089031608957}
+{'iteration': 3, 'action': 'update_position', 'wolf': '84125c3361184b9b9ee793788c4ebb56'}
+{'iteration': 3, 'action': 'update_seed_set', 'wolf': '84125c3361184b9b9ee793788c4ebb56'}
+{'iteration': 3, 'action': 'display_seed_set', 'wolf': '84125c3361184b9b9ee793788c4ebb56', 'seed_set': -7940563961014644312}
+{'iteration': 3, 'action': 'update_position', 'wolf': 'ad00c63171c947bdba168f9be4678cae'}
+{'iteration': 3, 'action': 'update_seed_set', 'wolf': 'ad00c63171c947bdba168f9be4678cae'}
+{'iteration': 3, 'action': 'display_seed_set', 'wolf': 'ad00c63171c947bdba168f9be4678cae', 'seed_set': -2917748853450867543}
+{'iteration': 3, 'action': 'update_position', 'wolf': 'c3d17f727de843748e9ade5a02304a8f'}
+{'iteration': 3, 'action': 'update_seed_set', 'wolf': 'c3d17f727de843748e9ade5a02304a8f'}
+{'iteration': 3, 'action': 'display_seed_set', 'wolf': 'c3d17f727de843748e9ade5a02304a8f', 'seed_set': 7545139084308993716}
+{'iteration': 3, 'action': 'update_position', 'wolf': 'a1c12af4ccf448419579579adffcdf3a'}
+{'iteration': 3, 'action': 'update_seed_set', 'wolf': 'a1c12af4ccf448419579579adffcdf3a'}
+{'iteration': 3, 'action': 'display_seed_set', 'wolf': 'a1c12af4ccf448419579579adffcdf3a', 'seed_set': -5777494035726627353}
+{'iteration': 3, 'action': 'update_position', 'wolf': '6b5ffe56d81040f89d707f363d987327'}
+{'iteration': 3, 'action': 'update_seed_set', 'wolf': '6b5ffe56d81040f89d707f363d987327'}
+{'iteration': 3, 'action': 'display_seed_set', 'wolf': '6b5ffe56d81040f89d707f363d987327', 'seed_set': -684844261486351190}
+{'iteration': 3, 'action': 'update_position', 'wolf': '1a22e48d085f439ab62e4362a7afb031'}
