@@ -393,7 +393,7 @@ def run(**run_args):
     print(
         {
             "action": "display_end_execution",
-            "total": run_delta,
+            "total": str(run_delta),
             "executions": execute_history,
         }
     )
