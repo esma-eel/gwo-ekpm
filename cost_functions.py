@@ -183,17 +183,25 @@ def calculate_i_for_vj(node, seed_set, position, graph):
     sum_first_order_neighbors = 0
     sum_second_order_neighbors = 0
 
-    for i in seed_set:
+    first_order_s = set()
+    second_order_s = set()
+    for node_of_s in seed_set:
+        if node_of_s in first_order_neighbors:
+            first_order_s.add(node_of_s)
+        elif node_of_s in second_order_neighbors:
+            second_order_s.add(node_of_s)
+
+    for i in first_order_s:
         sum_first_order_neighbors += position[nodes_list.index(i)]
 
-    for i in seed_set:
-        for k in seed_set:
-            if i == k:
-                continue
-
-            sum_second_order_neighbors += (
-                position[nodes_list.index(i)] * position[nodes_list.index(k)]
-            )
+    for i in first_order_s:
+        for k in second_order_s:
+            k_neighbors = knbrs(graph, k, 1)
+            if i in k_neighbors:
+                sum_second_order_neighbors += (
+                    position[nodes_list.index(i)]
+                    * position[nodes_list.index(k)]
+                )
 
     return sum_first_order_neighbors + sum_second_order_neighbors
 
