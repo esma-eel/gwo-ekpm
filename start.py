@@ -12,8 +12,13 @@ import numpy as np
 
 from algorithms import gwolf
 from cost_functions import (
-    gwim_fitness_function,
-    proposed_method_fitness_function,
+    gwim_default,
+    ekpm_full,
+    ekpm_impact_range_gwim,
+    ekpm_impact_range_eigv,
+    ekpm_impact_range_eigv_kshell_filter,
+    ekpm_impact_range_eigv_prb_filter,
+    ekpm_impact_range_eigv_kshell_prb_filter,
 )
 from network import initial_graph
 
@@ -173,7 +178,7 @@ def run_ekpm1(**paramters):
     gwolf_args = {
         **paramters,
         "reverse": False,
-        "cost_function": proposed_method_fitness_function,
+        "cost_function": ekpm_full,
     }
     alogrithm_execution_result = gwolf(**gwolf_args)
     return alogrithm_execution_result
@@ -183,7 +188,47 @@ def run_ekpm2(**paramters):
     gwolf_args = {
         **paramters,
         "reverse": True,
-        "cost_function": proposed_method_fitness_function,
+        "cost_function": ekpm_full,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm3(**paramters):
+    gwolf_args = {
+        **paramters,
+        "reverse": False,
+        "cost_function": ekpm_impact_range_gwim,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm4(**paramters):
+    gwolf_args = {
+        **paramters,
+        "reverse": True,
+        "cost_function": ekpm_impact_range_gwim,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm5(**paramters):
+    gwolf_args = {
+        **paramters,
+        "reverse": True,
+        "cost_function": ekpm_impact_range_eigv,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm6(**paramters):
+    gwolf_args = {
+        **paramters,
+        "reverse": False,
+        "cost_function": ekpm_impact_range_eigv,
     }
     alogrithm_execution_result = gwolf(**gwolf_args)
     return alogrithm_execution_result
@@ -192,14 +237,55 @@ def run_ekpm2(**paramters):
 def run_gwim(**paramters):
     gwolf_args = {
         **paramters,
-        "cost_function": gwim_fitness_function,
+        "cost_function": gwim_default,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm8(**paramters):
+    gwolf_args = {
+        **paramters,
+        "reverse": False,
+        "cost_function": ekpm_impact_range_eigv_kshell_filter,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm9(**paramters):
+    gwolf_args = {
+        **paramters,
+        "reverse": False,
+        "cost_function": ekpm_impact_range_eigv_prb_filter,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm10(**paramters):
+    gwolf_args = {
+        **paramters,
+        "reverse": False,
+        "cost_function": ekpm_impact_range_eigv_kshell_prb_filter,
     }
     alogrithm_execution_result = gwolf(**gwolf_args)
     return alogrithm_execution_result
 
 
 def get_run_options():
-    return {1: run_ekpm1, 2: run_ekpm2, 3: run_gwim}
+    return {
+        1: run_ekpm1,
+        2: run_ekpm2,
+        3: run_gwim,
+        4: run_ekpm3,
+        5: run_ekpm4,
+        6: run_ekpm6,
+        7: run_ekpm5,
+        8: run_ekpm8,
+        9: run_ekpm9,
+        10: run_ekpm10,
+    }
 
 
 def range_dict(**range_args):

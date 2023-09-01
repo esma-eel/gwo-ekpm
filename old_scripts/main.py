@@ -1,3 +1,4 @@
+"""
 import datetime
 import copy
 
@@ -11,7 +12,7 @@ from constants import (
     PROPOGATION_PROBABILITY,
     AVERAGE_MOVEMENT,
 )
-from cost_functions import proposed_method_fitness_function as fitness_function
+from cost_functions import ekpm_full as fitness_function
 from independent_cascade import independent_cascade_simulation
 from wolf import Wolf
 from network import initial_graph
@@ -78,3 +79,4 @@ if __name__ == "__main__":
     whole_process_end = datetime.datetime.now()
     delta_process = whole_process_end - whole_process_start
     print("execution took: ", str(delta_process))
+"""
