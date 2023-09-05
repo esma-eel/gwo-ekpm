@@ -19,7 +19,7 @@
                 "propogation_probability_step": 10,
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.arenas-pgp.tsv",
+                "dataset": "./dataset/out.arenas-pgp.tsv"
             },
             "algorithm_result": {
                 "ic": 42.46,
@@ -71,7 +71,7 @@
                 "propogation_probability_step": 10,
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.arenas-pgp.tsv",
+                "dataset": "./dataset/out.arenas-pgp.tsv"
             },
             "algorithm_result": {
                 "ic": 78.43,
@@ -123,7 +123,7 @@
                 "propogation_probability_step": 10,
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.arenas-pgp.tsv",
+                "dataset": "./dataset/out.arenas-pgp.tsv"
             },
             "algorithm_result": {
                 "ic": 127.71,
@@ -175,7 +175,7 @@
                 "propogation_probability_step": 10,
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.arenas-pgp.tsv",
+                "dataset": "./dataset/out.arenas-pgp.tsv"
             },
             "algorithm_result": {
                 "ic": 188.45,
@@ -227,7 +227,7 @@
                 "propogation_probability_step": 10,
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.arenas-pgp.tsv",
+                "dataset": "./dataset/out.arenas-pgp.tsv"
             },
             "algorithm_result": {
                 "ic": 268.13,
@@ -279,7 +279,7 @@
                 "propogation_probability_step": 10,
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.arenas-pgp.tsv",
+                "dataset": "./dataset/out.arenas-pgp.tsv"
             },
             "algorithm_result": {
                 "ic": 351.89,
@@ -331,7 +331,7 @@
                 "propogation_probability_step": 10,
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.arenas-pgp.tsv",
+                "dataset": "./dataset/out.arenas-pgp.tsv"
             },
             "algorithm_result": {
                 "ic": 394.24,
@@ -383,7 +383,7 @@
                 "propogation_probability_step": 10,
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.arenas-pgp.tsv",
+                "dataset": "./dataset/out.arenas-pgp.tsv"
             },
             "algorithm_result": {
                 "ic": 503.6,
@@ -435,7 +435,7 @@
                 "propogation_probability_step": 10,
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.arenas-pgp.tsv",
+                "dataset": "./dataset/out.arenas-pgp.tsv"
             },
             "algorithm_result": {
                 "ic": 588.15,
@@ -487,7 +487,7 @@
                 "propogation_probability_step": 10,
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.arenas-pgp.tsv",
+                "dataset": "./dataset/out.arenas-pgp.tsv"
             },
             "algorithm_result": {
                 "ic": 678.96,

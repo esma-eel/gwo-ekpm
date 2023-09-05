@@ -19,7 +19,7 @@
                 "propogation_probability_step": "None",
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.arenas-pgp.tsv",
+                "dataset": "./dataset/out.arenas-pgp.tsv"
             },
             "algorithm_result": {
                 "ic": 293.51,
@@ -61,7 +61,7 @@
                 "propogation_probability_step": "None",
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.arenas-pgp.tsv",
+                "dataset": "./dataset/out.arenas-pgp.tsv"
             },
             "algorithm_result": {
                 "ic": 331.86,
@@ -113,7 +113,7 @@
                 "propogation_probability_step": "None",
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.arenas-pgp.tsv",
+                "dataset": "./dataset/out.arenas-pgp.tsv"
             },
             "algorithm_result": {
                 "ic": 370.64,
@@ -175,7 +175,7 @@
                 "propogation_probability_step": "None",
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.arenas-pgp.tsv",
+                "dataset": "./dataset/out.arenas-pgp.tsv"
             },
             "algorithm_result": {
                 "ic": 378.6,
@@ -247,7 +247,7 @@
                 "propogation_probability_step": "None",
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.arenas-pgp.tsv",
+                "dataset": "./dataset/out.arenas-pgp.tsv"
             },
             "algorithm_result": {
                 "ic": 387.34,
@@ -329,7 +329,7 @@
                 "propogation_probability_step": "None",
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.arenas-pgp.tsv",
+                "dataset": "./dataset/out.arenas-pgp.tsv"
             },
             "algorithm_result": {
                 "ic": 411.87,
@@ -421,7 +421,7 @@
                 "propogation_probability_step": "None",
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.arenas-pgp.tsv",
+                "dataset": "./dataset/out.arenas-pgp.tsv"
             },
             "algorithm_result": {
                 "ic": 440.77,

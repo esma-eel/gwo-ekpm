@@ -61,7 +61,7 @@
                 "propogation_probability_step": "None",
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/CA-AstroPh3.tsv",
+                "dataset": "./dataset/CA-AstroPh3.tsv"
             },
             "algorithm_result": {
                 "ic": 1627.7,
@@ -113,7 +113,7 @@
                 "propogation_probability_step": "None",
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/CA-AstroPh3.tsv",
+                "dataset": "./dataset/CA-AstroPh3.tsv"
             },
             "algorithm_result": {
                 "ic": 1669.09,
@@ -175,7 +175,7 @@
                 "propogation_probability_step": "None",
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/CA-AstroPh3.tsv",
+                "dataset": "./dataset/CA-AstroPh3.tsv"
             },
             "algorithm_result": {
                 "ic": 1692.35,
@@ -247,7 +247,7 @@
                 "propogation_probability_step": "None",
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/CA-AstroPh3.tsv",
+                "dataset": "./dataset/CA-AstroPh3.tsv"
             },
             "algorithm_result": {
                 "ic": 1685.58,
@@ -329,7 +329,7 @@
                 "propogation_probability_step": "None",
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/CA-AstroPh3.tsv",
+                "dataset": "./dataset/CA-AstroPh3.tsv"
             },
             "algorithm_result": {
                 "ic": 1746.66,
@@ -421,7 +421,7 @@
                 "propogation_probability_step": "None",
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/CA-AstroPh3.tsv",
+                "dataset": "./dataset/CA-AstroPh3.tsv"
             },
             "algorithm_result": {
                 "ic": 1771.05,

@@ -55,7 +55,7 @@ def test_5_3_2_graph_data(data):
 def test_5_3_2_astro_data():
     data = test_5_3_2_data_extraction(
         "/home/esmaeel/work/thesis/thesis_main/src"
-        "/results/ekpm1/5.3.1.2/astro/ekpm1_5.3.2_astro.json"
+        "/results/gwim/5.3.1.2/astro/gwim_default_5.3.1.2_out.json"
     )
 
     graph_data = test_5_3_2_graph_data(data)
@@ -65,7 +65,7 @@ def test_5_3_2_astro_data():
 def test_5_3_2_ham_data():
     data = test_5_3_2_data_extraction(
         "/home/esmaeel/work/thesis/thesis_main/src"
-        "/results/ekpm1/5.3.1.2/ham/ekpm1_5.3.2_ham.json"
+        "/results/gwim/5.3.1.2/ham/gwim_default_ham_5.3.1.2_out.json"
     )
 
     graph_data = test_5_3_2_graph_data(data)
@@ -75,7 +75,7 @@ def test_5_3_2_ham_data():
 def test_5_3_2_pgp_data():
     data = test_5_3_2_data_extraction(
         "/home/esmaeel/work/thesis/thesis_main/src"
-        "/results/ekpm1/5.3.1.2/pgp/ekpm1_5.3.2_pgp.json"
+        "/results/gwim/5.3.1.2/pgp/gwim_default_pgp_5.3.1.2_out.json"
     )
 
     graph_data = test_5_3_2_graph_data(data)
@@ -106,6 +106,6 @@ plt.plot(
 
 plt.xlabel("Propogation Probability (PRB)")
 plt.ylabel("Influentiality")
-plt.title("Evaluation Influentiality [Propogation PRB] (EKPM 1)")
+plt.title("Evaluation Influentiality [Propogation PRB] (GWIM)")
 plt.legend()
 plt.show()

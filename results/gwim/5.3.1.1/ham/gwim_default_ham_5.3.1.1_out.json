@@ -19,7 +19,7 @@
                 "propogation_probability_step": "None",
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.petster-hamster.tsv",
+                "dataset": "./dataset/out.petster-hamster.tsv"
             },
             "algorithm_result": {
                 "ic": 206.6,
@@ -61,7 +61,7 @@
                 "propogation_probability_step": "None",
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.petster-hamster.tsv",
+                "dataset": "./dataset/out.petster-hamster.tsv"
             },
             "algorithm_result": {
                 "ic": 232.78,
@@ -113,7 +113,7 @@
                 "propogation_probability_step": "None",
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.petster-hamster.tsv",
+                "dataset": "./dataset/out.petster-hamster.tsv"
             },
             "algorithm_result": {
                 "ic": 247.43,
@@ -175,7 +175,7 @@
                 "propogation_probability_step": "None",
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.petster-hamster.tsv",
+                "dataset": "./dataset/out.petster-hamster.tsv"
             },
             "algorithm_result": {
                 "ic": 259.73,
@@ -247,7 +247,7 @@
                 "propogation_probability_step": "None",
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.petster-hamster.tsv",
+                "dataset": "./dataset/out.petster-hamster.tsv"
             },
             "algorithm_result": {
                 "ic": 277.52,
@@ -329,7 +329,7 @@
                 "propogation_probability_step": "None",
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.petster-hamster.tsv",
+                "dataset": "./dataset/out.petster-hamster.tsv"
             },
             "algorithm_result": {
                 "ic": 282.54,
@@ -421,7 +421,7 @@
                 "propogation_probability_step": "None",
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.petster-hamster.tsv",
+                "dataset": "./dataset/out.petster-hamster.tsv"
             },
             "algorithm_result": {
                 "ic": 319.87,
