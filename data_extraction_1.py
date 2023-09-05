@@ -105,54 +105,58 @@ def extract(file_name):
 
 
 ham = [
-    "ek_ir_gwim_s1_ham.txt",
-    "ek_ir_gwim_s2_ham.txt",
-    "ekpm_ir_eigv_kshell_prb_s1_ham.txt",
-    "ekpm_ir_eigv_kshell_prb_s2_ham.txt",
-    "ekpm_ir_eigv_kshell_s1_ham.txt",
-    "ekpm_ir_eigv_kshell_s2_ham.txt",
-    "ekpm_ir_eigv_prb_s1_ham.txt",
-    "ekpm_ir_eigv_prb_s2_ham.txt",
-    "ekpm_ir_eigv_s1_ham.txt",
-    "ekpm_ir_eigv_s2_ham.txt",
-    "gwim_default_normal_test_ham.txt",
+    "results/ekpm/ekpm_ir_gwim_s1/ekpm_ir_gwim_s1_ham.txt",
+    "results/ekpm/ekpm_ir_gwim_s2/ekpm_ir_gwim_s2_ham.txt",
+    "results/ekpm/ekpm_ir_eigv_kshell_prb_s1/ekpm_ir_eigv_kshell_prb_s1_ham.txt",
+    "results/ekpm/ekpm_ir_eigv_kshell_prb_s2/ekpm_ir_eigv_kshell_prb_s2_ham.txt",
+    "results/ekpm/ekpm_ir_eigv_kshell_s1/ekpm_ir_eigv_kshell_s1_ham.txt",
+    "results/ekpm/ekpm_ir_eigv_kshell_s2/ekpm_ir_eigv_kshell_s2_ham.txt",
+    "results/ekpm/ekpm_ir_eigv_prb_s1/ekpm_ir_eigv_prb_s1_ham.txt",
+    "results/ekpm/ekpm_ir_eigv_prb_s2/ekpm_ir_eigv_prb_s2_ham.txt",
+    "results/ekpm/ekpm_ir_eigv_s1/ekpm_ir_eigv_s1_ham.txt",
+    "results/ekpm/ekpm_ir_eigv_s2/ekpm_ir_eigv_s2_ham.txt",
+    "results/ekpm/normal_s1/ekpm_default_s1_ham.txt",
+    "results/ekpm/normal_s2/ekpm_default_s2_ham.txt",
+    "results/gwim/normal/gwim_default_normal_test_ham.txt",
 ]
 pgp = [
-    "ek_ir_gwim_s1_pgp.txt",
-    "ek_ir_gwim_s2_pgp.txt",
-    "ekpm_ir_eigv_kshell_prb_s1_pgp.txt",
-    "ekpm_ir_eigv_kshell_prb_s2_pgp.txt",
-    "ekpm_ir_eigv_kshell_s1_pgp.txt",
-    "ekpm_ir_eigv_kshell_s2_pgp.txt",
-    "ekpm_ir_eigv_prb_s1_pgp.txt",
-    "ekpm_ir_eigv_prb_s2_pgp.txt",
-    "ekpm_ir_eigv_s1_pgp.txt",
-    "ekpm_ir_eigv_s2_pgp.txt",
-    "gwim_default_normal_test_pgp.txt",
-]
-astro = [
-    "ek_ir_gwim_s1.txt",
-    "ek_ir_gwim_s2.txt",
-    "ekpm_default_s1.txt",
-    "ekpm_default_s2.txt",
-    "ekpm_ir_eigv_kshell_prb_s1.txt",
-    "ekpm_ir_eigv_kshell_prb_s2.txt",
-    "ekpm_ir_eigv_kshell_s1.txt",
-    "ekpm_ir_eigv_kshell_s2.txt",
-    "ekpm_ir_eigv_prb_s1.txt",
-    "ekpm_ir_eigv_prb_s2.txt",
-    "ekpm_ir_eigv_s1.txt",
-    "ekpm_ir_eigv_s2.txt",
-    "gwim_default_normal_test.txt",
+    "results/ekpm/ekpm_ir_gwim_s1/ekpm_ir_gwim_s1_pgp.txt",
+    "results/ekpm/ekpm_ir_gwim_s2/ekpm_ir_gwim_s2_pgp.txt",
+    "results/ekpm/ekpm_ir_eigv_kshell_prb_s1/ekpm_ir_eigv_kshell_prb_s1_pgp.txt",
+    "results/ekpm/ekpm_ir_eigv_kshell_prb_s2/ekpm_ir_eigv_kshell_prb_s2_pgp.txt",
+    "results/ekpm/ekpm_ir_eigv_kshell_s1/ekpm_ir_eigv_kshell_s1_pgp.txt",
+    "results/ekpm/ekpm_ir_eigv_kshell_s2/ekpm_ir_eigv_kshell_s2_pgp.txt",
+    "results/ekpm/ekpm_ir_eigv_prb_s1/ekpm_ir_eigv_prb_s1_pgp.txt",
+    "results/ekpm/ekpm_ir_eigv_prb_s2/ekpm_ir_eigv_prb_s2_pgp.txt",
+    "results/ekpm/ekpm_ir_eigv_s1/ekpm_ir_eigv_s1_pgp.txt",
+    "results/ekpm/ekpm_ir_eigv_s2/ekpm_ir_eigv_s2_pgp.txt",
+    "results/ekpm/normal_s1/ekpm_default_s1_pgp.txt",
+    "results/ekpm/normal_s2/ekpm_default_s2_pgp.txt",
+    "results/gwim/normal/gwim_default_normal_test_pgp.txt",
 ]
 
-fdirectory = "results/"
+astro = [
+    "results/ekpm/ekpm_ir_gwim_s1/ekpm_ir_gwim_s1.txt",
+    "results/ekpm/ekpm_ir_gwim_s2/ekpm_ir_gwim_s2.txt",
+    "results/ekpm/ekpm_ir_eigv_kshell_prb_s1/ekpm_ir_eigv_kshell_prb_s1.txt",
+    "results/ekpm/ekpm_ir_eigv_kshell_prb_s2/ekpm_ir_eigv_kshell_prb_s2.txt",
+    "results/ekpm/ekpm_ir_eigv_kshell_s1/ekpm_ir_eigv_kshell_s1.txt",
+    "results/ekpm/ekpm_ir_eigv_kshell_s2/ekpm_ir_eigv_kshell_s2.txt",
+    "results/ekpm/ekpm_ir_eigv_prb_s1/ekpm_ir_eigv_prb_s1.txt",
+    "results/ekpm/ekpm_ir_eigv_prb_s2/ekpm_ir_eigv_prb_s2.txt",
+    "results/ekpm/ekpm_ir_eigv_s1/ekpm_ir_eigv_s1.txt",
+    "results/ekpm/ekpm_ir_eigv_s2/ekpm_ir_eigv_s2.txt",
+    "results/ekpm/normal_s1/ekpm_default_s1.txt",
+    "results/ekpm/normal_s2/ekpm_default_s2.txt",
+    "results/gwim/normal/gwim_default_normal_test.txt",
+]
+
 
 extracted_data_ham = []
 
 print("# // extracting HAM dataset...")
 for file_name in ham:
-    result = extract(fdirectory + file_name)
+    result = extract(file_name)
     extracted_data_ham.append({file_name: result})
 
 print(extracted_data_ham)
@@ -160,7 +164,7 @@ print(extracted_data_ham)
 extracted_data_pgp = []
 print("# // extracting PGP dataset...")
 for file_name in pgp:
-    result = extract(fdirectory + file_name)
+    result = extract(file_name)
     extracted_data_pgp.append({file_name: result})
 
 print(extracted_data_pgp)
@@ -168,7 +172,64 @@ print(extracted_data_pgp)
 extracted_data = []
 print("# // extracting ASTRO dataset...")
 for file_name in astro:
-    result = extract(fdirectory + file_name)
+    result = extract(file_name)
     extracted_data.append({file_name: result})
 
 print(extracted_data)
+
+
+"""
+ham
+[
+"results/ekpm/ekpm_ir_gwim_s1/ekpm_ir_gwim_s1_ham.txt",
+"results/ekpm/ekpm_ir_gwim_s2/ekpm_ir_gwim_s2_ham.txt",
+"results/ekpm/ekpm_ir_eigv_kshell_prb_s1/ekpm_ir_eigv_kshell_prb_s1_ham.txt",
+"results/ekpm/ekpm_ir_eigv_kshell_prb_s2/ekpm_ir_eigv_kshell_prb_s2_ham.txt",
+"results/ekpm/ekpm_ir_eigv_kshell_s1/ekpm_ir_eigv_kshell_s1_ham.txt",
+"results/ekpm/ekpm_ir_eigv_kshell_s2/ekpm_ir_eigv_kshell_s2_ham.txt",
+"results/ekpm/ekpm_ir_eigv_prb_s1/ekpm_ir_eigv_prb_s1_ham.txt",
+"results/ekpm/ekpm_ir_eigv_prb_s2/ekpm_ir_eigv_prb_s2_ham.txt",
+"results/ekpm/ekpm_ir_eigv_s1/ekpm_ir_eigv_s1_ham.txt",
+"results/ekpm/ekpm_ir_eigv_s2/ekpm_ir_eigv_s2_ham.txt",
+"results/ekpm/normal_s1/ekpm_default_s1_ham.txt",
+"results/ekpm/normal_s2/ekpm_default_s2_ham.txt",
+"results/gwim/normal/gwim_default_normal_test_ham.txt",
+
+]
+
+pgp
+[
+"results/ekpm/ekpm_ir_gwim_s1/ekpm_ir_gwim_s1_pgp.txt",
+"results/ekpm/ekpm_ir_gwim_s2/ekpm_ir_gwim_s2_pgp.txt",
+"results/ekpm/ekpm_ir_eigv_kshell_prb_s1/ekpm_ir_eigv_kshell_prb_s1_pgp.txt",
+"results/ekpm/ekpm_ir_eigv_kshell_prb_s2/ekpm_ir_eigv_kshell_prb_s2_pgp.txt",
+"results/ekpm/ekpm_ir_eigv_kshell_s1/ekpm_ir_eigv_kshell_s1_pgp.txt",
+"results/ekpm/ekpm_ir_eigv_kshell_s2/ekpm_ir_eigv_kshell_s2_pgp.txt",
+"results/ekpm/ekpm_ir_eigv_prb_s1/ekpm_ir_eigv_prb_s1_pgp.txt",
+"results/ekpm/ekpm_ir_eigv_prb_s2/ekpm_ir_eigv_prb_s2_pgp.txt",
+"results/ekpm/ekpm_ir_eigv_s1/ekpm_ir_eigv_s1_pgp.txt",
+"results/ekpm/ekpm_ir_eigv_s2/ekpm_ir_eigv_s2_pgp.txt",
+"results/ekpm/normal_s1/ekpm_default_s1_pgp.txt",
+"results/ekpm/normal_s2/ekpm_default_s2_pgp.txt",
+"results/gwim/normal/gwim_default_normal_test_pgp.txt",
+]
+
+astro
+[
+"results/ekpm/ekpm_ir_gwim_s1/ekpm_ir_gwim_s1.txt",
+"results/ekpm/ekpm_ir_gwim_s2/ekpm_ir_gwim_s2.txt",
+"results/ekpm/ekpm_ir_eigv_kshell_prb_s1/ekpm_ir_eigv_kshell_prb_s1.txt",
+"results/ekpm/ekpm_ir_eigv_kshell_prb_s2/ekpm_ir_eigv_kshell_prb_s2.txt",
+"results/ekpm/ekpm_ir_eigv_kshell_s1/ekpm_ir_eigv_kshell_s1.txt",
+"results/ekpm/ekpm_ir_eigv_kshell_s2/ekpm_ir_eigv_kshell_s2.txt",
+"results/ekpm/ekpm_ir_eigv_prb_s1/ekpm_ir_eigv_prb_s1.txt",
+"results/ekpm/ekpm_ir_eigv_prb_s2/ekpm_ir_eigv_prb_s2.txt",
+"results/ekpm/ekpm_ir_eigv_s1/ekpm_ir_eigv_s1.txt",
+"results/ekpm/ekpm_ir_eigv_s2/ekpm_ir_eigv_s2.txt",
+"results/ekpm/normal_s1/ekpm_default_s1.txt",
+"results/ekpm/normal_s2/ekpm_default_s2.txt",
+"results/gwim/normal/gwim_default_normal_test.txt",
+]
+---
+
+"""

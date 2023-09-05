@@ -1,7 +1,7 @@
 # // extracting HAM dataset...
 [
     {
-        "ek_ir_gwim_s1_ham.txt": {
+        "results/ekpm/ekpm_ir_gwim_s1/ekpm_ir_gwim_s1_ham.txt": {
             "time": "0:23:39.909534",
             "network_size": 2122,
             "ic": 234.35,
@@ -11,7 +11,7 @@
         }
     },
     {
-        "ek_ir_gwim_s2_ham.txt": {
+        "results/ekpm/ekpm_ir_gwim_s2/ekpm_ir_gwim_s2_ham.txt": {
             "time": "0:33:47.601644",
             "network_size": 2122,
             "ic": 230.67,
@@ -21,7 +21,7 @@
         }
     },
     {
-        "ekpm_ir_eigv_kshell_prb_s1_ham.txt": {
+        "results/ekpm/ekpm_ir_eigv_kshell_prb_s1/ekpm_ir_eigv_kshell_prb_s1_ham.txt": {
             "time": "0:09:02.918096",
             "network_size": 2122,
             "ic": 204.55,
@@ -31,7 +31,7 @@
         }
     },
     {
-        "ekpm_ir_eigv_kshell_prb_s2_ham.txt": {
+        "results/ekpm/ekpm_ir_eigv_kshell_prb_s2/ekpm_ir_eigv_kshell_prb_s2_ham.txt": {
             "time": "0:08:30.379001",
             "network_size": 2122,
             "ic": 129.39,
@@ -41,7 +41,7 @@
         }
     },
     {
-        "ekpm_ir_eigv_kshell_s1_ham.txt": {
+        "results/ekpm/ekpm_ir_eigv_kshell_s1/ekpm_ir_eigv_kshell_s1_ham.txt": {
             "time": "0:14:55.691972",
             "network_size": 2122,
             "ic": 215.02,
@@ -51,7 +51,7 @@
         }
     },
     {
-        "ekpm_ir_eigv_kshell_s2_ham.txt": {
+        "results/ekpm/ekpm_ir_eigv_kshell_s2/ekpm_ir_eigv_kshell_s2_ham.txt": {
             "time": "0:13:25.212887",
             "network_size": 2122,
             "ic": 218.0,
@@ -61,7 +61,7 @@
         }
     },
     {
-        "ekpm_ir_eigv_prb_s1_ham.txt": {
+        "results/ekpm/ekpm_ir_eigv_prb_s1/ekpm_ir_eigv_prb_s1_ham.txt": {
             "time": "0:19:43.881160",
             "network_size": 2122,
             "ic": 231.12,
@@ -71,7 +71,7 @@
         }
     },
     {
-        "ekpm_ir_eigv_prb_s2_ham.txt": {
+        "results/ekpm/ekpm_ir_eigv_prb_s2/ekpm_ir_eigv_prb_s2_ham.txt": {
             "time": "0:08:32.645844",
             "network_size": 2122,
             "ic": 216.24,
@@ -81,7 +81,7 @@
         }
     },
     {
-        "ekpm_ir_eigv_s1_ham.txt": {
+        "results/ekpm/ekpm_ir_eigv_s1/ekpm_ir_eigv_s1_ham.txt": {
             "time": "0:19:22.028908",
             "network_size": 2122,
             "ic": 229.03,
@@ -91,7 +91,7 @@
         }
     },
     {
-        "ekpm_ir_eigv_s2_ham.txt": {
+        "results/ekpm/ekpm_ir_eigv_s2/ekpm_ir_eigv_s2_ham.txt": {
             "time": "0:08:36.404257",
             "network_size": 2122,
             "ic": 227.63,
@@ -101,7 +101,27 @@
         }
     },
     {
-        "gwim_default_normal_test_ham.txt": {
+        "results/ekpm/normal_s1/ekpm_default_s1_ham.txt": {
+            "time": "0:02:36.858080",
+            "network_size": 2122,
+            "ic": 219.75,
+            "influence": 0.1036,
+            "fitness_time": {"min": "0:00:00.084020", "max": "0:00:00.199191"},
+            "alpha_values": {"min": 2.6067, "max": 2.9519},
+        }
+    },
+    {
+        "results/ekpm/normal_s2/ekpm_default_s2_ham.txt": {
+            "time": "0:00:53.043663",
+            "network_size": 2122,
+            "ic": 216.55,
+            "influence": 0.102,
+            "fitness_time": {"min": "0:00:00.027843", "max": "0:00:00.067028"},
+            "alpha_values": {"min": 1.0986, "max": 1.9459},
+        }
+    },
+    {
+        "results/gwim/normal/gwim_default_normal_test_ham.txt": {
             "time": "0:19:32.750156",
             "network_size": 2122,
             "ic": 227.07,
@@ -114,7 +134,7 @@
 # // extracting PGP dataset...
 [
     {
-        "ek_ir_gwim_s1_pgp.txt": {
+        "results/ekpm/ekpm_ir_gwim_s1/ekpm_ir_gwim_s1_pgp.txt": {
             "time": "0:23:46.989151",
             "network_size": 6451,
             "ic": 343.44,
@@ -124,7 +144,7 @@
         }
     },
     {
-        "ek_ir_gwim_s2_pgp.txt": {
+        "results/ekpm/ekpm_ir_gwim_s2/ekpm_ir_gwim_s2_pgp.txt": {
             "time": "0:17:04.878136",
             "network_size": 6451,
             "ic": 324.6,
@@ -134,7 +154,7 @@
         }
     },
     {
-        "ekpm_ir_eigv_kshell_prb_s1_pgp.txt": {
+        "results/ekpm/ekpm_ir_eigv_kshell_prb_s1/ekpm_ir_eigv_kshell_prb_s1_pgp.txt": {
             "time": "0:26:57.317738",
             "network_size": 6451,
             "ic": 321.39,
@@ -144,7 +164,7 @@
         }
     },
     {
-        "ekpm_ir_eigv_kshell_prb_s2_pgp.txt": {
+        "results/ekpm/ekpm_ir_eigv_kshell_prb_s2/ekpm_ir_eigv_kshell_prb_s2_pgp.txt": {
             "time": "0:07:31.408008",
             "network_size": 6451,
             "ic": 75.4,
@@ -154,7 +174,7 @@
         }
     },
     {
-        "ekpm_ir_eigv_kshell_s1_pgp.txt": {
+        "results/ekpm/ekpm_ir_eigv_kshell_s1/ekpm_ir_eigv_kshell_s1_pgp.txt": {
             "time": "0:29:20.089273",
             "network_size": 6451,
             "ic": 333.02,
@@ -164,7 +184,7 @@
         }
     },
     {
-        "ekpm_ir_eigv_kshell_s2_pgp.txt": {
+        "results/ekpm/ekpm_ir_eigv_kshell_s2/ekpm_ir_eigv_kshell_s2_pgp.txt": {
             "time": "0:06:35.086384",
             "network_size": 6451,
             "ic": 345.98,
@@ -174,7 +194,7 @@
         }
     },
     {
-        "ekpm_ir_eigv_prb_s1_pgp.txt": {
+        "results/ekpm/ekpm_ir_eigv_prb_s1/ekpm_ir_eigv_prb_s1_pgp.txt": {
             "time": "0:44:22.779526",
             "network_size": 6451,
             "ic": 350.78,
@@ -184,7 +204,7 @@
         }
     },
     {
-        "ekpm_ir_eigv_prb_s2_pgp.txt": {
+        "results/ekpm/ekpm_ir_eigv_prb_s2/ekpm_ir_eigv_prb_s2_pgp.txt": {
             "time": "0:04:21.348387",
             "network_size": 6451,
             "ic": 318.77,
@@ -194,7 +214,7 @@
         }
     },
     {
-        "ekpm_ir_eigv_s1_pgp.txt": {
+        "results/ekpm/ekpm_ir_eigv_s1/ekpm_ir_eigv_s1_pgp.txt": {
             "time": "0:51:13.269546",
             "network_size": 6451,
             "ic": 337.53,
@@ -204,7 +224,7 @@
         }
     },
     {
-        "ekpm_ir_eigv_s2_pgp.txt": {
+        "results/ekpm/ekpm_ir_eigv_s2/ekpm_ir_eigv_s2_pgp.txt": {
             "time": "0:05:55.793505",
             "network_size": 6451,
             "ic": 339.88,
@@ -214,7 +234,27 @@
         }
     },
     {
-        "gwim_default_normal_test_pgp.txt": {
+        "results/ekpm/normal_s1/ekpm_default_s1_pgp.txt": {
+            "time": "0:15:15.404233",
+            "network_size": 6451,
+            "ic": 309.18,
+            "influence": 0.0479,
+            "fitness_time": {"min": "0:00:00.124186", "max": "0:00:01.142451"},
+            "alpha_values": {"min": 3.705, "max": 4.7157},
+        }
+    },
+    {
+        "results/ekpm/normal_s2/ekpm_default_s2_pgp.txt": {
+            "time": "0:01:21.422909",
+            "network_size": 6451,
+            "ic": 326.92,
+            "influence": 0.0507,
+            "fitness_time": {"min": "0:00:00.025334", "max": "0:00:00.078595"},
+            "alpha_values": {"min": 3.3322, "max": 4.2627},
+        }
+    },
+    {
+        "results/gwim/normal/gwim_default_normal_test_pgp.txt": {
             "time": "0:16:11.313326",
             "network_size": 6451,
             "ic": 326.25,
@@ -227,7 +267,7 @@
 # // extracting ASTRO dataset...
 [
     {
-        "ek_ir_gwim_s1.txt": {
+        "results/ekpm/ekpm_ir_gwim_s1/ekpm_ir_gwim_s1.txt": {
             "time": "6:42:49.141528",
             "network_size": 17491,
             "ic": 1635.02,
@@ -237,7 +277,7 @@
         }
     },
     {
-        "ek_ir_gwim_s2.txt": {
+        "results/ekpm/ekpm_ir_gwim_s2/ekpm_ir_gwim_s2.txt": {
             "time": "8:21:09.170215",
             "network_size": 17491,
             "ic": 1632.62,
@@ -247,27 +287,7 @@
         }
     },
     {
-        "ekpm_default_s1.txt": {
-            "time": "1:06:39.367565",
-            "network_size": 17491,
-            "ic": 1631.81,
-            "influence": 0.0933,
-            "fitness_time": {"min": "0:00:01.014272", "max": "0:00:05.666852"},
-            "alpha_values": {"min": 2.8197, "max": 4.4686},
-        }
-    },
-    {
-        "ekpm_default_s2.txt": {
-            "time": "0:11:34.800895",
-            "network_size": 17491,
-            "ic": 1612.89,
-            "influence": 0.0922,
-            "fitness_time": {"min": "0:00:00.444194", "max": "0:00:00.603656"},
-            "alpha_values": {"min": 1.7918, "max": 2.1972},
-        }
-    },
-    {
-        "ekpm_ir_eigv_kshell_prb_s1.txt": {
+        "results/ekpm/ekpm_ir_eigv_kshell_prb_s1/ekpm_ir_eigv_kshell_prb_s1.txt": {
             "time": "4:11:38.043898",
             "network_size": 17491,
             "ic": 1622.9,
@@ -277,7 +297,7 @@
         }
     },
     {
-        "ekpm_ir_eigv_kshell_prb_s2.txt": {
+        "results/ekpm/ekpm_ir_eigv_kshell_prb_s2/ekpm_ir_eigv_kshell_prb_s2.txt": {
             "time": "1:18:04.717401",
             "network_size": 17491,
             "ic": 1660.83,
@@ -287,7 +307,7 @@
         }
     },
     {
-        "ekpm_ir_eigv_kshell_s1.txt": {
+        "results/ekpm/ekpm_ir_eigv_kshell_s1/ekpm_ir_eigv_kshell_s1.txt": {
             "time": "4:26:29.862544",
             "network_size": 17491,
             "ic": 1635.28,
@@ -297,7 +317,7 @@
         }
     },
     {
-        "ekpm_ir_eigv_kshell_s2.txt": {
+        "results/ekpm/ekpm_ir_eigv_kshell_s2/ekpm_ir_eigv_kshell_s2.txt": {
             "time": "1:21:51.641310",
             "network_size": 17491,
             "ic": 1657.55,
@@ -307,7 +327,7 @@
         }
     },
     {
-        "ekpm_ir_eigv_prb_s1.txt": {
+        "results/ekpm/ekpm_ir_eigv_prb_s1/ekpm_ir_eigv_prb_s1.txt": {
             "time": "5:31:09.339585",
             "network_size": 17491,
             "ic": 1652.66,
@@ -317,7 +337,7 @@
         }
     },
     {
-        "ekpm_ir_eigv_prb_s2.txt": {
+        "results/ekpm/ekpm_ir_eigv_prb_s2/ekpm_ir_eigv_prb_s2.txt": {
             "time": "1:56:21.330036",
             "network_size": 17491,
             "ic": 1640.64,
@@ -327,7 +347,7 @@
         }
     },
     {
-        "ekpm_ir_eigv_s1.txt": {
+        "results/ekpm/ekpm_ir_eigv_s1/ekpm_ir_eigv_s1.txt": {
             "time": "5:19:11.140056",
             "network_size": 17491,
             "ic": 1639.4,
@@ -337,7 +357,7 @@
         }
     },
     {
-        "ekpm_ir_eigv_s2.txt": {
+        "results/ekpm/ekpm_ir_eigv_s2/ekpm_ir_eigv_s2.txt": {
             "time": "1:31:13.232626",
             "network_size": 17491,
             "ic": 1671.09,
@@ -347,7 +367,27 @@
         }
     },
     {
-        "gwim_default_normal_test.txt": {
+        "results/ekpm/normal_s1/ekpm_default_s1.txt": {
+            "time": "1:06:39.367565",
+            "network_size": 17491,
+            "ic": 1631.81,
+            "influence": 0.0933,
+            "fitness_time": {"min": "0:00:01.014272", "max": "0:00:05.666852"},
+            "alpha_values": {"min": 2.8197, "max": 4.4686},
+        }
+    },
+    {
+        "results/ekpm/normal_s2/ekpm_default_s2.txt": {
+            "time": "0:11:34.800895",
+            "network_size": 17491,
+            "ic": 1612.89,
+            "influence": 0.0922,
+            "fitness_time": {"min": "0:00:00.444194", "max": "0:00:00.603656"},
+            "alpha_values": {"min": 1.7918, "max": 2.1972},
+        }
+    },
+    {
+        "results/gwim/normal/gwim_default_normal_test.txt": {
             "time": "7:33:09.898232",
             "network_size": 17491,
             "ic": 1650.03,
