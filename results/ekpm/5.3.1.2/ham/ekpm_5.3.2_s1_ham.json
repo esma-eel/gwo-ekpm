@@ -1,0 +1,526 @@
+{
+    "action": "display_end_execution",
+    "total": "0:28:02.542129",
+    "executions": [
+        {
+            "action": "display_finished_algorithm",
+            "time": "0:02:42.449902",
+            "params": {
+                "cost_function": "ekpm_default_s1",
+                "seed_set_size_start": 20,
+                "seed_set_size_stop": "None",
+                "seed_set_size_step": "None",
+                "monte_carlo": 100,
+                "population_size": 25,
+                "max_t": 50,
+                "v_prim_degree_limit": 2,
+                "propogation_probability_start": 0.01,
+                "propogation_probability_stop": 0.1,
+                "propogation_probability_step": 10,
+                "impact_range": 60,
+                "average_movement": 0,
+                "dataset": "./dataset/out.petster-hamster.tsv"
+            },
+            "algorithm_result": {
+                "ic": 56.5,
+                "network_size": 2122,
+                "alpha": {
+                    "wolf": "d9d87f376a76440482789bd296a84a4a",
+                    "position": -6541591711474047849,
+                    "seed_set": [
+                        775,
+                        437,
+                        515,
+                        1213,
+                        915,
+                        1868,
+                        238,
+                        1056,
+                        287,
+                        759,
+                        371,
+                        85,
+                        1282,
+                        47,
+                        1718,
+                        4,
+                        1798,
+                        941,
+                        378,
+                        1489
+                    ]
+                },
+                "average_movement_history": []
+            },
+            "changing_parameter": "propogation_probability_start"
+        },
+        {
+            "action": "display_finished_algorithm",
+            "time": "0:03:09.136939",
+            "params": {
+                "cost_function": "ekpm_default_s1",
+                "seed_set_size_start": 20,
+                "seed_set_size_stop": "None",
+                "seed_set_size_step": "None",
+                "monte_carlo": 100,
+                "population_size": 25,
+                "max_t": 50,
+                "v_prim_degree_limit": 2,
+                "propogation_probability_start": 0.02,
+                "propogation_probability_stop": 0.1,
+                "propogation_probability_step": 10,
+                "impact_range": 60,
+                "average_movement": 0,
+                "dataset": "./dataset/out.petster-hamster.tsv"
+            },
+            "algorithm_result": {
+                "ic": 130.94,
+                "network_size": 2122,
+                "alpha": {
+                    "wolf": "f5c551c923d9416e8a3f10ed2e14ca4c",
+                    "position": 147061839085192288,
+                    "seed_set": [
+                        300,
+                        375,
+                        26,
+                        1597,
+                        649,
+                        237,
+                        44,
+                        1171,
+                        275,
+                        1565,
+                        40,
+                        210,
+                        168,
+                        82,
+                        880,
+                        64,
+                        689,
+                        991,
+                        244,
+                        181
+                    ]
+                },
+                "average_movement_history": []
+            },
+            "changing_parameter": "propogation_probability_start"
+        },
+        {
+            "action": "display_finished_algorithm",
+            "time": "0:02:48.588572",
+            "params": {
+                "cost_function": "ekpm_default_s1",
+                "seed_set_size_start": 20,
+                "seed_set_size_stop": "None",
+                "seed_set_size_step": "None",
+                "monte_carlo": 100,
+                "population_size": 25,
+                "max_t": 50,
+                "v_prim_degree_limit": 2,
+                "propogation_probability_start": 0.03,
+                "propogation_probability_stop": 0.1,
+                "propogation_probability_step": 10,
+                "impact_range": 60,
+                "average_movement": 0,
+                "dataset": "./dataset/out.petster-hamster.tsv"
+            },
+            "algorithm_result": {
+                "ic": 214.72,
+                "network_size": 2122,
+                "alpha": {
+                    "wolf": "bd748d3899614feb98f6723273793853",
+                    "position": -566821436822060369,
+                    "seed_set": [
+                        168,
+                        1277,
+                        174,
+                        458,
+                        118,
+                        246,
+                        1475,
+                        137,
+                        1429,
+                        157,
+                        888,
+                        490,
+                        1371,
+                        850,
+                        339,
+                        129,
+                        238,
+                        1461,
+                        23,
+                        918
+                    ]
+                },
+                "average_movement_history": []
+            },
+            "changing_parameter": "propogation_probability_start"
+        },
+        {
+            "action": "display_finished_algorithm",
+            "time": "0:02:39.545516",
+            "params": {
+                "cost_function": "ekpm_default_s1",
+                "seed_set_size_start": 20,
+                "seed_set_size_stop": "None",
+                "seed_set_size_step": "None",
+                "monte_carlo": 100,
+                "population_size": 25,
+                "max_t": 50,
+                "v_prim_degree_limit": 2,
+                "propogation_probability_start": 0.04,
+                "propogation_probability_stop": 0.1,
+                "propogation_probability_step": 10,
+                "impact_range": 60,
+                "average_movement": 0,
+                "dataset": "./dataset/out.petster-hamster.tsv"
+            },
+            "algorithm_result": {
+                "ic": 320.47,
+                "network_size": 2122,
+                "alpha": {
+                    "wolf": "a749a2bc6c4e466780c7bcb24dc07593",
+                    "position": 2333948196555896405,
+                    "seed_set": [
+                        46,
+                        649,
+                        1913,
+                        494,
+                        349,
+                        323,
+                        1128,
+                        1021,
+                        727,
+                        428,
+                        885,
+                        369,
+                        1172,
+                        273,
+                        85,
+                        237,
+                        270,
+                        1153,
+                        725,
+                        458
+                    ]
+                },
+                "average_movement_history": []
+            },
+            "changing_parameter": "propogation_probability_start"
+        },
+        {
+            "action": "display_finished_algorithm",
+            "time": "0:02:46.143891",
+            "params": {
+                "cost_function": "ekpm_default_s1",
+                "seed_set_size_start": 20,
+                "seed_set_size_stop": "None",
+                "seed_set_size_step": "None",
+                "monte_carlo": 100,
+                "population_size": 25,
+                "max_t": 50,
+                "v_prim_degree_limit": 2,
+                "propogation_probability_start": 0.05,
+                "propogation_probability_stop": 0.1,
+                "propogation_probability_step": 10,
+                "impact_range": 60,
+                "average_movement": 0,
+                "dataset": "./dataset/out.petster-hamster.tsv"
+            },
+            "algorithm_result": {
+                "ic": 430.76,
+                "network_size": 2122,
+                "alpha": {
+                    "wolf": "9a89b19cbfa944efb4d2baedabec19df",
+                    "position": 5061838508979130363,
+                    "seed_set": [
+                        137,
+                        494,
+                        564,
+                        1002,
+                        347,
+                        1475,
+                        1074,
+                        238,
+                        45,
+                        157,
+                        579,
+                        272,
+                        484,
+                        323,
+                        953,
+                        83,
+                        169,
+                        841,
+                        622,
+                        255
+                    ]
+                },
+                "average_movement_history": []
+            },
+            "changing_parameter": "propogation_probability_start"
+        },
+        {
+            "action": "display_finished_algorithm",
+            "time": "0:03:06.444101",
+            "params": {
+                "cost_function": "ekpm_default_s1",
+                "seed_set_size_start": 20,
+                "seed_set_size_stop": "None",
+                "seed_set_size_step": "None",
+                "monte_carlo": 100,
+                "population_size": 25,
+                "max_t": 50,
+                "v_prim_degree_limit": 2,
+                "propogation_probability_start": 0.06,
+                "propogation_probability_stop": 0.1,
+                "propogation_probability_step": 10,
+                "impact_range": 60,
+                "average_movement": 0,
+                "dataset": "./dataset/out.petster-hamster.tsv"
+            },
+            "algorithm_result": {
+                "ic": 526.2,
+                "network_size": 2122,
+                "alpha": {
+                    "wolf": "6d91b5009e914ae0ac79b7ea6c20ffa1",
+                    "position": -9020496432063559013,
+                    "seed_set": [
+                        238,
+                        581,
+                        255,
+                        687,
+                        47,
+                        169,
+                        1341,
+                        58,
+                        26,
+                        112,
+                        580,
+                        106,
+                        168,
+                        193,
+                        118,
+                        2321,
+                        2264,
+                        124,
+                        701,
+                        766
+                    ]
+                },
+                "average_movement_history": []
+            },
+            "changing_parameter": "propogation_probability_start"
+        },
+        {
+            "action": "display_finished_algorithm",
+            "time": "0:02:38.743999",
+            "params": {
+                "cost_function": "ekpm_default_s1",
+                "seed_set_size_start": 20,
+                "seed_set_size_stop": "None",
+                "seed_set_size_step": "None",
+                "monte_carlo": 100,
+                "population_size": 25,
+                "max_t": 50,
+                "v_prim_degree_limit": 2,
+                "propogation_probability_start": 0.07,
+                "propogation_probability_stop": 0.1,
+                "propogation_probability_step": 10,
+                "impact_range": 60,
+                "average_movement": 0,
+                "dataset": "./dataset/out.petster-hamster.tsv"
+            },
+            "algorithm_result": {
+                "ic": 601.99,
+                "network_size": 2122,
+                "alpha": {
+                    "wolf": "ae4db2b99bae45978eceae74a55b0b3c",
+                    "position": -6212775205502520256,
+                    "seed_set": [
+                        64,
+                        511,
+                        23,
+                        1,
+                        1874,
+                        263,
+                        572,
+                        1047,
+                        9,
+                        244,
+                        237,
+                        197,
+                        25,
+                        2025,
+                        375,
+                        137,
+                        1255,
+                        387,
+                        1762,
+                        468
+                    ]
+                },
+                "average_movement_history": []
+            },
+            "changing_parameter": "propogation_probability_start"
+        },
+        {
+            "action": "display_finished_algorithm",
+            "time": "0:02:38.257332",
+            "params": {
+                "cost_function": "ekpm_default_s1",
+                "seed_set_size_start": 20,
+                "seed_set_size_stop": "None",
+                "seed_set_size_step": "None",
+                "monte_carlo": 100,
+                "population_size": 25,
+                "max_t": 50,
+                "v_prim_degree_limit": 2,
+                "propogation_probability_start": 0.08,
+                "propogation_probability_stop": 0.1,
+                "propogation_probability_step": 10,
+                "impact_range": 60,
+                "average_movement": 0,
+                "dataset": "./dataset/out.petster-hamster.tsv"
+            },
+            "algorithm_result": {
+                "ic": 679.85,
+                "network_size": 2122,
+                "alpha": {
+                    "wolf": "ea5627fa9038465faf1ed6dae57a56c1",
+                    "position": -3287451422368832406,
+                    "seed_set": [
+                        528,
+                        336,
+                        42,
+                        205,
+                        137,
+                        377,
+                        891,
+                        726,
+                        515,
+                        1184,
+                        566,
+                        834,
+                        1024,
+                        254,
+                        1993,
+                        1132,
+                        717,
+                        507,
+                        1247,
+                        1656
+                    ]
+                },
+                "average_movement_history": []
+            },
+            "changing_parameter": "propogation_probability_start"
+        },
+        {
+            "action": "display_finished_algorithm",
+            "time": "0:02:54.365326",
+            "params": {
+                "cost_function": "ekpm_default_s1",
+                "seed_set_size_start": 20,
+                "seed_set_size_stop": "None",
+                "seed_set_size_step": "None",
+                "monte_carlo": 100,
+                "population_size": 25,
+                "max_t": 50,
+                "v_prim_degree_limit": 2,
+                "propogation_probability_start": 0.09,
+                "propogation_probability_stop": 0.1,
+                "propogation_probability_step": 10,
+                "impact_range": 60,
+                "average_movement": 0,
+                "dataset": "./dataset/out.petster-hamster.tsv"
+            },
+            "algorithm_result": {
+                "ic": 773.78,
+                "network_size": 2122,
+                "alpha": {
+                    "wolf": "6ddc0a74e9c54f0a9f62ab8fe4057e2c",
+                    "position": -1336627490253724300,
+                    "seed_set": [
+                        1256,
+                        1469,
+                        368,
+                        276,
+                        158,
+                        26,
+                        681,
+                        730,
+                        177,
+                        911,
+                        126,
+                        1389,
+                        145,
+                        638,
+                        515,
+                        536,
+                        1016,
+                        2035,
+                        46,
+                        488
+                    ]
+                },
+                "average_movement_history": []
+            },
+            "changing_parameter": "propogation_probability_start"
+        },
+        {
+            "action": "display_finished_algorithm",
+            "time": "0:02:38.865125",
+            "params": {
+                "cost_function": "ekpm_default_s1",
+                "seed_set_size_start": 20,
+                "seed_set_size_stop": "None",
+                "seed_set_size_step": "None",
+                "monte_carlo": 100,
+                "population_size": 25,
+                "max_t": 50,
+                "v_prim_degree_limit": 2,
+                "propogation_probability_start": 0.1,
+                "propogation_probability_stop": 0.1,
+                "propogation_probability_step": 10,
+                "impact_range": 60,
+                "average_movement": 0,
+                "dataset": "./dataset/out.petster-hamster.tsv"
+            },
+            "algorithm_result": {
+                "ic": 830.09,
+                "network_size": 2122,
+                "alpha": {
+                    "wolf": "c86878328fd445328fccb04a3e7dea25",
+                    "position": -1462690158688512844,
+                    "seed_set": [
+                        1077,
+                        1312,
+                        1115,
+                        360,
+                        420,
+                        642,
+                        1003,
+                        54,
+                        96,
+                        168,
+                        1531,
+                        977,
+                        2262,
+                        664,
+                        1131,
+                        238,
+                        940,
+                        211,
+                        982,
+                        419
+                    ]
+                },
+                "average_movement_history": []
+            },
+            "changing_parameter": "propogation_probability_start"
+        }
+    ]
+}
