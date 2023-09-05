@@ -1,4 +1,0 @@
-ekpm_ir_eigv_prb_s1
-20
-Namespace(cost_function='ekpm_ir_eigv_prb_s1', seed_set_size_start=20, seed_set_size_stop=None, seed_set_size_step=None, monte_carlo=100, population_size=25, max_t=50, v_prim_degree_limit=2, propogation_probability_start=0.02, propogation_probability_stop=None, propogation_probability_step=None, impact_range=60, average_movement=0, dataset='./dataset/CA-AstroPh3.ekpm_ir_eigv_prb_ekpm_ir_eigv_prb_s1s1tsv')
-{'cost_function': 'ekpm_ir_eigv_prb_s1', 'seed_set_size_start': 20, 'seed_set_size_stop': None, 'seed_set_size_step': None, 'monte_carlo': 100, 'population_size': 25, 'max_t': 50, 'v_prim_degree_limit': 2, 'propogation_probability_start': 0.02, 'propogation_probability_stop': None, 'propogation_probability_step': None, 'impact_range': 60, 'average_movement': 0, 'dataset': './dataset/CA-AstroPh3.ekpm_ir_eigv_prb_ekpm_ir_eigv_prb_s1s1tsv'}
