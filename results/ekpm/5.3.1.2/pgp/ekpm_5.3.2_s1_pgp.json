@@ -14,13 +14,12 @@
                 "population_size": 25,
                 "max_t": 50,
                 "v_prim_degree_limit": 2,
-                "propogation_probability_start": 0.1,
+                "propogation_probability_start": 0.01,
                 "propogation_probability_stop": 0.1,
                 "propogation_probability_step": 10,
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.arenas-pgp.tsv",
-                "graph": <networkx.classes.graph.Graph object at 0x7f30284eaf50>
+                "dataset": "./dataset/out.arenas-pgp.tsv"
             },
             "algorithm_result": {
                 "ic": 36.14,
@@ -67,13 +66,12 @@
                 "population_size": 25,
                 "max_t": 50,
                 "v_prim_degree_limit": 2,
-                "propogation_probability_start": 0.1,
+                "propogation_probability_start": 0.02,
                 "propogation_probability_stop": 0.1,
                 "propogation_probability_step": 10,
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.arenas-pgp.tsv",
-                "graph": <networkx.classes.graph.Graph object at 0x7f30284eaf50>
+                "dataset": "./dataset/out.arenas-pgp.tsv"
             },
             "algorithm_result": {
                 "ic": 64.64,
@@ -120,13 +118,12 @@
                 "population_size": 25,
                 "max_t": 50,
                 "v_prim_degree_limit": 2,
-                "propogation_probability_start": 0.1,
+                "propogation_probability_start": 0.03,
                 "propogation_probability_stop": 0.1,
                 "propogation_probability_step": 10,
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.arenas-pgp.tsv",
-                "graph": <networkx.classes.graph.Graph object at 0x7f30284eaf50>
+                "dataset": "./dataset/out.arenas-pgp.tsv"
             },
             "algorithm_result": {
                 "ic": 112.09,
@@ -173,13 +170,12 @@
                 "population_size": 25,
                 "max_t": 50,
                 "v_prim_degree_limit": 2,
-                "propogation_probability_start": 0.1,
+                "propogation_probability_start": 0.04,
                 "propogation_probability_stop": 0.1,
                 "propogation_probability_step": 10,
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.arenas-pgp.tsv",
-                "graph": <networkx.classes.graph.Graph object at 0x7f30284eaf50>
+                "dataset": "./dataset/out.arenas-pgp.tsv"
             },
             "algorithm_result": {
                 "ic": 158.18,
@@ -226,13 +222,12 @@
                 "population_size": 25,
                 "max_t": 50,
                 "v_prim_degree_limit": 2,
-                "propogation_probability_start": 0.1,
+                "propogation_probability_start": 0.05,
                 "propogation_probability_stop": 0.1,
                 "propogation_probability_step": 10,
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.arenas-pgp.tsv",
-                "graph": <networkx.classes.graph.Graph object at 0x7f30284eaf50>
+                "dataset": "./dataset/out.arenas-pgp.tsv"
             },
             "algorithm_result": {
                 "ic": 230.51,
@@ -279,13 +274,12 @@
                 "population_size": 25,
                 "max_t": 50,
                 "v_prim_degree_limit": 2,
-                "propogation_probability_start": 0.1,
+                "propogation_probability_start": 0.06,
                 "propogation_probability_stop": 0.1,
                 "propogation_probability_step": 10,
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.arenas-pgp.tsv",
-                "graph": <networkx.classes.graph.Graph object at 0x7f30284eaf50>
+                "dataset": "./dataset/out.arenas-pgp.tsv"
             },
             "algorithm_result": {
                 "ic": 340.09,
@@ -332,13 +326,12 @@
                 "population_size": 25,
                 "max_t": 50,
                 "v_prim_degree_limit": 2,
-                "propogation_probability_start": 0.1,
+                "propogation_probability_start": 0.07,
                 "propogation_probability_stop": 0.1,
                 "propogation_probability_step": 10,
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.arenas-pgp.tsv",
-                "graph": <networkx.classes.graph.Graph object at 0x7f30284eaf50>
+                "dataset": "./dataset/out.arenas-pgp.tsv"
             },
             "algorithm_result": {
                 "ic": 377.13,
@@ -385,13 +378,12 @@
                 "population_size": 25,
                 "max_t": 50,
                 "v_prim_degree_limit": 2,
-                "propogation_probability_start": 0.1,
+                "propogation_probability_start": 0.08,
                 "propogation_probability_stop": 0.1,
                 "propogation_probability_step": 10,
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.arenas-pgp.tsv",
-                "graph": <networkx.classes.graph.Graph object at 0x7f30284eaf50>
+                "dataset": "./dataset/out.arenas-pgp.tsv"
             },
             "algorithm_result": {
                 "ic": 469.16,
@@ -438,13 +430,12 @@
                 "population_size": 25,
                 "max_t": 50,
                 "v_prim_degree_limit": 2,
-                "propogation_probability_start": 0.1,
+                "propogation_probability_start": 0.09,
                 "propogation_probability_stop": 0.1,
                 "propogation_probability_step": 10,
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.arenas-pgp.tsv",
-                "graph": <networkx.classes.graph.Graph object at 0x7f30284eaf50>
+                "dataset": "./dataset/out.arenas-pgp.tsv"
             },
             "algorithm_result": {
                 "ic": 487.02,
@@ -496,8 +487,7 @@
                 "propogation_probability_step": 10,
                 "impact_range": 60,
                 "average_movement": 0,
-                "dataset": "./dataset/out.arenas-pgp.tsv",
-                "graph": <networkx.classes.graph.Graph object at 0x7f30284eaf50>
+                "dataset": "./dataset/out.arenas-pgp.tsv"
             },
             "algorithm_result": {
                 "ic": 639.88,

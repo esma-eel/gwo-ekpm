@@ -176,6 +176,7 @@
                 "impact_range": 60,
                 "average_movement": 0,
                 "dataset": "./dataset/CA-AstroPh3.tsv"
+            },
             "algorithm_result": {
                 "ic": 4064.4,
                 "network_size": 17491,
