@@ -1,0 +1,358 @@
+{
+    "action": "display_end_execution",
+    "total": "0:00:52.114811",
+    "executions": [
+        {
+            "action": "display_finished_algorithm",
+            "time": "0:00:52.114403",
+            "params": {
+                "cost_function": "ekpm_default_s2",
+                "seed_set_size_start": 20,
+                "seed_set_size_stop": "None",
+                "seed_set_size_step": "None",
+                "monte_carlo": 100,
+                "population_size": 25,
+                "max_t": 50,
+                "v_prim_degree_limit": 2,
+                "propogation_probability_start": 0.06,
+                "propogation_probability_stop": "None",
+                "propogation_probability_step": "None",
+                "impact_range": 60,
+                "average_movement": 1,
+                "dataset": "./dataset/out.arenas-pgp.tsv"
+            },
+            "algorithm_result": {
+                "ic": 317.63,
+                "network_size": 6451,
+                "alpha": {
+                    "wolf": "4c474f9c6e0b4b41bbfb8fd4ee67f87a",
+                    "position": 4878625992145302204,
+                    "seed_set": [
+                        1399,
+                        1312,
+                        211,
+                        9874,
+                        3007,
+                        1689,
+                        1201,
+                        4239,
+                        1802,
+                        1493,
+                        1774,
+                        1646,
+                        2057,
+                        1266,
+                        1952,
+                        3802,
+                        637,
+                        2463,
+                        7444,
+                        751
+                    ]
+                },
+                "average_movement_history": [
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 1,
+                        "for": "(0, 1)",
+                        "value": 2.4938803818628212
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 2,
+                        "for": "(1, 2)",
+                        "value": 3.0874324646739626
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 3,
+                        "for": "(2, 3)",
+                        "value": 4.381288916956392
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 4,
+                        "for": "(3, 4)",
+                        "value": 4.341711576857423
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 5,
+                        "for": "(4, 5)",
+                        "value": 5.164952923222085
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 6,
+                        "for": "(5, 6)",
+                        "value": 4.684497583187468
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 7,
+                        "for": "(6, 7)",
+                        "value": 5.341077332458218
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 8,
+                        "for": "(7, 8)",
+                        "value": 5.42032837075426
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 9,
+                        "for": "(8, 9)",
+                        "value": 6.44944731427583
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 10,
+                        "for": "(9, 10)",
+                        "value": 6.392342231290835
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 11,
+                        "for": "(10, 11)",
+                        "value": 5.774238098162081
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 12,
+                        "for": "(11, 12)",
+                        "value": 5.906267616282512
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 13,
+                        "for": "(12, 13)",
+                        "value": 6.522579045537433
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 14,
+                        "for": "(13, 14)",
+                        "value": 8.286278733039278
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 15,
+                        "for": "(14, 15)",
+                        "value": 7.716411055296096
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 16,
+                        "for": "(15, 16)",
+                        "value": 8.35345258746216
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 17,
+                        "for": "(16, 17)",
+                        "value": 8.137805036804131
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 18,
+                        "for": "(17, 18)",
+                        "value": 9.307917763494286
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 19,
+                        "for": "(18, 19)",
+                        "value": 9.804088173900217
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 20,
+                        "for": "(19, 20)",
+                        "value": 9.662422734083398
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 21,
+                        "for": "(20, 21)",
+                        "value": 14.168472151088181
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 22,
+                        "for": "(21, 22)",
+                        "value": 13.799235824328315
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 23,
+                        "for": "(22, 23)",
+                        "value": 12.909390995853988
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 24,
+                        "for": "(23, 24)",
+                        "value": 8.572980903049997
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 25,
+                        "for": "(24, 25)",
+                        "value": 8.799552296512033
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 26,
+                        "for": "(25, 26)",
+                        "value": 6.771901698443089
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 27,
+                        "for": "(26, 27)",
+                        "value": 5.490786972270817
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 28,
+                        "for": "(27, 28)",
+                        "value": 6.002622398777716
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 29,
+                        "for": "(28, 29)",
+                        "value": 6.326319029731139
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 30,
+                        "for": "(29, 30)",
+                        "value": 7.204869590613368
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 31,
+                        "for": "(30, 31)",
+                        "value": 8.079429448177883
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 32,
+                        "for": "(31, 32)",
+                        "value": 5.418910076982138
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 33,
+                        "for": "(32, 33)",
+                        "value": 6.697567738266903
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 34,
+                        "for": "(33, 34)",
+                        "value": 4.319063279288398
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 35,
+                        "for": "(34, 35)",
+                        "value": 3.5957690709898187
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 36,
+                        "for": "(35, 36)",
+                        "value": 4.060642940230499
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 37,
+                        "for": "(36, 37)",
+                        "value": 3.701435215002715
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 38,
+                        "for": "(37, 38)",
+                        "value": 3.826759544415152
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 39,
+                        "for": "(38, 39)",
+                        "value": 3.1347685926810147
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 40,
+                        "for": "(39, 40)",
+                        "value": 3.8734877608818516
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 41,
+                        "for": "(40, 41)",
+                        "value": 2.8725038488170767
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 42,
+                        "for": "(41, 42)",
+                        "value": 2.5624554820126964
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 43,
+                        "for": "(42, 43)",
+                        "value": 2.2849465055597658
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 44,
+                        "for": "(43, 44)",
+                        "value": 1.8050057434399764
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 45,
+                        "for": "(44, 45)",
+                        "value": 1.5140726406429836
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 46,
+                        "for": "(45, 46)",
+                        "value": 1.41363508082877
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 47,
+                        "for": "(46, 47)",
+                        "value": 0.8992991639589026
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 48,
+                        "for": "(47, 48)",
+                        "value": 0.7915184858953538
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 49,
+                        "for": "(48, 49)",
+                        "value": 0.4850281819554884
+                    },
+                    {
+                        "action": "display_average_movement",
+                        "iteration": 50,
+                        "for": "(49, 50)",
+                        "value": 0.18775408007831954
+                    }
+                ]
+            }
+        }
+    ]
+}
