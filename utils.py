@@ -2,6 +2,14 @@ import math
 
 
 def remap(x, oMin, oMax, nMin, nMax):
+    """
+    changes the range of number x
+    if it is between oMin and oMax
+    to nMin and nMax
+    Example: x = 8
+    range is between 0 and 10
+    we want to be between 0 and 1
+    """
     # range check
     if oMin == oMax:
         print("Warning: Zero input range")
@@ -48,6 +56,9 @@ def safe_ln(value):
 
 
 def graph_nodes(target_graph):
+    """
+    return list of all nodes of target_graph
+    """
     nodes = list(target_graph.nodes())
     return nodes
 
@@ -65,11 +76,18 @@ def maximum_degree(target_graph):
 
 
 def graph_length(target_graph):
+    """
+    return how many nodes a graph has
+    """
     length: int = len(graph_nodes(target_graph))
     return length
 
 
 def knbrs(G, start, k):
+    """
+    gives list of neighbors of start node untill order f k
+    in graph G
+    """
     nbrs = set([start])
     for _ in range(k):
         nbrs = set((nbr for n in nbrs for nbr in G[n]))
@@ -81,6 +99,9 @@ def knbrs(G, start, k):
 
 
 def calculate_average_movement(wolves, prev_t, current_t, average_movement):
+    """
+    usecase of this is for -am 1 parameter test 5.2
+    """
     if not bool(average_movement):
         return 0
 
@@ -89,6 +110,9 @@ def calculate_average_movement(wolves, prev_t, current_t, average_movement):
 
 
 def convert_positions_data(data):
+    """
+    usecase of this is for -am 1 parameter test 5.2
+    """
     new_data = {}
     for key, value in data.items():
         print("for ", key, value)
