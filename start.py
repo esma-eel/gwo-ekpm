@@ -325,6 +325,12 @@ print(vars(args))
 
 
 def range_dict(**range_args):
+    """
+    create iteration function based on given paramters
+    range(x,y,z) is for tests of 5.3.1.1 seed_set_size test
+    np.linspace(x, y, z) is for 5.3.1.1 propogaton
+
+    """
     params = {"iterate": False, "parameter": "", "function": range(1)}
 
     kstart = range_args.get("seed_set_size_start")

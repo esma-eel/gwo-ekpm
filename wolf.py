@@ -13,10 +13,14 @@ class Wolf(object):
     def __init__(self, *args, **kwargs):
         self._position = kwargs.get("position")
         self._seed_set = kwargs.get("seed_set")
+        # fitness vaue
         self._value = kwargs.get("value")
+        # usecase of this is for -am 1 parameter test 5.2
         self._average_movement = bool(kwargs.get("average_movement", False))
+
         self._id = uuid.uuid4().hex
 
+        # usecase of this is for -am 1 parameter test 5.2
         if self._average_movement:
             self._positions = []
             self._seed_sets = []
@@ -50,7 +54,6 @@ class Wolf(object):
         K which is number of seed set
         and Xi position list for wolf i based on algorithm 3 in article
         """
-
         position_copy = dict(self.X)
         filtered_position = sorted(
             position_copy.items(), key=lambda item: item[1], reverse=True
@@ -146,6 +149,9 @@ class Wolf(object):
         return self._id
 
     def move(self, prev_t, current_t):
+        """
+        usecase of this is for -am 1 parameter test 5.2
+        """
         if self._positions[current_t] and self._positions[prev_t]:
             distance_moved: float = math.dist(
                 self._positions[current_t].values(),
