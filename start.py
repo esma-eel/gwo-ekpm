@@ -12,8 +12,13 @@ import numpy as np
 
 from algorithms import gwolf
 from cost_functions import (
-    gwim_fitness_function,
-    proposed_method_fitness_function,
+    gwim_default,
+    ekpm_full,
+    ekpm_impact_range_gwim,
+    ekpm_impact_range_eigv,
+    ekpm_impact_range_eigv_kshell_filter,
+    ekpm_impact_range_eigv_prb_filter,
+    ekpm_impact_range_eigv_kshell_prb_filter,
 )
 from network import initial_graph
 
@@ -21,16 +26,167 @@ parser = argparse.ArgumentParser(
     description="EKPM (Esmaeel Komijani's Project Master)"
 )
 
+
+def run_ekpm_default_s1(**paramters):
+    # ekpm longtime connection
+    gwolf_args = {
+        **paramters,
+        "reverse": False,
+        "cost_function": ekpm_full,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm_default_s2(**paramters):
+    # ekpm shorttime connection
+    gwolf_args = {
+        **paramters,
+        "reverse": True,
+        "cost_function": ekpm_full,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm_ir_gwim_s1(**paramters):
+    gwolf_args = {
+        **paramters,
+        "reverse": False,
+        "cost_function": ekpm_impact_range_gwim,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm_ir_gwim_s2(**paramters):
+    gwolf_args = {
+        **paramters,
+        "reverse": True,
+        "cost_function": ekpm_impact_range_gwim,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm_ir_eigv_s1(**paramters):
+    gwolf_args = {
+        **paramters,
+        "reverse": False,
+        "cost_function": ekpm_impact_range_eigv,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm_ir_eigv_s2(**paramters):
+    gwolf_args = {
+        **paramters,
+        "reverse": True,
+        "cost_function": ekpm_impact_range_eigv,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm_ir_eigv_kshell_s1(**paramters):
+    gwolf_args = {
+        **paramters,
+        "reverse": False,
+        "cost_function": ekpm_impact_range_eigv_kshell_filter,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm_ir_eigv_kshell_s2(**paramters):
+    gwolf_args = {
+        **paramters,
+        "reverse": True,
+        "cost_function": ekpm_impact_range_eigv_kshell_filter,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm_ir_eigv_prb_s1(**paramters):
+    gwolf_args = {
+        **paramters,
+        "reverse": False,
+        "cost_function": ekpm_impact_range_eigv_prb_filter,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm_ir_eigv_prb_s2(**paramters):
+    gwolf_args = {
+        **paramters,
+        "reverse": True,
+        "cost_function": ekpm_impact_range_eigv_prb_filter,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm_ir_eigv_kshell_prb_s1(**paramters):
+    gwolf_args = {
+        **paramters,
+        "reverse": False,
+        "cost_function": ekpm_impact_range_eigv_kshell_prb_filter,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_ekpm_ir_eigv_kshell_prb_s2(**paramters):
+    gwolf_args = {
+        **paramters,
+        "reverse": True,
+        "cost_function": ekpm_impact_range_eigv_kshell_prb_filter,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def run_gwim_default(**paramters):
+    gwolf_args = {
+        **paramters,
+        "cost_function": gwim_default,
+    }
+    alogrithm_execution_result = gwolf(**gwolf_args)
+    return alogrithm_execution_result
+
+
+def get_run_options():
+    return {
+        "ekpm_default_s1": run_ekpm_default_s1,
+        "ekpm_default_s2": run_ekpm_default_s2,
+        "ekpm_ir_gwim_s1": run_ekpm_ir_gwim_s1,
+        "ekpm_ir_gwim_s2": run_ekpm_ir_gwim_s2,
+        "ekpm_ir_eigv_s1": run_ekpm_ir_eigv_s1,
+        "ekpm_ir_eigv_s2": run_ekpm_ir_eigv_s2,
+        "ekpm_ir_eigv_kshell_s1": run_ekpm_ir_eigv_kshell_s1,
+        "ekpm_ir_eigv_kshell_s2": run_ekpm_ir_eigv_kshell_s2,
+        "ekpm_ir_eigv_prb_s1": run_ekpm_ir_eigv_prb_s1,
+        "ekpm_ir_eigv_prb_s2": run_ekpm_ir_eigv_prb_s2,
+        "ekpm_ir_eigv_kshell_prb_s1": run_ekpm_ir_eigv_kshell_prb_s1,
+        "ekpm_ir_eigv_kshell_prb_s2": run_ekpm_ir_eigv_kshell_prb_s2,
+        "gwim_default": run_gwim_default,
+    }
+
+
 # cost function number
 parser.add_argument(
     "-c",
     "--cost_function",
     metavar="Cname",
-    type=int,
+    type=str,
     required=False,
-    default=1,
-    help="Costfuncions List are [ 1)EKMP1 2)EKPM2 3)GWIM ]",
+    default="ekpm_default_s1",
+    help=str(get_run_options().keys()),
 )
+
 
 # seed set size
 parser.add_argument(
@@ -160,7 +316,6 @@ parser.add_argument(
     help="Dataset file address",
 )
 
-
 args = parser.parse_args()
 
 print(args.cost_function)
@@ -169,40 +324,13 @@ print(args)
 print(vars(args))
 
 
-def run_ekpm1(**paramters):
-    gwolf_args = {
-        **paramters,
-        "reverse": False,
-        "cost_function": proposed_method_fitness_function,
-    }
-    alogrithm_execution_result = gwolf(**gwolf_args)
-    return alogrithm_execution_result
-
-
-def run_ekpm2(**paramters):
-    gwolf_args = {
-        **paramters,
-        "reverse": True,
-        "cost_function": proposed_method_fitness_function,
-    }
-    alogrithm_execution_result = gwolf(**gwolf_args)
-    return alogrithm_execution_result
-
-
-def run_gwim(**paramters):
-    gwolf_args = {
-        **paramters,
-        "cost_function": gwim_fitness_function,
-    }
-    alogrithm_execution_result = gwolf(**gwolf_args)
-    return alogrithm_execution_result
-
-
-def get_run_options():
-    return {1: run_ekpm1, 2: run_ekpm2, 3: run_gwim}
-
-
 def range_dict(**range_args):
+    """
+    create iteration function based on given paramters
+    range(x,y,z) is for tests of 5.3.1.1 seed_set_size test
+    np.linspace(x, y, z) is for 5.3.1.1 propogaton
+
+    """
     params = {"iterate": False, "parameter": "", "function": range(1)}
 
     kstart = range_args.get("seed_set_size_start")
@@ -271,7 +399,7 @@ def run(**run_args):
     print(
         {
             "action": "display_end_execution",
-            "total": run_delta,
+            "total": str(run_delta),
             "executions": execute_history,
         }
     )

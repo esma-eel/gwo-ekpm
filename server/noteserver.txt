@@ -1,0 +1,2 @@
+in order to run process in background linux
+python -u start.py | tee results/test/name.txt > outputlog.txt 2>&1 &

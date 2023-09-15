@@ -2,6 +2,10 @@ import networkx as nx
 
 
 def initial_graph(dataset_addres, v_prim_degree_limit):
+    """
+    create graph based on dataset address and the limit of nodes degree
+    based on main article ==> default is 1
+    """
     graph_type = nx.Graph()
     G = nx.read_edgelist(
         dataset_addres,

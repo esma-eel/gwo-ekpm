@@ -1,0 +1,9 @@
+3
+40
+Namespace(cost_function=3, seed_set_size_start=40, seed_set_size_stop=None, seed_set_size_step=None, monte_carlo=50, population_size=50, max_t=100, v_prim_degree_limit=2, propogation_probability_start=0.02, propogation_probability_stop=None, propogation_probability_step=None, impact_range=60, average_movement=1, dataset='./dataset/out.arenas-pgp.tsv')
+{'cost_function': 3, 'seed_set_size_start': 40, 'seed_set_size_stop': None, 'seed_set_size_step': None, 'monte_carlo': 50, 'population_size': 50, 'max_t': 100, 'v_prim_degree_limit': 2, 'propogation_probability_start': 0.02, 'propogation_probability_stop': None, 'propogation_probability_step': None, 'impact_range': 60, 'average_movement': 1, 'dataset': './dataset/out.arenas-pgp.tsv'}
+{'iteration': 0, 'action': 'generate_population'}
+{'iteration': 0, 'action': 'generate_position', 'wolf': 'b4c1df21455b460a9c540ea209343600'}
+{'iteration': 0, 'action': 'generate_seed_set', 'wolf': 'b4c1df21455b460a9c540ea209343600'}
+{'iteration': 0, 'action': 'display_seed_set', 'wolf': 'b4c1df21455b460a9c540ea209343600', 'seed_set': 3125484063272388061}
+{'iteration': 0, 'action': 'calculate_fitness', 'wolf': 'b4c1df21455b460a9c540ea209343600'}
