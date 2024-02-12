@@ -1,5 +1,6 @@
 # Examining the role of active users in social networks using the gray wolf optimization algorithm
 # GRAY WOLF OPTIMIZATION
+The project is presented as part of a master's degree in Information technology for e-commerce engineering
 
 # Datasets:
 - pgp
@@ -15,6 +16,5 @@ I made this project public in order to help other students
 This projects main article was
 https://www.sciencedirect.com/science/article/abs/pii/S095741741930689X?via%3Dihub
 
-I didnt have the codes so i started coding based on descriptions and samples they had in article
-
+I didnt have the main codes of authores so i started coding based on descriptions and samples they had in article
 
