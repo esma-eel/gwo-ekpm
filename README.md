@@ -1,5 +1,5 @@
 # Examining the role of active users in social networks using the gray wolf optimization algorithm
-# GRAY WOLF OPTIMIZATION
+# GRAY WOLF OPTIMIZATION for Influence maximization
 The project is presented as part of a master's degree in Information technology for e-commerce engineering
 
 # Datasets:
@@ -18,3 +18,4 @@ https://www.sciencedirect.com/science/article/abs/pii/S095741741930689X?via%3Dih
 
 I didnt have the main codes of authores so i started coding based on descriptions and samples they had in article
 
+tags: gwo, gray wolf optimization algorithm, influence maximization, GWIM, gray wolf influence maximization
