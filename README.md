@@ -1,7 +1,7 @@
 # Master Thesis Project: Examining the role of active users in social networks using the gray wolf optimization algorithm
 
 ## Introduction
-
+Unverisity: [University of Science and Culture](https://usc.ac.ir/)
 This project explores the application of the Gray Wolf Optimization (GWO) algorithm for influence maximization in social networks. Conducted as part of a master's degree in Information Technology for E-commerce Engineering, the research aims to understand and optimize the spread of influence within online communities.
 
 ## Objectives
@@ -9,6 +9,7 @@ This project explores the application of the Gray Wolf Optimization (GWO) algori
 - To implement the Gray Wolf Optimization algorithm for identifying influential nodes in social networks.
 - To evaluate the effectiveness of GWO in maximizing influence compared to traditional methods.
 - To analyze the impact of various dataset characteristics on the performance of the GWO algorithm.
+- To evaluate proposed method named EKPM compared to GWIM
 
 ## Datasets Used
 
@@ -32,11 +33,11 @@ Due to the unavailability of the original source code, the implementation of the
 
 ## Tags
 
-- gwo
-- gray wolf optimization algorithm
-- influence maximization
+- GWO
+- Gray Wolf Optimization Algorithm
+- Influence Maximization
 - GWIM
-- gray wolf influence maximization
+- Gray Wolf Influence Maximization
 
 ## Contributions
 
