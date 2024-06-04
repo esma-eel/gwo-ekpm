@@ -2,6 +2,7 @@
 
 ## Introduction
 Unverisity: [University of Science and Culture](https://usc.ac.ir/)
+
 This project explores the application of the Gray Wolf Optimization (GWO) algorithm for influence maximization in social networks. Conducted as part of a master's degree in Information Technology for E-commerce Engineering, the research aims to understand and optimize the spread of influence within online communities.
 
 ## Objectives
